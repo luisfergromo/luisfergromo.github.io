@@ -116,3 +116,7 @@ background: #41728c;
 border: 1px solid #3e7a9a;
 text-decoration: none;
 }
+a#ig.resize{
+    width: 64cm;
+    height:64cm;
+}
