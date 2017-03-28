@@ -12,12 +12,12 @@ font-family:"Helvetica Neue",Helvetica, Arial;
 }
 
 .mr20{
-margin-right: 20px;
+margin-right: 10px;
 }
 
 #content{
 background: url(../images/mid_bg.jpg) center top no-repeat;
-padding-top: 125px;
+padding-top: 100px;
 text-align: center;
 }
 
