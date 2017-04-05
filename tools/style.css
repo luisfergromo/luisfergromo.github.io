@@ -120,3 +120,7 @@ a#ig.resize{
     width: 64cm;
     height:64cm;
 }
+
+#logo{
+padding: 5px;
+}
