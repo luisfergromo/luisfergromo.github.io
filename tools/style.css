@@ -121,6 +121,7 @@ a#ig.resize{
     height:64cm;
 }
 
-#logo{
-padding: 5px;
+div#logo.resize{
+    width: 60%;
+    height: 60%;
 }
