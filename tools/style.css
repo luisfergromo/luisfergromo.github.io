@@ -125,3 +125,18 @@ div#logo.resize{
     width: 60%;
     height: 60%;
 }
+.CPMXBox{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .CPMXBox,.CPMXBox:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.copyright-content{
+    display: table;
+    width: 100%;
+}
