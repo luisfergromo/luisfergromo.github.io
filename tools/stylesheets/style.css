@@ -5,6 +5,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 
 body{
+
 margin:auto;
     background:#d9d9d9 url(../images/bg.gif) center top repeat-x;
     font-family:"Helvetica Neue",Helvetica, Arial;
@@ -15,6 +16,14 @@ width: auto;
 .navBar{
     padding-top: 3px;
 
+
+    margin:auto;
+    background: #d9d5d5 url("/images/bg.gif") center top repeat-x;
+    font-family:"Helvetica Neue",Helvetica, Arial;
+    width: auto;
+    min-width: 600px;
+    max-width: 2000px;
+
 }
 
 .mr20{
@@ -22,7 +31,7 @@ margin-right: 10px;
 }
 
 #content{
-background: url(../images/mid_bg.jpg) center top no-repeat;
+background: url(/images/mid_bg.jpg) center top no-repeat;
 padding-top: 100px;
 text-align: center;
 }
@@ -67,12 +76,12 @@ margin-bottom: 8px;
 width: 884px;
 padding-bottom: 20px;
 margin: 0 auto;
-background: url(../images/shadow.png) left bottom no-repeat;
+background: url(/images/shadow.png) left bottom no-repeat;
 }
 
 .mcontent{
 min-height: 153px;
-background:#ebebeb url(../images/main.gif) left top repeat-x;
+background:#ebebeb url(/images/main.gif) left top repeat-x ;
 width: 698px;
 border-left: 1px solid #f7f7f7;
 margin: 0 auto;
@@ -128,6 +137,8 @@ a#ig.resize{
 }
 
 div#logo.resize{
+    min-width: 30%;
+    max-width: 60%;
     width: 60%;
     height: 60%;
 }
@@ -146,3 +157,34 @@ a:hover + .CPMXBox,.CPMXBox:hover{
     display: table;
     width: 100%;
 }
+
+/*
+---------------------
+Nav Bar
+--------------------
+ */
+li{
+    float: left;
+}
+li a:hover{
+    background-color: #d9d5d5;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.active{
+    background-color: #4CAF50;
+}
+
