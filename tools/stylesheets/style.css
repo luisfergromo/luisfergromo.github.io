@@ -124,6 +124,8 @@ a#ig.resize{
 }
 
 div#logo.resize{
+    min-width: 30%;
+    max-width: 60%;
     width: 60%;
     height: 60%;
 }
@@ -141,4 +143,28 @@ a:hover + .CPMXBox,.CPMXBox:hover{
 .copyright-content{
     display: table;
     width: 100%;
+}
+li{
+    float: left;
+}
+li a:hover{
+    background-color: #d9d5d5;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.active{
+    background-color: #4CAF50;
 }
