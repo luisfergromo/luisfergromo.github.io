@@ -6,7 +6,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 body{
     margin:auto;
-    background: #d9d5d5 url("/images/LuisRomo.jpg") center top repeat-x;
+    background: #d9d5d5 url("/images/bg.gif") center top repeat-x;
     font-family:"Helvetica Neue",Helvetica, Arial;
     width: auto;
     min-width: 600px;
