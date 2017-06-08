@@ -144,6 +144,11 @@ a:hover + .CPMXBox,.CPMXBox:hover{
     display: table;
     width: 100%;
 }
+/*
+---------------------
+Nav Bar
+--------------------
+ */
 li{
     float: left;
 }
