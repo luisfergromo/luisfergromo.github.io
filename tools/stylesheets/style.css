@@ -135,6 +135,7 @@ a#ig.resize{
 }
 
 div#logo.resize{
+    padding-top: 3%;
     min-width: 30%;
     max-width: 60%;
     width: 60%;
