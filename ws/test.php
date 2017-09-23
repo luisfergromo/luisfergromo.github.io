@@ -1,6 +1,7 @@
 <?php
 header("Content-Type:aplication/json");
-if(!empty($GET['name']){
+include ("../ws/functions.php");
+if(!empty(($GET['name'])){
   $name=$_GET['name'];
   $price=get_price($name);
   
