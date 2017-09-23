@@ -5,7 +5,7 @@ if(!empty(($GET['name'])){
   $name=$_GET['name'];
   $price=get_price($name);
   
-if(empty($price))
+if(empty($price)){
   //echo:"Book not found";
   delivery_response(200,"Book not found",NULL);
 }else{
