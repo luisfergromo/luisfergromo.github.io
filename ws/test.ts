@@ -1,12 +1,8 @@
-/*
+
 var message = "Hello Wold"
 console.log(message)
 document.body.innerHTML = message;
-/*
-var message = "Hello Wold"
-console.log(message)
-document.body.innerHTML = message;
-*/
+
 /*
 var message = "hello world"
 console.log(message)
@@ -31,10 +27,10 @@ req.onload = function(e) {
     var i=0;
     console.log(response.routes.legs.ditance)
     console.log(response.routes.legs.duration)
-    /*for(i=0;i<40;i++){ //Access-Control-Allow-Origin
+    for(i=0;i<40;i++){ //Access-Control-Allow-Origin
 
     console.log(response.routes.legs.steps[i])
-    }*/
+    }
 };
 req.open("GET","https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
 req.responseType="json";
