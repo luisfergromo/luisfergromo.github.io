@@ -1,17 +1,12 @@
-
+var message = "hello world";
+console.log(message);
+document.body.innerHTML= message;
 /*
-var message = "hello world"
-console.log(message)
-document.body.innerHTML= message
-
 var req = new XMLHttpRequest()
-
 req.onload= function (e) {
-
     var response = req.response;
     console.log(response)
 }
-
 req.open("GET","https://api.github.com/users/luisfergromo/repos")
 req.responseType="json"
 req.send()
@@ -34,7 +29,8 @@ req.onload = function(e) {
 req.open("GET","https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
 req.responseType="json";
 //var httpRequest = new httpRequest;
-//httpRequest.setRequestHeader('Access-Control-Allow-Origin:', '*');
+req.setRequestHeader('Access-Control-Allow-Origin:', '*');
+req.setRequestHeader('Content-Type','application/json');
 //httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
 //
 req.send();
