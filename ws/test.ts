@@ -1,5 +1,5 @@
 
-var message = "Hello Wold"
+var message = "SW"
 console.log(message)
 document.body.innerHTML = message;
 
@@ -22,7 +22,7 @@ req.send()
 */
 var req = new XMLHttpRequest();
 req.onload = function(e) {
- var   response = req.response.routes[0].legs[0];
+ var  response = req.response.routes[0].legs[0];
  console.log(response);
     var i;
     console.log(response.distance)
