@@ -10,6 +10,3 @@ req.onload = function (e) {
 req.open("GET", "https://api.github.com/users/luisfergromo");
 //tipo de respuesta
 req.responseType = "json";
-//ejecución del request
-req.send()
-
