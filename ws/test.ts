@@ -39,4 +39,5 @@ req.responseType="json";
 //var httpRequest = new httpRequest;
 //httpRequest.setRequestHeader('Access-Control-Allow-Origin:', '*');
 //httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
+//
 req.send();
