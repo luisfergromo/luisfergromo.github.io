@@ -1,6 +1,6 @@
-var message = "hello world";
+let message = "hello world";
 console.log(message);
-document.body.innerHTML= message;
+//document.body.innerHTML= message;
 /*
 var req = new XMLHttpRequest()
 req.onload= function (e) {
@@ -12,7 +12,6 @@ req.responseType="json"
 req.send()
 */
 var req = new XMLHttpRequest();
-
 req.onload = function(e) {
  var  response = req.response.routes[0].legs[0];
  console.log(response);
@@ -27,9 +26,9 @@ req.onload = function(e) {
     }
 };
 req.open("GET","https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
-req.responseType="json";
+//req.responseType="json";
 //var httpRequest = new httpRequest;
-req.setRequestHeader('Access-Control-Allow-Origin:', '*');
+//req.setRequestHeader('Access-Control-Allow-Origin:', '*');
 req.setRequestHeader('Content-Type','application/json');
 //httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
 //
