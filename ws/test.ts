@@ -28,8 +28,8 @@ req.onload = function(e) {
 req.open("GET","https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
 req.responseType = "json";
 //var httpRequest = new httpRequest;
-//req.setRequestHeader('Access-Control-Allow-Origin:', '*');
+req.setRequestHeader('Access-Control-Allow-Origin:', '*');
 //req.setRequestHeader('Content-Type','application/json');
-req.setRequestHeader('Access-Control-Allow-Headers', '*');
+//req.setRequestHeader('Access-Control-Allow-Headers', '*');
 //
 req.send();
