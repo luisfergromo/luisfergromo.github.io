@@ -1,4 +1,4 @@
-var message = "SW";
+var message = "WS";
 console.log(message);
 document.body.innerHTML = message;
 /*
