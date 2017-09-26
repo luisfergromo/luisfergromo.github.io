@@ -21,6 +21,7 @@ req.responseType="json"
 req.send()
 */
 var req = new XMLHttpRequest();
+
 req.onload = function(e) {
  var  response = req.response.routes[0].legs[0];
  //console.log(response);
