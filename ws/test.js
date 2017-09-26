@@ -1,4 +1,4 @@
-var message = "Hola Mundo";
+var message = "API Test";
 console.log(message);
 document.body.innerHTML = message;
 /*
@@ -24,12 +24,12 @@ req.onload = function (e) {
     console.log(response);
     var i;
     console.log(response.distance);
-    document.body.innerHTML = (response.distance);
+    //document.body.innerHTML = (response.distance);
     console.log(response.duration);
-    document.body.innerHTML = (response.duration);
+    //document.body.innerHTML = (response.duration);
     for (i = 0; i < 40; i++) {
         console.log(response.steps[i]);
-        document.body.innerHTML = (response.steps[i]);
+        //   document.body.innerHTML = (response.steps[i]);
     }
 };
 req.open("GET", "https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
