@@ -1,5 +1,5 @@
 
-var message = "API Test";
+var message = "Hello World";
 console.log(message);
 document.body.innerHTML = message;
 
