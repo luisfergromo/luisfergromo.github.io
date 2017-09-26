@@ -20,11 +20,11 @@ req.send()
 */
 var req = new XMLHttpRequest();
 req.onload = function (e) {
-    var response = req.response;
+    var response = req.response.routes[0].legs[0];
     console.log(response);
     var i = 0;
-    console.log(response.routes.legs.ditance);
-    console.log(response.routes.legs.duration);
+    console.log(response.distance);
+    console.log(response.duration);
     for (i = 0; i < 40; i++) {
         console.log(response.routes.legs.steps[i]);
     }
