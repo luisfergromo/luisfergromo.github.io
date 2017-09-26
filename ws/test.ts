@@ -1,8 +1,4 @@
 
-var message = "Hello World";
-console.log(message);
-document.body.innerHTML = message;
-
 /*
 var message = "hello world"
 console.log(message)
