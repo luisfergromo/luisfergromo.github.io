@@ -1,6 +1,8 @@
+/*
 var message = "Hello World";
 console.log(message);
 document.body.innerHTML = message;
+*/
 var req = new XMLHttpRequest();
 req.onload = function (e) {
     var response = req.response;
