@@ -22,11 +22,11 @@ var req = new XMLHttpRequest();
 req.onload = function (e) {
     var response = req.response.routes[0].legs[0];
     console.log(response);
-    var i = 0;
+    var i;
     console.log(response.distance);
     console.log(response.duration);
     for (i = 0; i < 40; i++) {
-        console.log(response.routes.legs.steps[i]);
+        console.log(response.steps[i]);
     }
 };
 req.open("GET", "https://maps.googleapis.com/maps/api/directions/json?origin=20.637085, -103.430058&destination=20.646384, -103.413641&key=AIzaSyBAvGj8Asdi5OVQpxZAsk5TBOPzBB54WiQ");
