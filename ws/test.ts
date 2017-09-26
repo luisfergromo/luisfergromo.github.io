@@ -1,8 +1,8 @@
 
-var message = "WS"
+/*var message = "Hola Mundo"
 console.log(message)
 document.body.innerHTML = message;
-
+*/
 /*
 var message = "hello world"
 console.log(message)
@@ -25,12 +25,12 @@ req.onload = function(e) {
  var  response = req.response.routes[0].legs[0];
  console.log(response);
     var i;
-    console.log(response.distance)
+    console.log(response.distance);
     document.body.innerHTML = (response.distance);
-    console.log(response.duration)
+    console.log(response.duration);
     document.body.innerHTML = (response.duration);
     for(i=0;i<40;i++){ //Access-Control-Allow-Origin
-    console.log(response.steps[i])
+    console.log(response.steps[i]);
         document.body.innerHTML = (response.steps[i]);
     }
 };

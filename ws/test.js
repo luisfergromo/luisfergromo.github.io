@@ -1,6 +1,7 @@
-var message = "WS";
-console.log(message);
+/*var message = "Hola Mundo"
+console.log(message)
 document.body.innerHTML = message;
+*/
 /*
 var message = "hello world"
 console.log(message)
