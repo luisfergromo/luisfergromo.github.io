@@ -5,15 +5,12 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 
 body{
-    //margin:auto;
     background:#d9d9d9 url("/images/bg.gif") center top repeat-x;
     font-family:"Helvetica Neue",Helvetica, Arial;
     min-width: 600px;
-    //max-width: 2000px;
 }
 .navBar{
     padding-top: 3px;
-
 
     margin:auto;
     background: #d9d5d5 center top repeat-x;
@@ -79,7 +76,7 @@ background: url(/images/shadow.png) left bottom no-repeat;
 
 .mcontent{
 min-height: 153px;
-background:#ebebeb url(/images/main.gif) left top repeat-x ;
+background: #f7f7f7 url(/images/main.gif) left top repeat-x ;
 width: 698px;
 border-left: 1px solid #f7f7f7;
 margin: 0 auto;
