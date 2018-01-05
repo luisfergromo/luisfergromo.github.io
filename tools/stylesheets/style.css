@@ -127,6 +127,10 @@ border: 1px solid #3e7a9a;
 text-decoration: none;
 }
 
+#logo{
+    padding-top: -5px
+}
+
 div#logo.resize{
     min-width: 30%;
     max-width: 60%;
