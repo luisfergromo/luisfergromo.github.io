@@ -11,14 +11,12 @@ body{
 }
 .navBar{
     padding-top: 3px;
-
     margin:auto;
-    background: #d9d5d5 center top repeat-x;
+    background: #d9d5d5;
     font-family:"Helvetica Neue",Helvetica, Arial;
     width: auto;
     min-width: 600px;
     max-width: 2000px;
-
 }
 
 .mr20{
@@ -48,7 +46,7 @@ text-decoration: underline;
 }
 
 h1{
-color: #fff;
+color: #ffffff;
 font-size: 36px;
 margin-bottom: 15px;
 }
@@ -56,7 +54,7 @@ margin-bottom: 15px;
 h3{
 font-family: Georgia, helvetica, arial;
 font-size: 16px;
-color: #fff;
+color: #ffffff;
 font-style: italic;
 margin-bottom: 35px;
 }
@@ -76,7 +74,7 @@ background: url(/images/shadow.png) left bottom no-repeat;
 
 .mcontent{
 min-height: 153px;
-background: #f7f7f7 url(/images/main.gif) left top repeat-x ;
+background: url(/images/main.gif) left top repeat-x ;
 width: 698px;
 border-left: 1px solid #f7f7f7;
 margin: 0 auto;
@@ -116,14 +114,14 @@ margin-right: 10px;
 a.get{
 background: #ffffff;
 color: #fff;
-border: 1px solid #41728c;
+border: 1px solid #ffffff;
 padding: 3px 7px;
 font-size: 16px;
 }
 
 a:hover.get{
-background: #62b3eb;
-border: 1px solid #3e7a9a;
+background: #ffffff;
+border: 1px solid #ffffff;
 text-decoration: none;
 }
 
