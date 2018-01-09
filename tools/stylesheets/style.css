@@ -54,14 +54,14 @@ margin-bottom: 15px;
 h3{
 font-family: Georgia, helvetica, arial;
 font-size: 16px;
-color: #ffffff;
+color: #000000;
 font-style: italic;
 margin-bottom: 35px;
 }
 
 h2{
 font-size: 22px;
-color: #ffffff;
+color: #000000;
 margin-bottom: 8px;
 }
 
@@ -76,9 +76,7 @@ background: url(/images/shadow.png) left bottom no-repeat;
 min-height: 153px;
 background: url(/images/main.gif) left top repeat-x ;
 width: 698px;
-border-left: 1px solid #f7f7f7;
 margin: 0 auto;
-border-right: 1px solid #f7f7f7;
 padding: 20px;
 }
 
