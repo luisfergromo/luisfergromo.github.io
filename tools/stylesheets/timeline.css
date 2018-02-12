@@ -1,8 +1,8 @@
 /* -------------------------------------
  * General Style
  * ------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 body {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,54 +12,53 @@ body {
     color: #eee9dc;
     background: #1C87C8;
 }
-
 h2 {
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
     font-size: 1.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-/* -------------------------------------
- * timeline
- * ------------------------------------- */
-#timeline {
-    list-style: none;
-    margin: 50px 0 30px 120px;
-    padding-left: 30px;
-    border-left: 8px solid #eee9dc;
-}
+/*!*!* -------------------------------------*!
+ !** timeline*!
+ !** ------------------------------------- *!*!
+!*#timeline {*!
+    !*list-style: none;*!
+    !*margin: 50px 0 30px 120px;*!
+    !*padding-left: 30px;*!
+    !*border-left: 8px solid #eee9dc;*!
+!*}*!
 
-#timeline li {
-    margin: 40px 0;
-    position: relative;
-}
+!*#timeline li {*!
+    !*margin: 40px 0;*!
+    !*position: relative;*!
+!*}*!
 
-#timeline p {
-    margin: 0 0 15px;
-}
+!*#timeline p {*!
+    !*margin: 0 0 15px;*!
+!*}*!
 
-.year {
-    margin-top: -10px;
-    top: 50%;
-    left: -158px;
-    font-size: 1.95em;
-    line-height: 20px;
-    position: absolute;
-}
+!*.year {*!
+    !*margin-top: -10px;*!
+    !*top: 50%;*!
+    !*left: -158px;*!
+    !*font-size: 1.95em;*!
+    !*line-height: 20px;*!
+    !*position: absolute;*!
+!*}*!
 
-.circle {
-    margin-top: -10px;
-    top: 50%;
-    left: -44px;
-    width: 10px;
-    height: 10px;
-    background: #48b379;
-    border: 5px solid #eee9dc;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-}
+!*.circle {*!
+    !*margin-top: -10px;*!
+    !*top: 50%;*!
+    !*left: -44px;*!
+    !*width: 10px;*!
+    !*height: 10px;*!
+    !*background: #48b379;*!
+    !*border: 5px solid #eee9dc;*!
+    !*border-radius: 50%;*!
+    !*display: block;*!
+    !*position: absolute;*!
+!*}*!
 
 .content {
     max-height: 20px;
@@ -95,14 +94,6 @@ h2 {
     margin-top: -17px;
 }
 
-.content p {
-    max-height: 0;
-    color: transparent;
-    text-align: justify;
-    word-break: break-word;
-    hyphens: auto;
-    overflow: hidden;
-}
 
 .content .date {
     font-weight: bold;
@@ -166,12 +157,12 @@ footer {
 
 footer a {
     color: #555;
-}
+}*/
 
 /* -------------------------------------
  * mobile phones (vertical version only)
  * ------------------------------------- */
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
     #timeline {
         margin-left: 0;
         padding-left: 0;
@@ -235,17 +226,7 @@ footer a {
     footer {
         display: block;
     }
-}
-
-.socialMedia {
-    display: inline;
-    align-content: center;
-    float: right;
-}
-
-.fa-linkedin-square {
-    color: white;
-}
+}*/
 
 /*
 ----------------------
@@ -273,12 +254,14 @@ Nav Bar
 /*overflow: hidden;*/
 /*background-color: #333;*/
 /*}*/
+
+
 /*
 ---------------------
 Nav Bar
 --------------------
  */
-.navBar{
+navBar{
     padding-top: 3px;
     margin:auto;
     background: #d9d5d5;
@@ -310,6 +293,29 @@ Nav Bar
     overflow: hidden;
     background-color: #333;
 }
+/*
+----------------------
+cv Info
+----------------------
+ */
+.cvInfo{
+    padding: 0px 40px 10px 20px;
+}
+/*
+----------------------
+Footer
+----------------------
+ */
+.socialMedia {
+    display: inline;
+    align-content: center;
+    float: right;
+}
+
+.fa-linkedin-square {
+    color: white;
+}
+
 .active {
     background-color: #4CAF50;
 }
