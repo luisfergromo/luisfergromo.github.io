@@ -8,11 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover: true})</script>
     <style>
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            #logo {
+                height: 200px;
+                width: 200px;
+            }
+            #nameSpace{
+                display: none;
+            }
+            .twitter-follow-button{
+                height: 200%;
+                width: 200%;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            /* For  Desktop*/
+        }
 
         .topNav{
             margin: -8px -8px 0px -8px;
             background: #d9d5d5;
             font-family: "Helvetica Neue", Helvetica, Arial;
+            height: auto;
             width: auto;
         }
         li {
@@ -51,11 +69,10 @@
             color: black;
             background: lightblue none no-repeat fixed center;
             background-size: cover;
-            height: 540px;
             width: auto;
-            margin: 0px -8px 0px 8px;
             text-align: center;
             vertical-align: top;
+            min-height: 20%;
         }
         #nameSpace {
             padding: 10px;
@@ -78,7 +95,7 @@
     </ul>
 </div>
 <div class="body">
-    <img id="logo" src="images/Lfgromo%20(5).png" alt="LuisFerGRomo" height="200" width="200">
+    <img id="logo" src="images/Lfgromo%20(5).png" alt="LuisFerGRomo logo" >
     <br>
     <h1>Website under construction | Sitio en mantenimiento</h1>
     <div>
