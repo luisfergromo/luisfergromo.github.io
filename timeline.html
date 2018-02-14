@@ -7,51 +7,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover: true})</script>
     <title>Timeline</title>
+    <style>
+        .topNav{
+            padding-right: 0px;
+            margin: -8px -8px 0px -8px;
+            background: #d9d5d5;
+            font-family: "Helvetica Neue", Helvetica, Arial;
+            width: auto;
+            height: 46px;
+        }
+        li {
+            float: left;
+            list-style-type: none;
+        }
+
+        li a:hover {
+            background-color: #d9d5d5;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
-<div class="topnav" id="navBar" align="center">
+<div class="topNav" id="navBar" align="center">
     <ul>
-        <li><a class="fa fa-home" href="index1.html"></a></li>
+        <li><a class="fa fa-home" href="index.html"></a></li>
         <li><a href="drones.html">Drones</a> </li>
         <li><a href="timeline.html">Timeline</a> </li>
-        <li style="float: right"><a class="active" href="about.html">About</a></li>
+        <li style="float: right"><a class="active" href="#about">About</a></li>
     </ul>
 </div>
-<div class="cvInfo">
-    <h2><u>EDUCATION</u></h2>
-    <div>
-        <h3><b><a href="https://iteso.mx">ITESO</a></b></h3>
-        <h4>BS in Computer Science</h4>
+<div class="body">
+    <div class="cvInfo">
+        <h2><u>EDUCATION</u></h2>
+        <div>
+            <h3><b><a href="https://iteso.mx">ITESO</a></b></h3>
+            <h4>BS in Computer Science</h4>
+        </div>
+        <div>
+            <h3><b><a href="https://devf.mx">DevF</a></b></h3>
+            <h4>Basic iOS mobile development</h4>
+        </div>
+
+
+        <h2><u>SKILLS</u></h2>
+        <!--<ul>
+            <li>Languages: C, C#, Swift, HTML, CSS.</li>
+            <li>IDE & Dev Tools: Xcode, Visual Studio, WebStorm.</li>
+            <li>Social: I go to software development meet ups a few times a month where I've greate connections.</li>
+        </ul>-->
+
+        <h2><u>PROFESSIONAL POSITIONS</u></h2>
+        <h3><b>Laboratorio de aplicaciones móviles Ulab ITESO</b> — Project Manager — Aug 2016 - Present</h3>
+        <!--<h4>High impact development apps</h4>-->
+        <!--<ul>-->
+        <!--<li>TryForUs, Mi ITESO, Jalisco Sin Hambre</li>-->
+        <!--</ul>-->
+        <h3><b>CEDEFI UNIVA</b> — Swimming Instructor — Aug 2017 - Present</h3>
     </div>
-    <div>
-        <h3><b><a href="https://devf.mx">DevF</a></b></h3>
-        <h4>Basic iOS mobile development</h4>
+    <div class="socialMedia">
+        <a href="https://linkedin.com/in/luisfergromo">
+            <i class="fa fa-linkedin-square"style="font-size:100px"></i>
+        </a>
+        <a href="https://github.com/luisfergromo">
+            <i class="fa fa-github"style="font-size:100px"></i>
+            <!--<img src="images/GitHub_Logo_White.png" style="width: 15%; height: 15%">-->
+        </a>
     </div>
-
-
-    <h2><u>SKILLS</u></h2>
-    <ul>
-        <li>Languages: C, C#, Swift, HTML, CSS.</li>
-        <li>IDE & Dev Tools: Xcode, Visual Studio, WebStorm.</li>
-        <li>Social: I go to software development meet ups a few times a month where I've greate connections.</li>
-    </ul>
-
-    <h2><u>PROFESSIONAL POSITIONS</u></h2>
-    <h3><b>Laboratorio de aplicaciones móviles Ulab ITESO</b> — Project Manager — Aug 2016 - Present</h3>
-    <!--<h4>High impact development apps</h4>-->
-    <!--<ul>-->
-    <!--<li>TryForUs, Mi ITESO, Jalisco Sin Hambre</li>-->
-    <!--</ul>-->
-    <h3><b>CEDEFI UNIVA</b> — Swimming Instructor — Aug 2017 - Present</h3>
-</div>
-<div class="socialMedia">
-    <a href="https://linkedin.com/in/luisfergromo">
-        <i class="fa fa-linkedin-square"style="font-size:100px"></i>
-    </a>
-    <a href="https://github.com/luisfergromo">
-        <i class="fa fa-github"style="font-size:100px"></i>
-        <!--<img src="images/GitHub_Logo_White.png" style="width: 15%; height: 15%">-->
-    </a>
 </div>
 </body>
 </html>

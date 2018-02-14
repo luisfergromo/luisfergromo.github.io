@@ -3,14 +3,8 @@
  * ------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
-    font-size: 100%;
-    font-family: "Noto Sans", sans-serif;
-    color: #eee9dc;
-    background: #1C87C8;
+body{
+    background-color: #1C87C8;
 }
 h2 {
     margin: 2em 0 0 0;
@@ -254,45 +248,31 @@ Nav Bar
 /*overflow: hidden;*/
 /*background-color: #333;*/
 /*}*/
+.body{
+    padding: 12px;
+    margin: 0px -8px -200px -8px ;
+    background-color: #1C87C8;
+    font-size: 100%;
+    font-family: "Noto Sans", sans-serif;
+    color: #eee9dc;
+    width: auto;
+    height: auto;
+}
+/*.body{
+    width: auto;
+    margin: 0px -8px;
 
+
+
+}*/
 
 /*
 ---------------------
 Nav Bar
 --------------------
  */
-navBar{
-    padding-top: 3px;
-    margin:auto;
-    background: #d9d5d5;
-    font-family:"Helvetica Neue",Helvetica, Arial;
-    width: auto;
-    min-width: 600px;
-    max-width: 2000px;
-}
-.topnav li {
-    float: left;
-}
 
-.topnav li a:hover {
-    background-color: #d9d5d5;
-}
 
-.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 /*
 ----------------------
 cv Info
@@ -307,15 +287,17 @@ Footer
 ----------------------
  */
 .socialMedia {
+    width: auto;
+    height: auto;
     display: inline;
     align-content: center;
-    float: right;
 }
 
 .fa-linkedin-square {
     color: white;
 }
-
-.active {
-    background-color: #4CAF50;
+.fa-github{
+    color: white;
 }
+
+
