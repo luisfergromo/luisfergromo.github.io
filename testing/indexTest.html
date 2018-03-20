@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #topNav {
+            margin: auto;
+            background: #d9d5d5;
+            font-family: "Helvetica Neue", Helvetica, Arial;
+            width: auto;
+            min-width: 600px;
+            max-width: 2000px;
+        }
+
+        .navBar ul {
+            list-style-type: none;
+        }
+
+        .navBar li {
+            float: left;
+        }
+
+        .navBar li a:hover {
+            background-color: cornflowerblue;
+        }
+
+        .navBar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navBar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #About {
+            background-color: #4CAF50;
+        }
+
+        .body {
+            /*
+            url("https://wallpapertag.com/wallpaper/full/9/a/3/120009-best-solid-blue-background-2304x1440.jpg")
+            background-image: url("ws_Hi-Tech_Icons_1920x1080.jpg");
+            background-color: black;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;*/
+            background: lightblue none no-repeat fixed center;
+            background-size: cover;
+            height: 200px;
+            width: auto;
+            margin: -8px -8px;
+            text-align: center;
+            padding: 12px 0px 0px 0px;
+            vertical-align: top;
+            min-height: 400px;
+        }
+
+        .box {
+            background-color: white;
+            height: 240px;
+            width: 240px;
+            margin: 60px auto 0px auto;
+            border-radius: 5%;
+        }
+
+        .boxInAbox {
+            background-color: #1C87C8;
+            height: 240px;
+            width: 240px;
+            margin: 0px auto 0px auto;
+            border-radius: 5%;
+        }
+
+        .shortDescription {
+            height: auto;
+            width: auto;
+            background-color: inherit;
+            font-size: 36px;
+            margin: 0px -8px;
+        }
+
+        .text {
+            height: auto;
+            margin: 0px -8px;
+        }
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input{display: none}
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: #C6C5C5;
+            -webkit-transition: .4s;
+        }
+        .slider:before{
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="navBar" id="topNav">
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Drones">A.....</a></li>
+        <li><a href="#Timeline">T.....</a></li>
+        <li style="float: right"><a id="About" href="#About">About</a></li>
+    </ul>
+</div>
+<div class="body">
+    <!-- <span>
+         <h1>Something</h1>
+         <p>Something</p>
+     </span> -->
+    <div class="box">
+        <div class="boxInAbox" id="topBox">
+
+        </div>
+        <div class="button">
+            <br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Slide to view the magic</p>
+        </div>
+    </div>
+</div>
+<div class="shortDescription">
+    <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+</div>
+<div class="text"></div>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida metus ut faucibus lobortis. Integer a sapien eu ligula auctor aliquam. Quisque facilisis, tortor in lobortis sagittis, arcu arcu placerat ligula, non ullamcorper tellus elit sed elit. Curabitur lacinia eros eu sodales bibendum. Sed augue orci, aliquam accumsan ipsum et, blandit viverra tellus. Quisque tincidunt leo magna, nec imperdiet tellus egestas eu. Sed vehicula et dolor quis lacinia. Morbi dapibus blandit nisi, vel finibus velit molestie quis. Sed malesuada quis mauris eget congue. Pellentesque vel bibendum magna.
+
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ac leo enim. Suspendisse eget mi maximus, venenatis erat eget, sagittis nibh. Ut semper luctus mauris sit amet rutrum. Maecenas euismod orci vel nibh ultrices rhoncus. Morbi hendrerit dolor a magna gravida, id ornare est tempor. Aliquam metus erat, aliquet quis dui id, dignissim rutrum turpis.
+
+    Vivamus in finibus justo, vitae imperdiet enim. Morbi sed dignissim risus, sagittis rhoncus nibh. Suspendisse aliquet bibendum nibh id auctor. In commodo risus nec congue maximus. Aliquam erat volutpat. Donec sagittis odio risus, vel tempor quam pharetra vitae. Vivamus non risus id sapien tincidunt blandit. Fusce nec sollicitudin lorem. Pellentesque neque quam, efficitur vel fringilla quis, molestie eu quam. Mauris pretium mollis quam, a pretium risus mollis eget. Pellentesque ut tempor eros. Vivamus maximus urna posuere orci tempor, id placerat orci ornare. Etiam sollicitudin nisi quis ante tristique sollicitudin.
+
+    Mauris placerat posuere pretium. Mauris id nulla luctus, volutpat massa et, varius augue. Nam nec dictum lectus. Nullam sollicitudin, nulla ut luctus venenatis, lacus nisi feugiat elit, id porta ante tortor eu nisi. Aenean tortor diam, blandit vitae nulla quis, cursus malesuada nisl. Etiam cursus nisi non eleifend imperdiet. Etiam ac vehicula lorem. Aenean cursus ipsum a ornare interdum. Sed in nulla at ipsum consectetur laoreet ut euismod magna. Nunc neque magna, varius non dui in, sodales pretium leo. Maecenas molestie felis nec nibh congue tempor. Etiam cursus rutrum ipsum, ut mollis lorem blandit at.
+
+    Curabitur eu nisl lorem. Nam posuere neque mi, sit amet placerat odio molestie nec. Curabitur pulvinar rutrum neque, et tempor felis congue sit amet. Nullam non urna orci. Cras vel eros posuere, mattis lacus vel, mattis turpis. In hac habitasse platea dictumst. Sed venenatis imperdiet nisl, non facilisis elit laoreet a. Suspendisse turpis diam, iaculis quis cursus id, congue nec ex. Fusce finibus quis sem id iaculis. Etiam cursus elit quam, ut rhoncus mauris auctor eget. Phasellus sit amet porttitor enim.
+</p>
+
+</body>
+</html>
