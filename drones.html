@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="tools/stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <!--<link href="tools/stylesheets/960.css" rel="stylesheet" type="text/css" />-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>LuisFerGRomo - Drones</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link href="tools/stylesheets/style.css" rel="stylesheet" type="text/css" />
+      <!--<link href="tools/stylesheets/style.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="tools/stylesheets/960.css" rel="stylesheet" type="text/css" />-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script type="text/javascript">Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover: true})</script>
       <style>
-          @media only screen and (max-width: 768px) {
-            /* For mobile phones: */
-              .images_drones{
-                  <!--816-->
-                  height: 272px;
-                  width: auto;
-              }
-        }
-          @media only screen and (min-width: 768px) {
-            /* For  Desktop*/
-              .images_drones{
-                  height: 50%;
-                  width: auto;
-              }
+        .images_drones_row{
+            display: grid;
         }
       </style>
   </head>
@@ -38,13 +28,19 @@
           <li style="float: right"><a class="active" href="timeline.html">Timeline</a></li>
       </ul>
   </div>
-   <!--Imágenes -->
-    <div class="images_drones" id="images_drones" align="center">
-        <img src="images/1.png" alt="drone"/>
-        <img src="images/2.png" alt="drone"/>
-        <img src="images/3.png" alt="drone"/>
-        <img src="images/4.png" alt="drone"/>
-        <img src="images/5.png" alt="drone"/>
+  <!--<img src="images/1.png" width="50%" alt="drone"/>-->
+   <!--Imágenes-->
+    <div class="images_drones_row">
+        <div class="column">
+            <img src="images/1.png" width="100%" alt="drone"/></div>
+        <div class="column">
+            <img src="images/2.png"  width="100%" alt="drone"/></div>
+        <div class="column">
+            <img src="images/3.png" width="100%" alt="drone"/></div>
+        <div class="column">
+            <img src="images/4.png" width="100%" alt="drone"/></div>
+        <div class="column">
+            <img src="images/5.png" width="100%" alt="drone"/></div>
     </div>
   </body>
 </html>
