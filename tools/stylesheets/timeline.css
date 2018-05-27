@@ -68,5 +68,14 @@ body{
     color: white;
 
 }
+div.cvInfo ul{
+    background-color: #1C87C8;
+}
+cvInfo{
+    display: inline-block;
+}
+div.paragraph{
+
+}
 
 
