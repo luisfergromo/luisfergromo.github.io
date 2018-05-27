@@ -3,13 +3,11 @@
  * ------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-.topNav{
-    padding-right: 0px;
+div.topNav{
     margin: -8px -8px 0px -8px;
     background: #d9d5d5;
     font-family: "Helvetica Neue", Helvetica, Arial;
     width: auto;
-    height: 46px;
 }
 li {
     float: left;
@@ -39,28 +37,24 @@ ul {
 .active {
     background-color: #4CAF50;
 }
-body{
-    background-color: #1C87C8;
-}
+
 h2 {
     margin: 2em 0 0 0;
     font-size: 1.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: white;
 }
-
-.body{
-    padding: 12px;
-    margin: 0px -8px -200px -8px ;
-    background-color: #1C87C8;
-    font-size: 100%;
-    font-family: "Noto Sans", sans-serif;
-    color: #eee9dc;
+html{
+    background: #1C87C8;
+}
+body{
     width: auto;
     height: auto;
 }
-.cvInfo{
-    padding: 0px 40px 10px 20px;
+.information{
+    font-size: 80%;
+    font-family: "Noto Sans", sans-serif;
 }
 .socialMedia {
     width: auto;
@@ -69,11 +63,10 @@ h2 {
     align-content: center;
 }
 
-.fa-linkedin-square {
+
+.fa-linkedin-square, .fa-github {
     color: white;
-}
-.fa-github{
-    color: white;
+
 }
 
 
