@@ -9,11 +9,28 @@
       <!--<link href="tools/stylesheets/style.css" rel="stylesheet" type="text/css" />-->
       <!--<link href="tools/stylesheets/960.css" rel="stylesheet" type="text/css" />-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script type="text/javascript">Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover: true})</script>
+      <!--<script type="text/javascript">Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover: true})</script>-->
       <style>
-        .images_drones_row{
-            display: grid;
+          @media only screen and (max-width: 768px) {
+              /*For mobile phones: */
+              .bigVideo{
+                  visibility: collapse;
+                  display: none;
+              }
+
+            .images_drones_row{
+                max-width: 816px;
+                display: grid;
+                grid-template-columns: auto;
+            }
         }
+          @media only screen and (min-width: 768px){
+              /* For Mobile */
+              .medVideo{
+                  visibility: collapse;
+                  display: none;
+              }
+          }
       </style>
   </head>
   <body>
@@ -28,8 +45,11 @@
           <li style="float: right"><a class="active" href="timeline.html">Timeline</a></li>
       </ul>
   </div>
-  <!--<img src="images/1.png" width="50%" alt="drone"/>-->
-   <!--Imágenes-->
+
+  <iframe class="medVideo" src="https://app.box.com/embed/s/27yckub53gv9odcrisgqrjs1oducqg4l" width="500" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+  <iframe  class="bigVideo" src="https://app.box.com/embed/s/27yckub53gv9odcrisgqrjs1oducqg4l" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe></iframe>
+
+  <!--Imágenes-->
     <div class="images_drones_row">
         <div class="column">
             <img src="images/1.png" width="100%" alt="drone"/></div>
