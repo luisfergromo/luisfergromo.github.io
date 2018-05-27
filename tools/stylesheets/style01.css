@@ -15,6 +15,9 @@
                 width: 768px;
                 height: auto;
             }
+            .topNav{
+                display: none;
+            }
         }
         @media only screen and (min-width: 768px) {
             /* For  Desktop */
@@ -22,6 +25,9 @@
                 height: 300px;
                 width: auto;
             }
+            /*.hamburguerMenu{
+                display: none;
+            }*/
         }
 
         .topNav{
