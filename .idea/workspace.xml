@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4a781f7-4bd3-40be-8bcc-9c495fc3a365" name="Default" comment="css edit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c4a781f7-4bd3-40be-8bcc-9c495fc3a365" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state relative-caret-position="129">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -69,17 +68,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="luisfergromo" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="luisfergromo.github.io" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ws/test.ts" root0="SKIP_HIGHLIGHTING" />
@@ -109,8 +103,10 @@
         <option value="$PROJECT_DIR$/testing/testing.js" />
         <option value="$PROJECT_DIR$/testing/indexTest.html" />
         <option value="$PROJECT_DIR$/index1.html" />
+        <option value="$PROJECT_DIR$/tools/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/tools/stylesheets/timeline.css" />
         <option value="$PROJECT_DIR$/timeline.html" />
+        <option value="$PROJECT_DIR$/tools/stylesheets/style01.css" />
         <option value="$PROJECT_DIR$/tools/stylesheets/social.css" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/testing/index01.html" />
@@ -120,8 +116,6 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/javascript/vanilla.js" />
         <option value="$PROJECT_DIR$/tools/javascript/vanilla.js" />
-        <option value="$PROJECT_DIR$/tools/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/tools/stylesheets/style01.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -142,7 +136,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-22" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
@@ -153,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,6 +169,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,10 +226,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index01.html" />
-        <item itemvalue="JavaScript Debug.drones.html" />
         <item itemvalue="JavaScript Debug.social.html" />
+        <item itemvalue="JavaScript Debug.index01.html" />
         <item itemvalue="JavaScript Debug.indexTest.html" />
+        <item itemvalue="JavaScript Debug.drones.html" />
         <item itemvalue="JavaScript Debug.portfolio.html" />
       </list>
     </recent_temporary>
@@ -294,7 +288,13 @@
       <workItem from="1531680077802" duration="448000" />
       <workItem from="1531680555054" duration="852000" />
       <workItem from="1531681522420" duration="200000" />
-      <workItem from="1534181325168" duration="1049000" />
+    </task>
+    <task id="LOCAL-00057" summary="update 2.0">
+      <created>1515128280632</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1515128280632</updated>
     </task>
     <task id="LOCAL-00058" summary="update 2.0">
       <created>1515128462174</created>
@@ -632,32 +632,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531681593561</updated>
     </task>
-    <task id="LOCAL-00106" summary="css edit">
-      <created>1534181456762</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1534181456763</updated>
-    </task>
-    <option name="localTasksCounter" value="107" />
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111608000" />
+    <option name="totallyTimeSpent" value="110559000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15329626" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15362932" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50357425" side_tool="true" visible="true" weight="0.3382353" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5017618" side_tool="true" visible="true" weight="0.32692307" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49722" weight="0.32647058" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4982382" visible="true" weight="0.32692307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.17156473" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49642575" visible="true" weight="0.3382353" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.496875" weight="0.3385269" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26947638" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -671,23 +664,23 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13194445" />
       <window_info id="Structure" order="1" weight="0.24938875" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="REST Client" order="8" visible="true" weight="0.36706948" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.19354838" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.496875" weight="0.3385269" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -754,8 +747,7 @@
     <MESSAGE value="Timeline update to 2.7v &#10;Index upgrade to 3.1v&#10;Drones 2.0v&#10;Social 0.3&#10;About me removed" />
     <MESSAGE value="Timeline update to 3v &#10;Index upgrade to 3.1v&#10;Drones 2.5v&#10;Social 1v&#10;About me removed" />
     <MESSAGE value="New js folder" />
-    <MESSAGE value="css edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="css edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New js folder" />
   </component>
   <component name="editorHistoryManager">
     <entry file="uml://JavaScript-modules-diagram//Users/luisromo/WebstormProjects/luisfergromo.github.io">
@@ -984,6 +976,13 @@
     <entry file="file://$PROJECT_DIR$/images/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tools/stylesheets/style01.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/stylesheets/about.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -1034,6 +1033,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml" />
     <entry file="file://$PROJECT_DIR$/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/tools/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/javascript/vanilla.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1044,24 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/stylesheets/style01.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="129">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
