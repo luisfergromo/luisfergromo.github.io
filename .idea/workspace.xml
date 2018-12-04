@@ -2,25 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4a781f7-4bd3-40be-8bcc-9c495fc3a365" name="Default" comment="New js folder">
+      <change afterPath="$PROJECT_DIR$/devtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/stylesheets/style01.css" beforeDir="false" afterPath="$PROJECT_DIR$/tools/stylesheets/style01.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-645556238">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="39" />
+          <entry key="html" value="219" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="39" />
+          <entry key="HTML" value="219" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state>
+              <caret selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/devtest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/stylesheets/style01.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -34,8 +92,8 @@
         <option value="package_json" />
         <option value="TypeScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -83,8 +141,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ws/test.ts" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/social.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ws/test.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ws/test.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -112,7 +170,6 @@
         <option value="$PROJECT_DIR$/tools/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/tools/stylesheets/timeline.css" />
         <option value="$PROJECT_DIR$/timeline.html" />
-        <option value="$PROJECT_DIR$/tools/stylesheets/style01.css" />
         <option value="$PROJECT_DIR$/tools/stylesheets/social.css" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/testing/index01.html" />
@@ -123,6 +180,8 @@
         <option value="$PROJECT_DIR$/javascript/vanilla.js" />
         <option value="$PROJECT_DIR$/tools/javascript/vanilla.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/tools/stylesheets/style01.css" />
+        <option value="$PROJECT_DIR$/devtest.html" />
       </list>
     </option>
   </component>
@@ -139,12 +198,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="890" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectView">
@@ -152,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,11 +221,16 @@
               <item name="luisfergromo.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="luisfergromo.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luisfergromo.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,15 +244,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/testing" />
-      <recent name="$PROJECT_DIR$/ws" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tools" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ws" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/testing" />
       <recent name="$PROJECT_DIR$/ws" />
     </key>
   </component>
@@ -206,14 +269,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="about.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/about.html" />
-    <configuration name="drones.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/drones.html" />
-    <configuration name="index01.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/testing/index01.html" />
-    <configuration name="indexTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/testing/indexTest.html" />
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/index.html" />
-    <configuration name="portfolio.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/portfolio.html" />
-    <configuration name="social.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/social.html" />
+  <component name="RunManager" selected="JavaScript Debug.devtest.html">
+    <configuration name="about.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/about.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="devtest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/devtest.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="drones.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/drones.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index01.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/testing/index01.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="indexTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/testing/indexTest.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="portfolio.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/portfolio.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="social.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/luisfergromo.github.io/social.html">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.about.html" />
       <item itemvalue="JavaScript Debug.index.html" />
@@ -222,6 +302,7 @@
       <item itemvalue="JavaScript Debug.social.html" />
       <item itemvalue="JavaScript Debug.drones.html" />
       <item itemvalue="JavaScript Debug.index01.html" />
+      <item itemvalue="JavaScript Debug.devtest.html" />
     </list>
     <recent_temporary>
       <list>
@@ -288,6 +369,7 @@
       <workItem from="1531680555054" duration="852000" />
       <workItem from="1531681522420" duration="200000" />
       <workItem from="1534285079402" duration="1380000" />
+      <workItem from="1543887877727" duration="1292000" />
     </task>
     <task id="LOCAL-00060" summary="update 2.0">
       <created>1515128615679</created>
@@ -636,53 +718,53 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112478000" />
+    <option name="totallyTimeSpent" value="113770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="890" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TypeScript" order="12" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13601127" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49964765" weight="0.32820514" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.26923078" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49682876" weight="0.2846154" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19677791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.17156473" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.496875" weight="0.3385269" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989429" weight="0.26923078" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.26861313" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49682876" weight="0.2846154" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.496875" weight="0.3385269" />
+      <window_info anchor="bottom" id="REST Client" order="10" visible="true" weight="0.36706948" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49964765" weight="0.32820514" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="REST Client" order="10" visible="true" weight="0.36706948" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13194445" />
       <window_info id="Structure" order="1" weight="0.24938875" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.19354838" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" weight="0.3385269" />
+      <window_info anchor="bottom" id="REST Client" order="8" visible="true" weight="0.36706948" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.496875" weight="0.3385269" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info anchor="bottom" id="REST Client" order="8" visible="true" weight="0.36706948" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.19354838" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.496875" weight="0.3385269" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" weight="0.3385269" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -750,61 +832,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="New js folder" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JavaScript-modules-diagram//Users/luisromo/WebstormProjects/luisfergromo.github.io">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$</OriginalElement>
-          <nodes>
-            <node x="" y="">$PROJECT_DIR$/images/1.png</node>
-            <node x="" y="">$PROJECT_DIR$/images/2.png</node>
-            <node x="" y="">$PROJECT_DIR$/images/234x60-1.gif</node>
-            <node x="" y="">$PROJECT_DIR$/images/3.png</node>
-            <node x="" y="">$PROJECT_DIR$/images/4.png</node>
-            <node x="" y="">$PROJECT_DIR$/images/5.png</node>
-            <node x="" y="">$PROJECT_DIR$/tools/stylesheets/960.css</node>
-            <node x="" y="">$PROJECT_DIR$/js/Adobe_Caslon_Pro_600.font.js</node>
-            <node x="" y="">$PROJECT_DIR$/images/Comunidad-de-Talento-h.png</node>
-            <node x="" y="">$PROJECT_DIR$/about.html</node>
-            <node x="" y="">$PROJECT_DIR$/blog.html</node>
-            <node x="" y="">$PROJECT_DIR$/js/cufon-yui.js</node>
-            <node x="" y="">$PROJECT_DIR$/drones.html</node>
-            <node x="" y="">$PROJECT_DIR$/favicon.ico</node>
-            <node x="" y="">$PROJECT_DIR$/index.html</node>
-            <node x="" y="">$PROJECT_DIR$/tools/stylesheets/style.css</node>
-            <node x="" y="">$PROJECT_DIR$/tools/stylesheets/timeline.css</node>
-            <node x="" y="">$PROJECT_DIR$/timeline.html</node>
-            <node x="" y="">$PROJECT_DIR$/images/workingDuck.gif</node>
-            <node x="" y="">/w3images/avatar2.png</node>
-            <node x="" y="">/w3images/avatar3.png</node>
-            <node x="" y="">/w3images/avatar5.png</node>
-            <node x="" y="">/w3images/avatar6.png</node>
-            <node x="" y="">/w3images/fjords.jpg</node>
-            <node x="" y="">/w3images/forest.jpg</node>
-            <node x="" y="">/w3images/lights.jpg</node>
-            <node x="" y="">/w3images/mountains.jpg</node>
-            <node x="" y="">/w3images/nature.jpg</node>
-            <node x="" y="">http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js</node>
-            <node x="" y="">http://platform.twitter.com/widgets.js</node>
-            <node x="" y="">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</node>
-            <node x="" y="">https://fonts.googleapis.com/css?family=Open+Sans</node>
-            <node x="" y="">https://www.w3schools.com/lib/w3-theme-blue-grey.css</node>
-            <node x="" y="">https://www.w3schools.com/w3css/4/w3.css</node>
-            <node x="" y="">images/Lfgromo%20(5).png</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5037403740374038" x="627.0" y="496.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.html" />
     <entry file="file://$PROJECT_DIR$/WS/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/WS/package.json" />
     <entry file="file://$PROJECT_DIR$/blog.html" />
@@ -1045,15 +1072,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/stylesheets/style01.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        <state relative-caret-position="349">
+          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state>
+          <caret selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devtest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>

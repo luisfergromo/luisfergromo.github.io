@@ -87,3 +87,6 @@ ul {
     min-height: 90px;
     min-width: 728px;
 }
+.containers{
+    grid-template-areas: 'container1 container2';
+}
