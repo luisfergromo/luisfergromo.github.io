@@ -21,7 +21,7 @@ req.onload = function (e) {
     //document.body.innerHTML = (response.distance);
     console.log(response.duration);
     //document.body.innerHTML = (response.duration);
-    for (i = 0; i < 40; i++) {
+    for (i = 0; i < 40; i++) { //Access-Control-Allow-Origin
         console.log(response.steps[i]);
         //   document.body.innerHTML = (response.steps[i]);
     }
