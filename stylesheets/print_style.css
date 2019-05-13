@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header,
+#nav-menu,
+#sidebar,
+.footer, .social-icons {
+    display: none;
+}

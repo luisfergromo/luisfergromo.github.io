@@ -1,0 +1,249 @@
+/* Reset */
+/* For mobile phones: */
+/*[class*="*col-"]{
+
+}
+@media only screen and (max-width: 320px) {
+    #body{
+        background-color: darkgrey;
+        width: auto;
+        height: 640px;
+    }
+    #logo{
+        resize: both;
+        width: 5%;
+    }
+    .mcontent{
+        display: none;
+    }
+    .mr20{
+        display: inline;
+    }
+    .copyright-notice{
+        font-size: x-small;
+    }
+    #nameSpace{
+    display: none;
+    }
+    #pData{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pData{
+        display: none;
+    }
+    #body{
+        background-color: black;
+    }
+}*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+    background: #303030;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.topNav{
+    margin: -8px -8px 0px -8px;
+    background: #d9d5d5;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    width: auto;
+}
+
+.mr20 {
+    margin-right: 10px;
+}
+
+#content {
+    background: #1C87C8;
+    padding-top: 100px;
+    text-align: center;
+}
+
+p {
+    font-size: 13px;
+    color: #b3b30c;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #8ec8e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: Georgia, helvetica, arial;
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #e3edf0;
+    margin-bottom: 8px;
+}
+
+.main {
+    width: 884px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    background: url(/images/shadow.png) left bottom no-repeat;
+    min-height: 366px;
+    max-width: 884px;
+}
+
+.mcontent {
+    min-height: 153px;
+    background: url(/images/main.gif) left top repeat-x;
+    width: 698px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid #fff;
+    background: #ededed;
+    -moz-box-shadow: 1px 2px 3px #C6C5C5;
+    -webkit-box-shadow: 1px 2px 3px #C6C5C5;
+    float: left;
+    text-align: left;
+    min-height: 110px;
+    padding: 20px;
+    width: 180px;
+}
+
+.box2 {
+    border: 1px solid #fff;
+    background: #ededed;
+    -moz-box-shadow: 1px 2px 3px #C6C5C5;
+    -webkit-box-shadow: 1px 2px 3px #C6C5C5;
+    float: left;
+    text-align: left;
+    min-height: 110px;
+    padding: 20px;
+    width: 172px;
+}
+
+.box2 a {
+    float: left;
+    margin-right: 10px;
+}
+
+a.get {
+    background: #ffffff;
+    color: #fff;
+    border: 1px solid #ffffff;
+    padding: 3px 7px;
+    font-size: 16px;
+}
+
+a:hover.get {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+#logo {
+    padding-top: -5px
+}
+
+#logo.resize {
+    min-width: 30%;
+    max-width: 60%;
+    width: 60%;
+    height: 60%;
+}
+
+.CPMXBox {
+    display: none;
+    width: 100%;
+}
+
+a:hover + .CPMXBox, .CPMXBox:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.copyright-content {
+    display: table;
+    width: 100%;
+    font-size: 80%;
+}
+
+/*
+---------------------
+Nav Bar
+--------------------
+ */
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #d9d5d5;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303030;
+}
+
+.active {
+    background-color: #E97425;

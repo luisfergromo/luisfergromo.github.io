@@ -1,0 +1,49 @@
+.card {
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background: white;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+h1{
+    color: black;
+}
+div.icons{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+body{
+    width: auto;
+    height: auto;
+}
+footer p#_sourceCode{
+    padding: 1px 0px 0px 20px;
+    display: inline;
+    alignment: center;
+}
+div.card{
+    height: 80%;
+}
