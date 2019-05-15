@@ -1,10 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
+/* .header,
+.nav-menu,
+.sidebar,
+.footer,
+*/
 #header,
-#nav-menu,
-#sidebar,
-.footer, .social-icons {
+.nav-bar,
+.social-icons,
+#contact button,
+.footer {
     display: none;
+}
+
+#about img {
+    height: 300px;
+}
+
+#contact {
+    display: inline;
 }

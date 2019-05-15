@@ -1,45 +1,59 @@
-body{
+:root {
+    --yellow_color: #F2E205;
+    --orange_color: #f26b1d;
+    --red_color: #f20505;
+    --white_color: #f2f2f2;
+    --black_color: #0d0d0d;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-#header{
+
+#header {
     height: 100vh;
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1701&q=80) fixed center;
 }
-.box{
+
+.box {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     align-content: center;
 }
-.box img{
-    border-radius: 50% ;
+
+.box img {
+    border-radius: 50%;
     width: 250px;
     /*border: 2px solid white;*/
 }
-.box h1{
-    color: white;
+
+.box h1 {
+    color: var(--orange_color);
     font-weight: bold;
     margin: 10px;
 }
-.box p{
-    color: #fff;
+
+.box p {
+    color: var(--orange_color);
 }
+
 .scroll-btn {
     bottom: 30px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    border: 2px solid white;
+    border: 2px solid --orange_color;
     padding: 10px 10px 20px;
     border-radius: 30px;
 }
 
 .scroll-bar span {
-    border: 2px solid white;
+    border: 2px solid --orange_color;
     font-size: 10px;
     border-radius: 30px;
 }
@@ -57,42 +71,52 @@ body{
         transform: translateY(10px);
     }
 }
-.nav-bar{
+
+.nav-bar {
     position: sticky;
     top: 0;
     z-index: 2;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     height: 30px;
 }
+
 .navbar-toggler {
     outline: none !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     float: right;
     text-align: right;
 }
-.nav-link{
-    color: white !important;
+
+.nav-link {
+    color: var(--orange_color) !important;
 }
-#body{
+
+#body {
     height: 100vh;
 }
-.about{
+
+.about {
     padding-top: 100px;
     margin-bottom: -130px;
 
 }
-.profile-img{
+
+.profile-img {
     height: 200px;
 }
-.social-icons{
+
+.social-icons {
     top: 50%;
     transform: translateY(-50%);
     position: sticky;
     z-index: 1;
     width: 80px;
 }
+
 .social-icons ul li {
     height: 40px;
     width: 40px;
@@ -112,6 +136,7 @@ body{
     width: 80px;
     transition: 1s;
 }
+
 .resume {
     margin-top: -50px;
     padding-top: 50px;
@@ -122,10 +147,12 @@ body{
 .resume h3 {
     margin-bottom: 50px;
 }
-.timeline{
+
+.timeline {
     list-style-type: none;
     position: relative;
 }
+
 .timeline::before {
     content: '';
     background: black;
@@ -167,6 +194,7 @@ body{
     height: 20px;
     z-index: 1;
 }
+
 .services {
     padding: 50px 0 50px;
 }
@@ -214,7 +242,7 @@ body{
 .contact {
     padding-top: 50px;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) fixed center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) fixed center;
     color: white;
 }
 
