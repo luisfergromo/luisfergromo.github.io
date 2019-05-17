@@ -21,6 +21,7 @@
     <title>LuisFerGRomo</title>
 </head>
 
+
 <body>
     <section id="header">
         <div class="container text-center">
@@ -237,6 +238,10 @@
                 <p>Made with <i class="far fa-heart"></i> by me</p>
             </div>
         </div>
+        <!--div id="vapp">
+            <colored-box class="red" />
+            <p>Hello World. {{display}}</p>
+        </div-->
     </section>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
@@ -247,11 +252,14 @@
             window.print();
         }
         const vueApp = new Vue({
-  el: '#vapp',
-  data: { 
-   display: 'redbox' 
-  }
-})
+            el: '#vapp',
+            data: {
+                display: 'redbox'
+            }
+        })
+        Vue.component('ColoredBox', {
+            template: "<div class=\"box\"> - </div>"
+        })
     </script>
 </body>
 
