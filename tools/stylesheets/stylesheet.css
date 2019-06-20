@@ -211,16 +211,16 @@ body {
     z-index: 1;
 }
 
-.services {
+.experience {
     padding: 50px 0 50px;
-    display: none;
+    /* display: none; */
 }
 
-.services h1 {
+.experience h1 {
     margin: 15px 0 15px;
 }
 
-.services-box {
+.experience-box {
     background-color: #f9f9f9;
     padding: 10px;
     margin: 20px;
@@ -228,31 +228,31 @@ body {
     border-top-right-radius: 50px;
 }
 
-.services-box .fa .fab {
+.experience-box .fa .fab {
     margin: 0 10px;
     font-size: 20px;
 }
 
-.services-box span {
+.experience-box span {
     margin: 3px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.services-box p {
+.experience-box p {
     font-size: 15px;
     margin-top: 20px;
     color: #777;
 }
 
-.services-box:hover {
+.experience-box:hover {
     background-color: #000;
     color: #fff;
     border-radius: 50px 0 50px 0;
     transition: 1s;
 }
 
-.services-box:hover p {
+.experience-box:hover p {
     color: #fff;
 }
 
