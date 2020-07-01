@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "luisfergromo-df00c"
+    "default": "luisfergromo-df00c",
+    "staging": "luisfergromo",
+    "luisfergromo": "luisfergromo"
   }
 }

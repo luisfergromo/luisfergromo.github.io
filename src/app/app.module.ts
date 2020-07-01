@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
-import { AngularLandingComponent } from './angular-landing/angular-landing.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    AngularLandingComponent
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +17,6 @@ import { AngularLandingComponent } from './angular-landing/angular-landing.compo
   providers: [],
   bootstrap: [
     AppComponent
-    //LandingComponent
   ]
 })
 export class AppModule { }
