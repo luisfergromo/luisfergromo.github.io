@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
+  title = "index-view";
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  printPdf() {
+    window.print();
+  }
 }
