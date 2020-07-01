@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { IndexComponent } from './index/index.component';
+import { BlogComponent } from './blog/blog.component';
 // import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
