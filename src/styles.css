@@ -380,9 +380,9 @@ body {
         height: 20px;
         z-index: 1;
     }
-    .experience{
-        padding-top: 10px;
-    }
+    /* .experience{
+        padding-top: 0px;
+    } */
     .contact .row {
         padding: 60px 0;
         font-size: 22px;
