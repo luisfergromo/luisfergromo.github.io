@@ -2,12 +2,8 @@
   "name": "luisfergromo-web",
   "version": "0.1.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "ng serve --open",
+    "dev":"ng build --prod && firebase deploy"
   },
   "private": true,
   "dependencies": {
