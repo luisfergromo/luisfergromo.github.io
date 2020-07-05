@@ -4,12 +4,10 @@ import { IndexComponent } from './index/index.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 
-
-
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'blog', component: BlogComponent }
+  { path: 'blog', component: BlogComponent },
 ];
 
 @NgModule({
