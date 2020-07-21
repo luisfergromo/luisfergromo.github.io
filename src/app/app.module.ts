@@ -1,27 +1,21 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { ProjectsComponent } from "./projects/projects.component";
 import { IndexComponent } from "./index/index.component";
-import { BlogComponent } from "./blog/blog.component";
 import { environment } from "src/environments/environment";
 import { ServiceWorkerModule } from "@angular/service-worker";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IndexComponent,
-    ProjectsComponent,
-    BlogComponent,
-  ],
+  declarations: [AppComponent, IndexComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // HttpClientModule
     /* Remove this comment to make PWA
      * ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
      * */
