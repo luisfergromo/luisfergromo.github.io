@@ -1,14 +1,15 @@
 {
   "hosting": {
+    "site": "luisfergromo",
     "public": "dist/luisfergromo-web",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites":[
+    "rewrites": [
       {
-        "source":"**",
+        "source": "**",
         "destination": "/index.html"
       }
     ]
