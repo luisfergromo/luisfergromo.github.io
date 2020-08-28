@@ -1,0 +1,55 @@
+{
+    "experiences": [
+        {
+            "id": 0,
+            "initialYear": 2017,
+            "position": "Project Manager And QA Tester",
+            "tasks": [
+                {
+                    "id": 0,
+                    "body": "Technical writer."
+                },
+                {
+                    "id": 1,
+                    "body": "QA Manual Tester."
+                },
+                {
+                    "id": 3,
+                    "body": "Support the developers team in the implementation of new features."
+                },
+                {
+                    "id": 4,
+                    "body": "Support the developers team in the implementation of new features."
+                },
+                {
+                    "id": 5,
+                    "body": "Improve the contingency plan and control deadlines."
+                },
+                {
+                    "id": 6,
+                    "body": "Manual and automation mobile testing."
+                }
+            ],
+            "company": "ITESO, A.C.",
+            "latestProjects": [
+                {
+                    "id": 0,
+                    "body": "Jalisco Sin Hambre"
+                },
+                {
+                    "id": 1,
+                    "body": "Mi ITESO"
+                }
+            ],
+            "duration": "3 years",
+            "location": "México"
+        }
+    ],
+    "education":[
+        {
+            "id":0,
+            "title": "Industrial Engineering",
+            "":""
+        }
+    ]
+}

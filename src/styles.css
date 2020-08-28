@@ -15,7 +15,9 @@ body {
 #header {
   height: 100vh;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1701&q=80) fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1701&q=80)
+      fixed center;
 }
 
 .box {
@@ -103,7 +105,6 @@ body {
 .about {
   padding-top: 100px;
   margin-bottom: -130px;
-
 }
 
 .profile-img {
@@ -113,7 +114,6 @@ body {
   min-height: 80px;
   max-height: 280px;
 }
-
 
 .social-icons {
   top: 50%;
@@ -159,10 +159,11 @@ body {
   z-index: 2;
   list-style-type: none;
   position: relative;
+  margin-left: 10px;
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   background: var(--black_color);
   display: inline-block;
   position: absolute;
@@ -191,7 +192,7 @@ body {
 }
 
 .timeline li::before {
-  content: '';
+  content: "";
   background: var(--white_color);
   display: inline-block;
   position: absolute;
@@ -252,7 +253,9 @@ body {
 .contact {
   padding-top: 50px;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+      fixed center;
   color: var(--white_color);
   z-index: 0;
 }
@@ -307,10 +310,11 @@ body {
 
 /* You can add global styles to this file, and also import other style files */
 /* Desktop */
-@media screen and (min-width:1024px) {}
+@media screen and (min-width: 1024px) {
+}
 
 /* Smartphone */
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .social-icons {
     display: none;
   }
@@ -395,7 +399,6 @@ body {
     padding: 0;
     margin: 0;
   }
-
   #header,
   .nav-bar,
   .social-icons,
@@ -404,32 +407,23 @@ body {
   .btn {
     display: none;
   }
-
   #about img {
     margin: 0;
     padding-top: -100px;
     /* height: 200px; */
   }
-
-  .resume {
-    padding: 200px;
-  }
-
   #contact {
     display: inline;
   }
-
   .contact h1 {
     display: none;
   }
-
   .timeline {
     list-style-type: none;
     position: relative;
   }
-
   .timeline::before {
-    content: '';
+    content: "";
     background: var(--black_color);
     display: none;
     position: absolute;
@@ -438,12 +432,10 @@ body {
     height: 100%;
     z-index: 1;
   }
-
   .timeline li {
     margin: 20px 0 20px 20px;
     background-color: #ffffff;
   }
-
   .timeline li h4 {
     /* background-color: #000; */
     padding: 5px 0 5px 20px;
@@ -451,14 +443,12 @@ body {
     font-size: 15px;
     color: var(--white_color);
   }
-
   .timeline li h4 span {
     font-weight: bold;
     color: #ccc;
   }
-
   .timeline li::before {
-    content: '';
+    content: "";
     background: var(--white_color);
     display: none;
     position: absolute;
@@ -469,18 +459,15 @@ body {
     height: 20px;
     z-index: 1;
   }
-
-  /* .experience{
-        padding-top: 0px;
-    } */
+  .experience {
+    padding-top: 0px;
+  }
   .contact .row {
     padding: 60px 0;
     font-size: 22px;
   }
-
   .contact .col-md-4 .fa {
     padding: 10px;
     font-size: 40px;
   }
-
 }

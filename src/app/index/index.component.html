@@ -3,7 +3,7 @@
     <div class="container text-center">
       <div class="box">
         <img src="../assets/images/Lfgromo (5).png" alt="" />
-        <h1>LuisFerGRomo</h1>
+        <h1>{{ name }}</h1>
         <p>PM, QA and Unpractical <s>Developer</s> Programmer.</p>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <div class="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-          <img src="../assets/images/Lfgromo (5).png" alt="" />LuisFerGRomo
+          <img src="../assets/images/Lfgromo (5).png" alt="" />{{ name }}
         </a>
         <button
           class="navbar-toggler"
@@ -55,35 +55,37 @@
     </div>
     <section class="socialmedia">
       <ul>
-        <a href="https://www.linkedin.com/in/luisfergromo/" target="_blank">
+        <a href="https://www.linkedin.com/in/{{ name }}/" target="_blank">
           <li>
             <i class="fab fa-linkedin"></i>
           </li>
         </a>
-        <a href="https://www.facebook.com/luisfergromomx" target="_blank">
+        <a href="https://www.facebook.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-facebook"></i>
           </li>
         </a>
-        <a href="https://www.twitter.com/luisfergromo" target="_blank">
+        <a href="https://www.twitter.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-twitter"></i>
           </li>
         </a>
-        <a href="https://www.instagram.com/luisfergromo" target="_blank">
+        <a href="https://www.instagram.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-instagram"></i>
           </li>
         </a>
         <a
-          href="https://www.notion.so/luisfergromo/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
+          href="https://www.notion.so/{{
+            name
+          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
           target="_blank"
         >
           <li>
             <i class="fas fa-blog"></i>
           </li>
         </a>
-        <a href="https://www.github.com/luisfergromo" target="_blank">
+        <a href="https://www.github.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-github"></i>
           </li>
@@ -110,35 +112,37 @@
     </div>
     <div class="social-icons">
       <ul>
-        <a href="https://www.linkedin.com/in/luisfergromo/" target="_blank">
+        <a href="https://www.linkedin.com/in/{{ name }}/" target="_blank">
           <li>
             <i class="fab fa-linkedin"></i>
           </li>
         </a>
-        <a href="https://www.facebook.com/luisfergromomx" target="_blank">
+        <a href="https://www.facebook.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-facebook"></i>
           </li>
         </a>
-        <a href="https://www.twitter.com/luisfergromo" target="_blank">
+        <a href="https://www.twitter.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-twitter"></i>
           </li>
         </a>
-        <a href="https://www.instagram.com/luisfergromo" target="_blank">
+        <a href="https://www.instagram.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-instagram"></i>
           </li>
         </a>
         <a
-          href="https://www.notion.so/luisfergromo/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
+          href="https://www.notion.so/{{
+            name
+          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
           target="_blank"
         >
           <li>
             <i class="fas fa-blog"></i>
           </li>
         </a>
-        <a href="https://www.github.com/luisfergromo" target="_blank">
+        <a href="https://www.github.com/{{ name }}" target="_blank">
           <li>
             <i class="fab fa-github"></i>
           </li>
@@ -152,7 +156,7 @@
             <h3 class="text-center">My Experiences</h3>
             <ul class="timeline">
               <li>
-                <h4><span>2019 – </span>Project Manager And QA Tester</h4>
+                <h4><span>2015 – </span>Project Manager And QA Tester</h4>
                 <p>
                   Technical writer.<br />
                   QA Manual Tester.<br />
@@ -164,7 +168,7 @@
                 <b>Company</b> – Laboratorio de Aplicaciones Móviles Ulab –
                 <b>ITESO</b><br />
                 <b>Projects</b> Jalisco Sin Hambre, Mi ITESO.<br />
-                <b>Duration</b> – 3yrs [2015 to present]<br />
+                <!-- <b>Duration</b> – 5yrs<br /> -->
                 <b>Location</b> – México
               </li>
               <li>
@@ -172,7 +176,7 @@
                 <p>Provide hardware and software assistance.</p>
                 <br />
                 <b>Company</b> – Telecable de zapopan<br />
-                <b>Duration</b> – 1yr<br />
+                <!-- <b>Duration</b> – 1yr<br /> -->
                 <b>Location</b> – México
               </li>
             </ul>
@@ -184,13 +188,13 @@
                 <h4><span>2018 - 2021 </span> Industrial Engineering</h4>
                 <p>Supply Chain<br /></p>
                 <b>Institute</b>
-                <a href="https://www.tecmilenio.mx">Tec Milenio</a>
+                <a href="https://www.tecmilenio.mx"> Tec Milenio</a>
               </li>
               <li>
                 <h4><span>2015 - 2018</span> CS Licenciate Degree</h4>
                 <p>BS Computer Science</p>
                 <br />
-                <b>Institute</b> <a href="https://www.iteso.mx">ITESO AC</a>
+                <b>Institute</b> <a href="https://www.iteso.mx"> ITESO AC</a>
               </li>
               <li>
                 <h4>
@@ -200,7 +204,7 @@
                   Mobile development Obj-c and Swift<br />
                   Perform use of web"experience, create user interfaces.<br />
                 </p>
-                <b>Institute</b> <a href="https://www.defv.mx">DevF MX</a>
+                <b>Institute</b> <a href="https://www.defv.mx"> DevF MX</a>
               </li>
               <li>
                 <h4>
@@ -209,7 +213,7 @@
                 <p>
                   Develop mobile and desktop apps with .Net technology<br />
                 </p>
-                <b>Institute</b> <a href="https://wwwiteso.mx">ITESO AC</a>
+                <b>Institute</b> <a href="https://www.iteso.mx"> ITESO AC</a>
               </li>
             </ul>
           </div>
@@ -231,17 +235,22 @@
           <div class="col-md-4">
             <div class="experience-box">
               <i class="fa fa-rocket"></i><span>Testing</span>
-              <p>Katalon Studio</p>
-              <p>Appium</p>
+              <p><a href="https://www.katalon.com/">Katalon Studio</a></p>
+              <p><a href="http://appium.io/">Appium</a></p>
               <p>Manual Testing</p>
+              <p><a href="https://testproject.io/">Testproject</a></p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="experience-box">
               <i class="fa fa-laptop"></i><span>Development</span><br />
-              <p>Xcode</p>
-              <p>VS Code</p>
-              <p>Android Studio</p>
+              <p><a href="https://developer.apple.com/xcode/">Xcode</a></p>
+              <p><a href="https://code.visualstudio.com/">VS Code</a></p>
+              <p>
+                <a href="https://developer.android.com/studio"
+                  >Android Studio</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -249,10 +258,10 @@
     </div>
     <div class="contact" id="contact">
       <div class="container text-center">
-        <h1>Contact Me</h1>
+        <h1>PDF Resume</h1>
         <p class="text-center"></p>
         <button type="button" (click)="printPdf()" class="btn btn-primary">
-          <i class="fa fa-download">Resume</i>
+          <i class="fa fa-download"> Download</i>
         </button>
       </div>
       <div class="footer text-center">

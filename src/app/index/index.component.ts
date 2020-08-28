@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  selector: "app-index",
+  templateUrl: "./index.component.html",
+  styleUrls: ["./index.component.css"],
 })
 export class IndexComponent implements OnInit {
   title = "index-view";
-  
-  constructor() { }
+  name = "LuisFerGRomo";
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   printPdf() {
     window.print();
   }
