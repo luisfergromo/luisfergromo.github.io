@@ -1,0 +1,23 @@
+import { SpaComponent } from "./spa.component";
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+
+describe("SpaComponent", () => {
+  let component: SpaComponent;
+  let fixture: ComponentFixture<SpaComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [SpaComponent],
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SpaComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it("should create", () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -8,10 +8,10 @@ import { ServiceWorkerModule } from "@angular/service-worker";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { HttpClientModule } from "@angular/common/http";
-import { EsComponent } from './es/es.component';
+import { SpaComponent } from "./spa/spa.component";
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, EsComponent],
+  declarations: [AppComponent, IndexComponent, SpaComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
