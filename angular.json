@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "luisfergromo-web"
+  "defaultProject": "luisfergromo-web",
+  "cli": {
+    "analytics": false
+  }
 }

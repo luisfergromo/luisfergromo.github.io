@@ -19,23 +19,15 @@
         <a class="navbar-brand" href="spa#">
           <img src="../assets/images/Lfgromo (5).png" alt="" />{{ name }}
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span class="sr-only">(current)</span></a
-              >
+                <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="spa#about">Acerca de mi</a>
@@ -75,12 +67,9 @@
             <i class="fab fa-instagram"></i>
           </li>
         </a>
-        <a
-          href="https://www.notion.so/{{
+        <a href="https://www.notion.so/{{
             name
-          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
-          target="_blank"
-        >
+          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6" target="_blank">
           <li>
             <i class="fas fa-blog"></i>
           </li>
@@ -95,11 +84,7 @@
     <div class="about container" id="about">
       <div class="row">
         <div class="col-md-6 text-center">
-          <img
-            src="../assets/images/luisromo_profile.jpg"
-            class="profile-img"
-            alt="profile image"
-          />
+          <img src="../assets/images/luisromo_profile.jpg" class="profile-img" alt="profile image" />
         </div>
         <div class="col-md-6">
           <h3>¿Quién es {{ name }}?</h3>
@@ -132,12 +117,9 @@
             <i class="fab fa-instagram"></i>
           </li>
         </a>
-        <a
-          href="https://www.notion.so/{{
+        <a href="https://www.notion.so/{{
             name
-          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6"
-          target="_blank"
-        >
+          }}/Home-ed575e8a309d4a2ca8d2a03ea5fb36f6" target="_blank">
           <li>
             <i class="fas fa-blog"></i>
           </li>
@@ -155,77 +137,31 @@
           <div class="col-md-6">
             <h3 class="text-center">Mi Experiencia</h3>
             <ul class="timeline">
-              <li>
+              <li *ngFor="let experience of experiences">
                 <h4>
-                  <span>2015 – </span>Administrador de proyectos y aseguramiento
-                  de calidad.
+                  <span>{{experience.initialYear}} – </span>{{experience.position_spa}}
                 </h4>
-                <p>Escritor Técnico</p>
-                <p>Probador manual y automatizado de software.</p>
-                <p>
-                  Apoyo a desarrolladores durante el desarrollo de nuevas
-                  implementaciones.
-                </p>
-                <p>
-                  Mejora en el plan de contigencia y administración de
-                  proyectos.
-                </p>
+                <div *ngFor="let text of experience.tasks">
+                  <p ng-hide="experience.tasks == null">{{text.body_spa}}</p>
+                </div>
                 <br />
-                <b>Empresa</b> – Laboratorio de Aplicaciones Móviles Ulab –
-                <b>ITESO</b><br />
-                <b>Proyectos</b> Jalisco Sin Hambre, Mi ITESO.<br />
-              </li>
-              <li>
-                <h4><span>2021 –  </span>Profesor de bachilletaro</h4>
-                <p>Profesor de asignatura: español y matemáticas</p>
-                <br />
-                <b>Organización</b> – Aprendamos Juntos por Tec Monterrey<br />
-              </li>
-              <li>
-                <h4><span>2010 – 2011 </span>Soporte Técnico</h4>
-                <p>Asistencia tecnica especializada</p>
-                <p>
-                  Solución de problemas de interconección de redes y
-                  telecomunicaciones.
-                </p>
-                <br />
-                <b>Empresa</b> – Telecable de zapopan<br />
+                <b>Empresa</b> – {{experience.company}}
+                <b ng-hide="experience.latestProjects == null">Projects </b>
+                <a *ngFor="let project of experience.latestProjects">{{project.body}}<br /></a>
               </li>
             </ul>
           </div>
           <div class="col-md-6">
             <h3 class="text-center">Mi Educación</h3>
             <ul class="timeline">
-              <li>
-                <h4><span>2018 - 2021 </span> Ingeniería Industrial</h4>
-                <p>Cadena de suministros.<br /></p>
-                <p>Mejora Continua.<br /></p>
-                <b>Institución</b>
-                <a href="https://www.tecmilenio.mx"> Tec Milenio</a>
-              </li>
-              <!-- <li>
-                <h4><span>2015 - 2018</span> CS Licenciate Degree</h4>
-                <p>BS Computer Science</p>
-                <br />
-                <b>Institute</b> <a href="https://www.iteso.mx"> ITESO AC</a>
-              </li> -->
-              <li>
-                <h4><span>2016 - </span> Desarrollo iOS (BootCamp)</h4>
-                <p>Desarrollo móvil en lenguajes Obj-c y Swift.<br /></p>
-                <p>
-                  Mejora de experiencia de usuario, creación y diseño de
-                  interfaces.<br />
-                </p>
-                <b>Institución</b> <a href="https://www.defv.mx"> DevF MX</a>
-              </li>
-              <li>
-                <h4><span>2013 - 2014 – </span> Programación .NET</h4>
-                <p>
-                  Desarrollo de Aplicaciones móviles y de escritorio con
-                  tecnología .Net<br />
-                </p>
-                <b>Institución</b>
-                <a href="https://www.iteso.mx"> ITESO A.C.</a>
+              <li *ngFor="let item of education">
+                <h4><span ng-hide="item.endingYear == null">{{item.initialYear}} - {{item.endingYear}} </span>
+                  {{item.title_spa}}</h4>
+                <div *ngFor="let text of item.tasks">
+                  <p>{{text.body_spa}}<br /></p>
+                </div>
+                <b>Institución </b><a *ngFor="let institute of item.company"><a href={{institute.url}}>
+                    {{institute.name}}</a></a>
               </li>
             </ul>
           </div>
@@ -239,8 +175,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="experience-box">
-              <i class="fa fa-chart-line"></i
-              ><span>Administración de Proyectos</span>
+              <i class="fa fa-chart-line"></i><span>Administración de Proyectos</span>
               <p>Jira</p>
               <p>Asana</p>
             </div>
@@ -261,14 +196,10 @@
                 <a href="https://developer.apple.com/xcode/">Xcode – iOS</a>
               </p>
               <p>
-                <a href="https://code.visualstudio.com/"
-                  >VS Code – JS, HTML y NodeJs</a
-                >
+                <a href="https://code.visualstudio.com/">VS Code – JS, HTML y NodeJs</a>
               </p>
               <p>
-                <a href="https://developer.android.com/studio"
-                  >Android Studio – Android</a
-                >
+                <a href="https://developer.android.com/studio">Android Studio – Android</a>
               </p>
             </div>
           </div>

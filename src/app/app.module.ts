@@ -16,7 +16,7 @@ import { SpaComponent } from "./spa/spa.component";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // HttpClientModule
+    HttpClientModule
     /* Remove this comment to make PWA
      * ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
      * */

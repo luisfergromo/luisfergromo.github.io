@@ -1,55 +1,161 @@
-{
-    "experiences": [
-        {
-            "id": 0,
-            "initialYear": 2017,
-            "position": "Project Manager And QA Tester",
-            "tasks": [
-                {
-                    "id": 0,
-                    "body": "Technical writer."
-                },
-                {
-                    "id": 1,
-                    "body": "QA Manual Tester."
-                },
-                {
-                    "id": 3,
-                    "body": "Support the developers team in the implementation of new features."
-                },
-                {
-                    "id": 4,
-                    "body": "Support the developers team in the implementation of new features."
-                },
-                {
-                    "id": 5,
-                    "body": "Improve the contingency plan and control deadlines."
-                },
-                {
-                    "id": 6,
-                    "body": "Manual and automation mobile testing."
-                }
-            ],
-            "company": "ITESO, A.C.",
-            "latestProjects": [
-                {
-                    "id": 0,
-                    "body": "Jalisco Sin Hambre"
-                },
-                {
-                    "id": 1,
-                    "body": "Mi ITESO"
-                }
-            ],
-            "duration": "3 years",
-            "location": "México"
-        }
-    ],
-    "education":[
-        {
-            "id":0,
-            "title": "Industrial Engineering",
-            "":""
-        }
-    ]
-}
+[
+    {
+        "experiences": [
+            {
+                "id": 0,
+                "initialYear": 2017,
+                "position": "Project Manager And QA Tester",
+                "position_spa": "Administrador de proyectos y aseguramiento de calidad.",
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Technical writer.",
+                        "body_spa": "Escritor Técnico"
+                    },
+                    {
+                        "id": 1,
+                        "body": "QA Manual Tester.",
+                        "body_spa": "Probador manual y automatizado de software."
+                    },
+                    {
+                        "id": 3,
+                        "body": "Support the developers team in the implementation of new features.",
+                        "body_spa": "Apoyo a desarrolladores durante el desarrollo de nuevas implementaciones."
+                    },
+                    {
+                        "id": 4,
+                        "body": "Improve the contingency plan and control deadlines.",
+                        "body_spa": "Mejora en el plan de contigencia y administración de proyectos."
+                    },
+                    {
+                        "id": 5,
+                        "body": "Manual and automation mobile testing.",
+                        "body_spa": "Prueba manual y automatizada de aplicacioens móviles"
+                    }
+                ],
+                "company": "ITESO, A.C.",
+                "latestProjects": [
+                    {
+                        "id": 0,
+                        "body": "Jalisco Sin Hambre"
+                    },
+                    {
+                        "id": 1,
+                        "body": "Mi ITESO"
+                    }
+                ],
+                "duration": "3 years",
+                "location": "México"
+            },
+            {
+                "id": 1,
+                "initialYear": 2021,
+                "position": "High school teacher",
+                "position_spa": "Profesor de bachillerato",
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Suject teacher: spanish & math.",
+                        "body_spa": "Profesor de asignatura: español y matemáticas."
+                    }
+                ],
+                "company": "Tec Monterrey.",
+                "latestProjects": [
+                    {
+                        "id": 0,
+                        "body": "Aprendamos Juntos"
+                    }
+                ],
+                "duration": ".5 years",
+                "location": "Online"
+            },
+            {
+                "id": 2,
+                "initialYear": 2010,
+                "endYear": 2011,
+                "position": "Provide hardware and software assistance.",
+                "position_spa": "Soporte técnico",
+                "tasks": null,
+                "company": "Telecable de Zapopan",
+                "latestProjects": null,
+                "duration": ".5 years",
+                "location": "Online"
+            }
+        ],
+        "education": [
+            {
+                "id": 0,
+                "title": "Industrial Engineering",
+                "title_spa": "Ingeniería Industrial",
+                "initialYear": 2018,
+                "endingYear": 2021,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Supply Chain",
+                        "body_spa": "Cadena de suministros"
+                    },
+                    {
+                        "id": 0,
+                        "body": "Project Management",
+                        "body_spa": "Administración de proyectos"
+                    }
+                ],
+                "company": [
+                    {
+                        "id": 0,
+                        "name": "Tec Milenio",
+                        "url": "https://tecmilenio.mx"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Basic iOS mobile development (BootCamp)",
+                "title_spa": "Desarrollo iOS (BootCamp)",
+                "initialYear": 2016,
+                "endingYear": null,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Mobile development Obj-c and Swift",
+                        "body_spa": "Desarrollo móvil en lenguajes Obj-c y Swift."
+                    },
+                    {
+                        "id": 0,
+                        "body": "Perform use of web experience, create user interfaces.",
+                        "body_spa": "Mejora de experiencia de usuario, creación y diseño de interfaces."
+                    }
+                ],
+                "company": [
+                    {
+                        "id": 0,
+                        "name": "DevF MX",
+                        "url": "https://www.defv.mx/"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": ".Net Programming Lenguaje Course",
+                "title_spa": "Programación .NET",
+                "initialYear": 2013,
+                "endingYear": 2014,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Develop mobile and desktop apps with .Net technology",
+                        "body_spa": "Desarrollo de Aplicaciones móviles y de escritorio con tecnología .Net"
+                    }
+                ],
+                "company": [
+                    {
+                        "id": 0,
+                        "name": "ITESO AC",
+                        "url": "https://www.iteso.mx/"
+                    }
+                ]
+            }
+        ]
+    }
+]
