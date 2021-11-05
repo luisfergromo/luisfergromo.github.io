@@ -75,7 +75,18 @@
                 "endYear": 2011,
                 "position": "Provide hardware and software assistance.",
                 "position_spa": "Soporte técnico",
-                "tasks": null,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Specialized tecnical Suport",
+                        "body_spa": "Asistencia tecnica especializada"
+                    },
+                    {
+                        "id": 1,
+                        "body": "Network and communication solving issues",
+                        "body_spa": "Solución de problemas de interconección de redes y telecomunicaciones."
+                    }
+                ],
                 "company": "Telecable de Zapopan",
                 "latestProjects": null,
                 "duration": ".5 years",
