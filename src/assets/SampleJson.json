@@ -99,7 +99,12 @@
                 "title_spa": "Master IT management",
                 "initialYear": 2021,
                 "endingYear": 2024,
-                "tasks": null},
+                "tasks": null,
+"company":[{
+                        "id": 0,
+                        "name": "Tec Milenio",
+                        "url": "https://tecmilenio.mx"
+                    }]},
             {
                 "id": 0,
                 "title": "Industrial Engineering",
