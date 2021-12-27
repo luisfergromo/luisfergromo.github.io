@@ -90,10 +90,16 @@
                 "company": "Telecable de Zapopan",
                 "latestProjects": null,
                 "duration": ".5 years",
-                "location": "Online"
+                "location": "Mexico"
             }
         ],
         "education": [
+{"id": 0,
+                "title": "Maestría Gestión de Tecnologías de la información",
+                "title_spa": "Master IT management",
+                "initialYear": 2021,
+                "endingYear": 2024,
+                "tasks": null},
             {
                 "id": 0,
                 "title": "Industrial Engineering",
