@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import currentData from '../../assets/testJson.json';
 import curriculumData from '../../assets/SampleJson.json'
+
 interface Data{
   id:Number;
   name:String;
@@ -30,10 +31,8 @@ interface Education{
 export class IndexComponent implements OnInit {
   title = "index-view";
   name = "LuisFerGRomo";
-  constructor() {}
 
   ngOnInit(): void {
-    
   }
   printPdf() {
     window.print();

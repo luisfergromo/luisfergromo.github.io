@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "luisfergromo-web";
   name = "LuisFerGRomo";
+  completeName ="Luis Gutiérrez";
   printPdf() {
     window.print();
   }

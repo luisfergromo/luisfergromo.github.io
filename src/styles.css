@@ -291,6 +291,10 @@ body {
 .contact .btn .fa .fab {
   margin-right: 10px;
 }
+.fa-whatsapp{
+    color: green;
+    
+}
 
 .footer {
   background: black;
@@ -390,6 +394,7 @@ body {
   .resume {
     padding-top: 200px;
   }
+
 }
 
 @media print {
@@ -418,6 +423,7 @@ body {
   .contact h1 {
     display: none;
   }
+
   .timeline {
     list-style-type: none;
     position: relative;
