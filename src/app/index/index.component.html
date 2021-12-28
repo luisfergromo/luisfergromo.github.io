@@ -173,9 +173,16 @@
         <h1 class="text-center">Tools</h1>
         <br />
         <div class="row">
+          <div class="col-md-4" *ngFor="let tool of tools">
+            <div class="experience-box">
+              <i class="{{ tool.icon }}"></i><span>{{tool.name}}</span>
+              <p *ngFor="let element of tool.elements">{{ element.name }}</p>
+            </div>
+          </div>
+          <!-- <div class="row">
           <div class="col-md-4">
             <div class="experience-box">
-              <i class="fa fa-chart-line"></i><span>Project Managment</span>
+              <i class="fa fa-chart-line"></i><span>Project Management</span>
               <p>Jira</p>
               <p>Asana</p>
               <p>Taiga</p>
@@ -204,6 +211,7 @@
               </p>
             </div>
           </div>
+         -->
         </div>
       </div>
     </div>

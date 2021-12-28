@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import currentData from '../../assets/testJson.json';
+//import currentData from '../../assets/testJson.json';
 import curriculumData from '../../assets/SampleJson.json'
 
 interface Data{
@@ -23,6 +23,11 @@ interface Education{
   tasks:any;
   company:any;
 }
+interface Tools{
+  name:String;
+  elements:any;
+  icon:String;
+}
 @Component({
   selector: "app-index",
   templateUrl: "./index.component.html",
@@ -38,7 +43,9 @@ export class IndexComponent implements OnInit {
     window.print();
   }
   
-  someData:Data[] = currentData[0].someData;
+  //someData:Data[] = currentData[0].someData;
   experiences:Experiences[] = curriculumData[0].experiences;
   education:Education[] = curriculumData[0].education;
+  tools:Tools[] = curriculumData[0].tools;
+
 }

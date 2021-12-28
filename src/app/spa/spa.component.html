@@ -180,35 +180,10 @@
         <h1 class="text-center">Herramientas</h1>
         <br />
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4" *ngFor="let tool of tools">
             <div class="experience-box">
-              <i class="fa fa-chart-line"></i><span>Administración de Proyectos</span>
-              <p>Jira</p>
-              <p>Asana</p>
-              <p>Taiga</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="experience-box">
-              <i class="fa fa-rocket"></i><span>Pruebas</span>
-              <p><a href="https://www.katalon.com/">Katalon Studio</a></p>
-              <p><a href="http://appium.io/">Appium</a></p>
-              <p>Pruebas Manuales</p>
-              <p><a href="https://testproject.io/">Testproject</a></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="experience-box">
-              <i class="fa fa-laptop"></i><span>Desarrollo</span><br />
-              <p>
-                <a href="https://developer.apple.com/xcode/">Xcode – iOS</a>
-              </p>
-              <p>
-                <a href="https://code.visualstudio.com/">VS Code – JS, HTML y NodeJs</a>
-              </p>
-              <p>
-                <a href="https://developer.android.com/studio">Android Studio – Android</a>
-              </p>
+              <i class="{{ tool.icon }}"></i><span>{{tool.name_spa}}</span>
+              <p *ngFor="let element of tool.elements">{{ element.name }}</p>
             </div>
           </div>
         </div>

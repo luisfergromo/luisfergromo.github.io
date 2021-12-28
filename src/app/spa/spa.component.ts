@@ -16,6 +16,11 @@ interface Education{
   tasks:any;
   company:any;
 }
+interface Tools{
+  name_spa:String;
+  icon:String;
+  elements:any;
+}
 @Component({
   selector: "app-spa",
   templateUrl: "./spa.component.html",
@@ -32,4 +37,5 @@ export class SpaComponent implements OnInit {
   }
 experiences: Experiences[]= curriculumData[0].experiences;
 education: Education[]= curriculumData[0].education;
+tools:Tools[]= curriculumData[0].tools;
 }
