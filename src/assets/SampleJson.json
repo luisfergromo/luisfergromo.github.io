@@ -178,6 +178,55 @@
                     }
                 ]
             }
+        ],
+        "tools": [
+            {
+                "name": "Project Management",
+                "name_espa": "Administración de Proyectos",
+                "elements": [
+                    {
+                        "id": 0,
+                        "name": "Jira",
+                        "url": ""
+                    },
+                    {
+                        "id": 1,
+                        "name": "Asana",
+                        "url": ""
+                    },
+                    {
+                        "id": 2,
+                        "name": "Taiga",
+                        "url": ""
+                    }
+                ]
+            },
+            {
+                "name": "Testing",
+                "name_espa": "Pruebas",
+                "elements": [
+                   {
+                    "id": 0,
+                    "name": "Katalon Studio",
+                    "url": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Appium",
+                    "url": ""
+                },
+                {
+                    "id": 2,
+                    "name": "Manual Testing",
+                    "url": ""
+                },
+                {
+                    "id": 3,
+                    "name": "Testproject",
+                    "url": ""
+                }
+                 ]
+            }
         ]
     }
 ]
