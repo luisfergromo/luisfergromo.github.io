@@ -94,17 +94,21 @@
             }
         ],
         "education": [
-{"id": 0,
+            {
+                "id": 0,
                 "title": "Maestría Gestión de Tecnologías de la información",
                 "title_spa": "Master IT management",
                 "initialYear": 2021,
                 "endingYear": 2024,
                 "tasks": null,
-"company":[{
+                "company": [
+                    {
                         "id": 0,
                         "name": "Tec Milenio",
                         "url": "https://tecmilenio.mx"
-                    }]},
+                    }
+                ]
+            },
             {
                 "id": 0,
                 "title": "Industrial Engineering",
@@ -205,27 +209,48 @@
                 "name": "Testing",
                 "name_espa": "Pruebas",
                 "elements": [
-                   {
-                    "id": 0,
-                    "name": "Katalon Studio",
-                    "url": ""
-                },
-                {
-                    "id": 1,
-                    "name": "Appium",
-                    "url": ""
-                },
-                {
-                    "id": 2,
-                    "name": "Manual Testing",
-                    "url": ""
-                },
-                {
-                    "id": 3,
-                    "name": "Testproject",
-                    "url": ""
-                }
-                 ]
+                    {
+                        "id": 0,
+                        "name": "Katalon Studio",
+                        "url": ""
+                    },
+                    {
+                        "id": 1,
+                        "name": "Appium",
+                        "url": ""
+                    },
+                    {
+                        "id": 2,
+                        "name": "Manual Testing",
+                        "url": ""
+                    },
+                    {
+                        "id": 3,
+                        "name": "Testproject",
+                        "url": ""
+                    }
+                ]
+            },
+            {
+                "name": "Development",
+                "name_espa": "Desarrollo",
+                "elements": [
+                    {
+                        "id": 0,
+                        "name": "Xcode - iOS",
+                        "url": ""
+                    },
+                    {
+                        "id": 1,
+                        "name": "VS Code - Js, HTML & NodeJs",
+                        "url": ""
+                    },
+                    {
+                        "id": 2,
+                        "name": "Android Studio - Android",
+                        "url": ""
+                    }
+                ]
             }
         ]
     }
