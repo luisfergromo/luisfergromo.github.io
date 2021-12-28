@@ -31,7 +31,7 @@ interface Education{
 export class IndexComponent implements OnInit {
   title = "index-view";
   name = "LuisFerGRomo";
-
+  completeName ="Luis Gutiérrez";
   ngOnInit(): void {
   }
   printPdf() {

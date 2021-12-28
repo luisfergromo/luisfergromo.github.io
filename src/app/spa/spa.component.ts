@@ -23,6 +23,7 @@ interface Education{
 })
 export class SpaComponent implements OnInit {
   name = "LuisFerGRomo";
+  completeName ="Luis Gutiérrez";
   constructor() {}
 
   ngOnInit(): void {}
