@@ -186,7 +186,7 @@
         "tools": [
             {
                 "name": "Project Management",
-                "name_espa": "Administración de Proyectos",
+                "name_spa": "Administración de Proyectos",
                 "elements": [
                     {
                         "id": 0,
