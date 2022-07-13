@@ -96,8 +96,8 @@
         "education": [
             {
                 "id": 0,
-                "title": "Maestría Gestión de Tecnologías de la información",
-                "title_spa": "Master IT management",
+                "title": "Master IT management",
+                "title_spa": "Maestría Gestión de Tecnologías de la información",
                 "initialYear": 2021,
                 "endingYear": 2024,
                 "tasks": null,
@@ -203,6 +203,11 @@
                         "id": 2,
                         "name": "Taiga",
                         "url": ""
+                    },
+                    {
+                        "id": 3,
+                        "name": "PMC Tool",
+                        "url": "https://pmc-tool.com/en/home/"
                     }
                 ]
             },
