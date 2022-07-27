@@ -1,0 +1,25 @@
+body {
+    background-color: FEFEFE;
+}
+
+.main {
+    padding: 20px 0px 0px 100px;
+}
+
+.container {
+    display: inline-flex;
+}
+
+.container>img {
+    height: 200px;
+    border-radius: 20%;
+    padding: 0px 10px 0px 0px;
+}
+
+.JSH>.text1 {
+    display: none;
+}
+
+.JSH:hover {
+    display: grid-inline;
+}

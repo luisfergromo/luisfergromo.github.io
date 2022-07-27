@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { HttpClientModule } from "@angular/common/http";
 import { SpaComponent } from "./spa/spa.component";
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, SpaComponent],
+  declarations: [AppComponent, IndexComponent, SpaComponent, PortfolioComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
