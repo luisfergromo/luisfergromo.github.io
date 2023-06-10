@@ -4,6 +4,19 @@
             {
                 "id": 0,
                 "initialYear": 2017,
+                "position": "IT Coordinator",
+                "position_spa": "Coordinador de Tecnologías Educativas",
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Administrate Information Technologies at ITESO Continuing Education Office, with Technical Support at Operative Process, Educative Innovation and implementation of most popular platforms.",
+                        "body_spa": "Administrar las tecnologías de la información de la Oficina de Educación Continua en Iteso, mismas que son requeridas como soporte en diferentes procesos operativos así como el aporte mediante la innovación a la tecnología educativa a través de herramientas y plataformas de tendencia."
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "initialYear": 2017,
                 "position": "Project Manager And QA Tester",
                 "position_spa": "Administrador de proyectos y aseguramiento de calidad.",
                 "tasks": [
@@ -48,7 +61,7 @@
                 "location": "México"
             },
             {
-                "id": 1,
+                "id": 2,
                 "initialYear": 2021,
                 "position": "High school teacher",
                 "position_spa": "Profesor de bachillerato",
@@ -70,7 +83,7 @@
                 "location": "Online"
             },
             {
-                "id": 2,
+                "id": 3,
                 "initialYear": 2010,
                 "endYear": 2011,
                 "position": "Provide hardware and software assistance.",
