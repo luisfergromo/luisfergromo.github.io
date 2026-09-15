@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist/luisfergromo-web",
+    "site": "lromo",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

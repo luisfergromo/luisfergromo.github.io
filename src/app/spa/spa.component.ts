@@ -4,8 +4,9 @@ interface Experiences{
     id:Number;
   initialYear:Number;
   position_spa:String;
-  location:String;
-  latestProjects: any;
+  location?:String;
+  company?:String;
+  latestProjects?: any;
   tasks: any;
 }
 interface Education{
