@@ -1,0 +1,251 @@
+#skills-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  color: #333;
+}
+
+.skills-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 60px 20px 50px;
+  border-bottom: 3px solid #f26b1d;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(242, 107, 29, 0.2);
+  color: #f26b1d;
+  border: 1px solid rgba(242, 107, 29, 0.4);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.skills-hero .lead {
+  font-size: 1.15rem;
+  max-width: 750px;
+  margin: 0 auto 25px;
+  color: #ccc;
+}
+
+.main-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Proven Skill Cards */
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #f26b1d;
+}
+
+.skill-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #fff3eb;
+  color: #f26b1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.skill-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f26b1d;
+  letter-spacing: 0.8px;
+}
+
+.skill-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.skill-desc {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 15px 0;
+}
+
+.skill-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.skill-highlights li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.skill-card-footer {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
+}
+
+.badge-tool {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 2px 4px 2px 0;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid #dee2e6;
+}
+
+/* Learning Cards */
+.learning-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #f26b1d;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.learning-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.learning-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  color: #2b6cb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.learning-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #718096;
+  letter-spacing: 0.8px;
+}
+
+.learning-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.learning-desc {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin: 15px 0 10px;
+}
+
+.learning-topics {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+  color: #2d3748;
+}
+
+.learning-topics ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+}
+
+.learning-topics li {
+  margin-bottom: 6px;
+}
+
+.learning-goal {
+  font-size: 0.88rem;
+  color: #4a5568;
+  background: #fff8f5;
+  border: 1px solid #ffe3d3;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.contact-cta h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.contact-cta p {
+  color: #d1d5db;
+  max-width: 650px;
+  margin: 0 auto 25px;
+}
+
+@media (max-width: 768px) {
+  .skills-hero h1 {
+    font-size: 2rem;
+  }
+  .section-heading h2 {
+    font-size: 1.6rem;
+  }
+}

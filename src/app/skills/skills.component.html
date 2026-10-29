@@ -1,0 +1,144 @@
+<section id="skills-page">
+  <!-- Navbar -->
+  <div class="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" routerLink="/spa">
+        <img src="../assets/images/Lfgromo (5).png" alt="LuisFerGRomo logo" />{{ name }}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/spa"><i class="fa fa-arrow-left"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/spa" fragment="resume">Currículum</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/skills">Capacidades & Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/portfolio">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/eng">| English</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Header -->
+  <div class="skills-hero">
+    <div class="container text-center">
+      <span class="hero-badge"><i class="fas fa-layer-group"></i> Experiencia &amp; Evolución Técnica</span>
+      <h1>Lo que sé realizar &amp; Nuevas Fronteras</h1>
+      <p class="lead">
+        Soluciones que diseño, opero y automatizo en producción, junto con las tecnologías que investigo y aprendo continuamente.
+      </p>
+      <div class="hero-anchors">
+        <a href="#capabilities" class="btn btn-outline-light btn-sm mr-2"><i class="fas fa-check-circle"></i> Lo que sé realizar</a>
+        <a href="#learning" class="btn btn-warning btn-sm"><i class="fas fa-bolt"></i> En qué me estoy formando</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content">
+    <!-- SECTION 1: PROVEN CAPABILITIES -->
+    <section id="capabilities" class="skills-section">
+      <div class="section-heading text-center">
+        <h2><i class="fas fa-cubes text-warning"></i> Lo Que Sé y Puedo Realizar</h2>
+        <p class="section-subtitle">Capacidades comprobadas aplicadas en entornos empresariales, universitarios y de alta escala.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4" *ngFor="let cap of capabilities">
+          <div class="skill-card h-100">
+            <div class="skill-card-header d-flex align-items-center">
+              <div class="skill-icon-wrapper mr-3">
+                <i [class]="cap.icon"></i>
+              </div>
+              <div>
+                <span class="skill-category">{{ cap.category }}</span>
+                <h3 class="skill-title mb-0">{{ cap.title }}</h3>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <p class="skill-desc">{{ cap.description }}</p>
+              <ul class="skill-highlights">
+                <li *ngFor="let point of cap.highlights">
+                  <i class="fas fa-check text-success mr-2"></i> {{ point }}
+                </li>
+              </ul>
+            </div>
+            <div class="skill-card-footer">
+              <div class="tools-badges">
+                <span class="badge badge-tool" *ngFor="let t of cap.tools">{{ t }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: LEARNING & NEXT FRONTIERS -->
+    <section id="learning" class="skills-section mt-5">
+      <div class="section-heading text-center">
+        <h2><i class="fas fa-seedling text-success"></i> Nuevas Skills en Aprendizaje Activo</h2>
+        <p class="section-subtitle">Fronteras técnicas en las que estoy invirtiendo tiempo, experimentando en mi Home Lab y certificándome.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4" *ngFor="let item of learningSkills">
+          <div class="learning-card h-100">
+            <div class="learning-card-header d-flex justify-content-between align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="learning-icon-wrapper mr-3">
+                  <i [class]="item.icon"></i>
+                </div>
+                <div>
+                  <span class="learning-category">{{ item.category }}</span>
+                  <h3 class="learning-title mb-0">{{ item.title }}</h3>
+                </div>
+              </div>
+              <span class="badge" [ngClass]="item.badgeClass">{{ item.badge }}</span>
+            </div>
+            <div class="learning-card-body">
+              <p class="learning-desc">{{ item.description }}</p>
+              <div class="learning-topics">
+                <b>Ejes clave de estudio y práctica:</b>
+                <ul>
+                  <li *ngFor="let topic of item.keyTopics">
+                    <i class="fas fa-chevron-right text-warning mr-2"></i> {{ topic }}
+                  </li>
+                </ul>
+              </div>
+              <div class="learning-goal">
+                <i class="fas fa-bullseye text-danger mr-1"></i> <b>Objetivo de aplicación:</b> {{ item.goal }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action / Contact box -->
+    <div class="contact-cta text-center my-5 p-5">
+      <h3>¿Tienes un reto técnico o una integración compleja en mente?</h3>
+      <p class="lead">Hablemos sobre cómo puedo aportar valor en automatización, datos, arquitectura de sistemas o ciberseguridad.</p>
+      <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn btn-warning btn-lg mr-2">
+        <i class="fas fa-envelope"></i> Contáctame por Correo
+      </a>
+      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
+        <i class="fab fa-linkedin"></i> Conectar en LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <div class="footer text-center py-4 bg-dark text-white-50">
+    <p class="mb-0">Diseñado con <i class="far fa-heart text-danger"></i> por {{ completeName }}</p>
+  </div>
+</section>
