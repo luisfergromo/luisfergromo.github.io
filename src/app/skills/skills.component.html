@@ -2,29 +2,39 @@
   <!-- Navbar -->
   <div class="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" routerLink="/spa">
+      <a class="navbar-brand" [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" role="button">
         <img src="../assets/images/Lfgromo (5).png" alt="LuisFerGRomo logo" />{{ name }}
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()"
+        aria-controls="navbarNav" [attr.aria-expanded]="!isMenuCollapsed" aria-label="Toggle navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" [class.show]="!isMenuCollapsed" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/spa"><i class="fa fa-arrow-left"></i> Inicio</a>
+            <a class="nav-link" [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" (click)="closeMenu()">
+              <i class="fa fa-arrow-left"></i> {{ currentLang === 'es' ? 'Inicio' : 'Home' }}
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/spa" fragment="resume">Currículum</a>
+            <a class="nav-link" [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" [fragment]="'resume'" (click)="closeMenu()">
+              {{ currentLang === 'es' ? 'Currículum' : 'Resume' }}
+            </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/skills">Capacidades & Skills</a>
+            <a class="nav-link" routerLink="/skills" (click)="closeMenu()">
+              {{ currentLang === 'es' ? 'Capacidades & Skills' : 'Capabilities & Skills' }}
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/portfolio">Portafolio</a>
+            <a class="nav-link" routerLink="/portfolio" (click)="closeMenu()">
+              {{ currentLang === 'es' ? 'Portafolio' : 'Portfolio' }}
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/eng">| English</a>
+            <a class="nav-link lang-switch" (click)="switchLanguage()" role="button">
+              {{ currentLang === 'es' ? '| English' : '| Español' }}
+            </a>
           </li>
         </ul>
       </div>
@@ -34,14 +44,22 @@
   <!-- Hero Header -->
   <div class="skills-hero">
     <div class="container text-center">
-      <span class="hero-badge"><i class="fas fa-layer-group"></i> Experiencia &amp; Evolución Técnica</span>
-      <h1>Lo que sé realizar &amp; Nuevas Fronteras</h1>
+      <span class="hero-badge">
+        <i class="fas fa-layer-group"></i> {{ currentLang === 'es' ? 'Experiencia & Evolución Técnica' : 'Experience & Technical Evolution' }}
+      </span>
+      <h1>{{ currentLang === 'es' ? 'Lo que sé realizar & Nuevas Fronteras' : 'What I Can Deliver & New Frontiers' }}</h1>
       <p class="lead">
-        Soluciones que diseño, opero y automatizo en producción, junto con las tecnologías que investigo y aprendo continuamente.
+        {{ currentLang === 'es' 
+          ? 'Soluciones que diseño, opero y automatizo en producción, junto con las tecnologías que investigo y aprendo continuamente.'
+          : 'Solutions I architect, operate, and automate in production, alongside the emerging technologies I continuously research and master.' }}
       </p>
       <div class="hero-anchors">
-        <a href="#capabilities" class="btn btn-outline-light btn-sm mr-2"><i class="fas fa-check-circle"></i> Lo que sé realizar</a>
-        <a href="#learning" class="btn btn-warning btn-sm"><i class="fas fa-bolt"></i> En qué me estoy formando</a>
+        <a href="#capabilities" class="btn btn-outline-light btn-sm mr-2 mb-2">
+          <i class="fas fa-check-circle"></i> {{ currentLang === 'es' ? 'Lo que sé realizar' : 'Proven Capabilities' }}
+        </a>
+        <a href="#learning" class="btn btn-warning btn-sm mb-2">
+          <i class="fas fa-bolt"></i> {{ currentLang === 'es' ? 'En qué me estoy formando' : 'Active Learning & R&D' }}
+        </a>
       </div>
     </div>
   </div>
@@ -50,8 +68,14 @@
     <!-- SECTION 1: PROVEN CAPABILITIES -->
     <section id="capabilities" class="skills-section">
       <div class="section-heading text-center">
-        <h2><i class="fas fa-cubes text-warning"></i> Lo Que Sé y Puedo Realizar</h2>
-        <p class="section-subtitle">Capacidades comprobadas aplicadas en entornos empresariales, universitarios y de alta escala.</p>
+        <h2>
+          <i class="fas fa-cubes text-warning"></i> {{ currentLang === 'es' ? 'Lo Que Sé y Puedo Realizar' : 'What I Deliver & Core Capabilities' }}
+        </h2>
+        <p class="section-subtitle">
+          {{ currentLang === 'es' 
+            ? 'Capacidades comprobadas aplicadas en entornos empresariales, universitarios y de alta escala.'
+            : 'Proven competencies deployed across enterprise, higher-education, and high-availability operations.' }}
+        </p>
       </div>
 
       <div class="row">
@@ -62,14 +86,14 @@
                 <i [class]="cap.icon"></i>
               </div>
               <div>
-                <span class="skill-category">{{ cap.category }}</span>
-                <h3 class="skill-title mb-0">{{ cap.title }}</h3>
+                <span class="skill-category">{{ currentLang === 'es' ? cap.category : (cap.categoryEn || cap.category) }}</span>
+                <h3 class="skill-title mb-0">{{ currentLang === 'es' ? cap.title : (cap.titleEn || cap.title) }}</h3>
               </div>
             </div>
             <div class="skill-card-body">
-              <p class="skill-desc">{{ cap.description }}</p>
+              <p class="skill-desc">{{ currentLang === 'es' ? cap.description : (cap.descriptionEn || cap.description) }}</p>
               <ul class="skill-highlights">
-                <li *ngFor="let point of cap.highlights">
+                <li *ngFor="let point of (currentLang === 'es' ? cap.highlights : (cap.highlightsEn || cap.highlights))">
                   <i class="fas fa-check text-success mr-2"></i> {{ point }}
                 </li>
               </ul>
@@ -87,8 +111,14 @@
     <!-- SECTION 2: LEARNING & NEXT FRONTIERS -->
     <section id="learning" class="skills-section mt-5">
       <div class="section-heading text-center">
-        <h2><i class="fas fa-seedling text-success"></i> Nuevas Skills en Aprendizaje Activo</h2>
-        <p class="section-subtitle">Fronteras técnicas en las que estoy invirtiendo tiempo, experimentando en mi Home Lab y certificándome.</p>
+        <h2>
+          <i class="fas fa-seedling text-success"></i> {{ currentLang === 'es' ? 'Nuevas Skills en Aprendizaje Activo' : 'Emerging Skills & Active Learning' }}
+        </h2>
+        <p class="section-subtitle">
+          {{ currentLang === 'es' 
+            ? 'Fronteras técnicas en las que estoy invirtiendo tiempo, experimentando en mi Home Lab y certificándome.'
+            : 'Technical frontiers where I invest dedicated focus, homelab experimentation, and certifications.' }}
+        </p>
       </div>
 
       <div class="row">
@@ -100,24 +130,24 @@
                   <i [class]="item.icon"></i>
                 </div>
                 <div>
-                  <span class="learning-category">{{ item.category }}</span>
-                  <h3 class="learning-title mb-0">{{ item.title }}</h3>
+                  <span class="learning-category">{{ currentLang === 'es' ? item.category : (item.categoryEn || item.category) }}</span>
+                  <h3 class="learning-title mb-0">{{ currentLang === 'es' ? item.title : (item.titleEn || item.title) }}</h3>
                 </div>
               </div>
-              <span class="badge" [ngClass]="item.badgeClass">{{ item.badge }}</span>
+              <span class="badge" [ngClass]="item.badgeClass">{{ currentLang === 'es' ? item.badge : (item.badgeEn || item.badge) }}</span>
             </div>
             <div class="learning-card-body">
-              <p class="learning-desc">{{ item.description }}</p>
+              <p class="learning-desc">{{ currentLang === 'es' ? item.description : (item.descriptionEn || item.description) }}</p>
               <div class="learning-topics">
-                <b>Ejes clave de estudio y práctica:</b>
+                <b>{{ currentLang === 'es' ? 'Ejes clave de estudio y práctica:' : 'Key study areas & hands-on focus:' }}</b>
                 <ul>
-                  <li *ngFor="let topic of item.keyTopics">
+                  <li *ngFor="let topic of (currentLang === 'es' ? item.keyTopics : (item.keyTopicsEn || item.keyTopics))">
                     <i class="fas fa-chevron-right text-warning mr-2"></i> {{ topic }}
                   </li>
                 </ul>
               </div>
               <div class="learning-goal">
-                <i class="fas fa-bullseye text-danger mr-1"></i> <b>Objetivo de aplicación:</b> {{ item.goal }}
+                <i class="fas fa-bullseye text-danger mr-1"></i> <b>{{ currentLang === 'es' ? 'Objetivo de aplicación:' : 'Target objective:' }}</b> {{ currentLang === 'es' ? item.goal : (item.goalEn || item.goal) }}
               </div>
             </div>
           </div>
@@ -127,19 +157,22 @@
 
     <!-- Call to action / Contact box -->
     <div class="contact-cta text-center my-5 p-5">
-      <h3>¿Tienes un reto técnico o una integración compleja en mente?</h3>
-      <p class="lead">Hablemos sobre cómo puedo aportar valor en automatización, datos, arquitectura de sistemas o ciberseguridad.</p>
-      <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn btn-warning btn-lg mr-2">
-        <i class="fas fa-envelope"></i> Contáctame por Correo
+      <h3>{{ currentLang === 'es' ? '¿Tienes un reto técnico o una integración compleja en mente?' : 'Have a technical challenge or complex integration in mind?' }}</h3>
+      <p class="lead">
+        {{ currentLang === 'es' 
+          ? 'Hablemos sobre cómo puedo aportar valor en automatización, datos, arquitectura de sistemas o ciberseguridad.'
+          : 'Let us connect on how I can add immediate value in workflow automation, data pipelines, systems architecture, or cybersecurity.' }}
+      </p>
+      <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn btn-warning btn-lg mr-2 mb-2">
+        <i class="fas fa-envelope"></i> {{ currentLang === 'es' ? 'Contáctame por Correo' : 'Send an Email' }}
       </a>
-      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
-        <i class="fab fa-linkedin"></i> Conectar en LinkedIn
+      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg mb-2">
+        <i class="fab fa-linkedin"></i> {{ currentLang === 'es' ? 'Conectar en LinkedIn' : 'Connect on LinkedIn' }}
       </a>
     </div>
   </div>
 
   <div class="footer text-center py-4 bg-dark text-white-50">
-    <p class="mb-0">Diseñado con <i class="far fa-heart text-danger"></i> por {{ completeName }}</p>
+    <p class="mb-0">{{ currentLang === 'es' ? 'Diseñado con' : 'Designed with' }} <i class="far fa-heart text-danger"></i> {{ currentLang === 'es' ? 'por' : 'by' }} {{ completeName }}</p>
   </div>
 </section>
-
