@@ -1,4 +1,5 @@
-<section id="header">
+<!-- ==================== WEB INTERFACE (SCREEN ONLY) ==================== -->
+<section id="header" class="d-print-none">
   <div class="container text-center">
     <div class="box">
       <img src="../assets/images/Lfgromo (5).png" alt="Luis Fernando Gutiérrez Romo avatar de perfil" />
@@ -12,7 +13,8 @@
     </div>
   </div>
 </section>
-<section id="body">
+
+<section id="body" class="d-print-none">
   <div class="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="spa#">
@@ -47,6 +49,7 @@
       </div>
     </nav>
   </div>
+
   <section class="socialmedia">
     <ul>
       <li>
@@ -64,23 +67,9 @@
           <i class="fas fa-envelope"></i>
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.twitter.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
     </ul>
   </section>
+
   <div class="about container" id="about">
     <div class="row">
       <div class="col-md-6 text-center">
@@ -100,6 +89,7 @@
       </div>
     </div>
   </div>
+
   <div class="social-icons">
     <ul>
       <li>
@@ -117,23 +107,9 @@
           <i class="fas fa-envelope"></i>
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.twitter.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/{{ name }}" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
     </ul>
   </div>
+
   <div class="resume" id="resume">
     <div class="container">
       <div class="row">
@@ -182,6 +158,7 @@
       </div>
     </div>
   </div>
+
   <div class="experience" id="experience">
     <div class="container">
       <h1 class="text-center">Habilidades Técnicas y Herramientas</h1>
@@ -196,12 +173,13 @@
       </div>
     </div>
   </div>
+
   <div class="contact" id="contact">
     <div class="container text-center">
-      <h1>Currículum en PDF</h1>
-      <p class="text-center">Descarga o imprime una copia de este currículum en formato PDF.</p>
+      <h1>Currículum en PDF (Formato ATS)</h1>
+      <p class="text-center">Descarga o imprime una copia estandarizada y optimizada para sistemas ATS.</p>
       <button type="button" (click)="printPdf()" class="btn btn-primary">
-        <i class="fa fa-download"> Descargar / Imprimir</i>
+        <i class="fa fa-download"> Descargar / Imprimir PDF (ATS)</i>
       </button>
     </div>
     <div class="footer text-center">
@@ -209,3 +187,78 @@
     </div>
   </div>
 </section>
+
+<!-- ==================== ATS RESUME DOCUMENT (PRINT ONLY) ==================== -->
+<div class="ats-resume d-none d-print-block">
+  <header class="ats-header">
+    <h1>{{ completeName }}</h1>
+    <h2>Senior IT Operations &amp; Systems Integrator</h2>
+    <p class="ats-contact-info">
+      Zapopan, Jalisco, México • luisfernando.gutierrezr@outlook.com • 
+      linkedin.com/in/LuisFerGRomo • github.com/LuisFerGRomo • luisfergromo.github.io
+    </p>
+  </header>
+
+  <section>
+    <h3 class="ats-section-title">Resumen Profesional</h3>
+    <p class="ats-summary">
+      Integrador de Sistemas y Operaciones de TI Senior con Maestría en Gestión de Tecnologías de la Información (ITESO), formación en Ingeniería Industrial y Certificación Profesional en Ciberseguridad. Especialista en orquestar ecosistemas digitales complejos, automatizar flujos de trabajo de negocio y desplegar infraestructura escalable y segura. Amplia experiencia aprovechando plataformas como Canvas LMS, Salesforce, Power Automate, n8n y Docker para resolver cuellos de botella operativos y construir arquitecturas resilientes. Experto en transformar datos operativos en decisiones estratégicas mediante Power BI y modelado DAX avanzado, garantizando alta disponibilidad, seguridad digital (Zero Trust, Shift-Left) e integridad empresarial.
+    </p>
+  </section>
+
+  <section>
+    <h3 class="ats-section-title">Habilidades Técnicas y Herramientas</h3>
+    <div class="ats-skills-grid">
+      <p><strong>Infraestructura &amp; Cloud:</strong> Docker, Google Cloud Platform (Cloud Run, IAM), Linux (Debian, Kali), Tailscale (Zero Trust), Raspberry Pi.</p>
+      <p><strong>Automatización &amp; Integración:</strong> n8n, Microsoft Power Automate, Salesforce Data Loader, GitHub Actions (CI/CD), REST APIs, Webhooks.</p>
+      <p><strong>Plataformas &amp; Datos:</strong> Canvas LMS, Canvas Catalog, Salesforce CRM, Power BI (DAX Modeling), SQL, Microsoft PowerApps.</p>
+      <p><strong>Ciberseguridad &amp; Análisis:</strong> Pentesting (Nmap, ffuf, Metasploit, Burp Suite), Marco MITRE ATT&amp;CK, Evaluación de Vulnerabilidades, Seguridad Shift-Left.</p>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="ats-section-title">Experiencia Profesional</h3>
+    <div class="ats-job-block" *ngFor="let experience of experiences">
+      <div class="ats-job-header">
+        <span>{{ experience.position_spa }}</span>
+        <span>{{ experience.initialYear }} – {{ experience.endYear || 'Presente' }}</span>
+      </div>
+      <div class="ats-job-company">
+        <span>{{ experience.company }}</span>
+        <span>{{ experience.location }}</span>
+      </div>
+      <ul class="ats-list" *ngIf="experience.tasks">
+        <li *ngFor="let text of experience.tasks">
+          {{ text.body_spa }}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="ats-section-title">Educación y Certificaciones</h3>
+    <div class="ats-job-block" *ngFor="let item of education">
+      <div class="ats-job-header">
+        <span>{{ item.title_spa }}</span>
+        <span><ng-container *ngIf="item.endingYear">{{ item.initialYear }} – {{ item.endingYear }}</ng-container></span>
+      </div>
+      <div class="ats-job-company">
+        <span *ngFor="let institute of item.company">{{ institute.name }}</span>
+      </div>
+      <ul class="ats-list" *ngIf="item.tasks">
+        <li *ngFor="let text of item.tasks">
+          {{ text.body_spa }}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="ats-section-title">Proyectos Comunitarios y Divulgación</h3>
+    <ul class="ats-list">
+      <li><strong>Ingeniería de Audio y Radio:</strong> Creador, editor técnico y locutor de la cápsula de divulgación tecnológica "Ingeniería Inversa" en Radio ITESO 95.1 FM. Operación de consolas profesionales AEQ CAPITOL IP12 y postproducción con Adobe Audition.</li>
+      <li><strong>Home Lab &amp; Edge Computing:</strong> Construcción de infraestructura autoalojada con Raspberry Pi, Docker y Tailscale para automatización local, despliegues IoT y ejecución de LLMs locales con Ollama.</li>
+      <li><strong>Telemetría y Rendimiento Deportivo:</strong> Procesamiento y telemetría de métricas biométricas en tiempo real con sensores y ecosistema Garmin (Epix Gen 2, HRM-Pro Plus).</li>
+    </ul>
+  </section>
+</div>

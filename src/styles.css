@@ -520,42 +520,151 @@ body {
   }
 }
 
-/* ==================== PRINT MEDIA ==================== */
+/* ==================== ATS RESUME PRINT STYLES ==================== */
 @media print {
-  * {
-    padding: 0;
-    margin: 0;
+  @page {
+    size: letter portrait;
+    margin: 10mm 14mm;
   }
+
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Ocultar interfaz web y elementos decorativos */
   #header,
   .nav-bar,
   .social-icons,
   .socialmedia,
-  .contact button,
+  .about,
+  .resume,
+  .experience,
+  .contact,
   .footer,
-  .btn {
+  .btn,
+  .scroll-btn,
+  .d-print-none {
     display: none !important;
   }
-  body, #body {
-    background-color: #fff !important;
-    color: #000 !important;
+
+  /* Contenedor estándar ATS (1 columna limpia sin graficos) */
+  .ats-resume {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #000000 !important;
   }
-  .about {
-    padding-top: 20px;
+
+  .ats-header {
+    text-align: center;
+    margin-bottom: 8pt;
+    border-bottom: 1.5pt solid #000000;
+    padding-bottom: 6pt;
   }
-  .resume {
-    padding-top: 20px;
-    background-color: transparent !important;
-    border: none !important;
+
+  .ats-header h1 {
+    font-size: 18pt !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5pt !important;
+    margin: 0 0 2pt 0 !important;
+    color: #000000 !important;
   }
-  .timeline::before {
-    display: none;
+
+  .ats-header h2 {
+    font-size: 11pt !important;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    margin: 0 0 4pt 0 !important;
   }
-  .timeline li {
-    box-shadow: none;
-    border: 1px solid #ccc;
-    break-inside: avoid;
+
+  .ats-contact-info {
+    font-size: 8.8pt !important;
+    color: #333333 !important;
+    margin: 0 !important;
   }
-  .timeline li::before {
-    display: none;
+
+  .ats-contact-info a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+
+  .ats-section-title {
+    font-size: 10.5pt !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5pt !important;
+    border-bottom: 1pt solid #000000 !important;
+    margin-top: 8pt !important;
+    margin-bottom: 4pt !important;
+    padding-bottom: 1.5pt !important;
+    color: #000000 !important;
+  }
+
+  .ats-summary {
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+    text-align: justify !important;
+    margin-bottom: 6pt !important;
+    color: #111111 !important;
+  }
+
+  .ats-job-block {
+    margin-bottom: 7pt !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .ats-job-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 9.8pt !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+  }
+
+  .ats-job-company {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 9pt !important;
+    font-style: italic !important;
+    color: #333333 !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .ats-list {
+    margin: 2pt 0 4pt 14pt !important;
+    padding: 0 !important;
+    list-style-type: disc !important;
+  }
+
+  .ats-list li {
+    font-size: 8.8pt !important;
+    line-height: 1.3 !important;
+    margin-bottom: 2pt !important;
+    color: #111111 !important;
+  }
+
+  .ats-skills-grid p {
+    font-size: 8.8pt !important;
+    line-height: 1.35 !important;
+    margin-bottom: 2.5pt !important;
+  }
+
+  .ats-skills-grid strong {
+    color: #000000 !important;
   }
 }
