@@ -1,34 +1,33 @@
 import { Component, OnInit } from "@angular/core";
-//import currentData from '../../assets/testJson.json';
-import curriculumData from '../../assets/SampleJson.json'
+import curriculumData from '../../assets/SampleJson.json';
 
-interface Data{
-  id:Number;
-  name:String;
-  description:String;
-}
-interface Experiences{
-  id:Number;
-  initialYear:Number;
-  position:String;
-  location?:String;
-  company?:String;
+interface Experiences {
+  id: Number;
+  initialYear: Number;
+  endYear?: Number;
+  position: String;
+  location?: String;
+  company?: String;
+  duration?: String;
   latestProjects?: any;
   tasks: any;
 }
-interface Education{
-  id:Number;
-  title:String;
-  initialYear:Number;
+
+interface Education {
+  id: Number;
+  title: String;
+  initialYear: Number;
   endingYear: Number;
-  tasks:any;
-  company:any;
+  tasks: any;
+  company: any;
 }
-interface Tools{
-  name:String;
-  elements:any;
-  icon:String;
+
+interface Tools {
+  name: String;
+  elements: any;
+  icon: String;
 }
+
 @Component({
   selector: "app-index",
   templateUrl: "./index.component.html",
@@ -37,16 +36,15 @@ interface Tools{
 export class IndexComponent implements OnInit {
   title = "index-view";
   name = "LuisFerGRomo";
-  completeName ="Luis Gutiérrez";
-  ngOnInit(): void {
-  }
+  completeName = "Luis Fernando Gutiérrez Romo";
+
+  ngOnInit(): void {}
+
   printPdf() {
     window.print();
   }
-  
-  //someData:Data[] = currentData[0].someData;
-  experiences:Experiences[] = curriculumData[0].experiences;
-  education:Education[] = curriculumData[0].education;
-  tools:Tools[] = curriculumData[0].tools;
 
+  experiences: Experiences[] = curriculumData[0].experiences;
+  education: Education[] = curriculumData[0].education;
+  tools: Tools[] = curriculumData[0].tools;
 }

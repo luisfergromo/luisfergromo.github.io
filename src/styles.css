@@ -398,7 +398,6 @@ body {
 }
 
 @media print {
-  @import url("tools/stylesheets/stylesheet.css");
 
   * {
     padding: 0;

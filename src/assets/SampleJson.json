@@ -3,50 +3,95 @@
         "experiences": [
             {
                 "id": 0,
-                "initialYear": 2017,
-                "position": "IT Coordinator",
-                "position_spa": "Coordinador de Tecnologías Educativas",
+                "initialYear": 2022,
+                "endYear": 2026,
+                "position": "Educational Technology Coordinator (Systems Integrator)",
+                "position_spa": "Coordinador de Tecnologías Educativas (Integrador de Sistemas)",
+                "company": "ITESO Universidad Jesuita de Guadalajara",
+                "location": "Zapopan, Jalisco, Mexico",
+                "duration": "4 years",
                 "tasks": [
                     {
                         "id": 0,
-                        "body": "Administrate Information Technologies at ITESO Continuing Education Office, with Technical Support at Operative Process, Educative Innovation and implementation of most popular platforms.",
-                        "body_spa": "Administrar las tecnologías de la información de la Oficina de Educación Continua en Iteso, mismas que son requeridas como soporte en diferentes procesos operativos así como el aporte mediante la innovación a la tecnología educativa a través de herramientas y plataformas de tendencia."
+                        "body": "Enterprise Systems Architecture: Architected scalable Canvas LMS and Canvas Catalog environments, leading cross-platform integrations to ensure operational continuity for high-volume continuous education programs.",
+                        "body_spa": "Arquitectura de Sistemas Empresariales: Diseñó entornos escalables de Canvas LMS y Canvas Catalog, liderando integraciones multiplataforma para garantizar la continuidad operativa en programas de educación continua de alto volumen."
+                    },
+                    {
+                        "id": 1,
+                        "body": "Data Pipelines & CRM Integration: Engineered automated data pipelines between Canvas LMS and Salesforce via Data Loader and n8n, eliminating manual entry, managing API rate limits, and enforcing strict enterprise data integrity.",
+                        "body_spa": "Tuberías de Datos e Integración CRM: Creó canalizaciones automatizadas de datos entre Canvas LMS y Salesforce mediante Data Loader y n8n, eliminando la captura manual, gestionando límites de llamadas API y garantizando la integridad de datos empresariales."
+                    },
+                    {
+                        "id": 2,
+                        "body": "Secure Infrastructure & Edge Computing: Deployed containerized integration services using Docker, implementing Zero Trust networks via Tailscale to secure internal APIs without exposing public ports to the internet.",
+                        "body_spa": "Infraestructura Segura y Computación Edge: Desplegó servicios de integración contenerizados con Docker, implementando redes Zero Trust mediante Tailscale para proteger APIs internas sin exponer puertos públicos a internet."
+                    },
+                    {
+                        "id": 3,
+                        "body": "Workflow Orchestration: Programmed automated multi-channel workflows with Microsoft Power Automate and custom HTML templates (Delivra) for academic credentialing and targeted corporate outreach.",
+                        "body_spa": "Orquestación de Flujos de Trabajo: Programó flujos multicanal automatizados con Microsoft Power Automate y plantillas HTML personalizadas (Delivra) para acreditaciones académicas y difusión corporativa focalizada."
+                    },
+                    {
+                        "id": 4,
+                        "body": "Advanced Business Intelligence: Developed executive Power BI dashboards utilizing complex DAX modeling, translating raw operational databases into actionable strategic metrics for institutional decision-making.",
+                        "body_spa": "Inteligencia de Negocios Avanzada (BI): Desarrolló paneles ejecutivos en Power BI utilizando modelado complejo con DAX, transformando bases de datos operativas en métricas estratégicas para la toma de decisiones institucionales."
+                    },
+                    {
+                        "id": 5,
+                        "body": "Systems Lifecycle Management: Directed strategic troubleshooting and sunsetting of enterprise applications, establishing strict data validation workflows and resolving root-cause software contingencies.",
+                        "body_spa": "Gestión del Ciclo de Vida de Sistemas: Dirigió la resolución estratégica de problemas y el retiro planificado de aplicaciones empresariales, estableciendo flujos rigurosos de validación de datos y resolviendo contingencias de causa raíz."
+                    }
+                ],
+                "latestProjects": [
+                    {
+                        "id": 0,
+                        "body": "Canvas LMS & Catalog Integration"
+                    },
+                    {
+                        "id": 1,
+                        "body": "Salesforce Data Pipeline (n8n & Data Loader)"
+                    },
+                    {
+                        "id": 2,
+                        "body": "Zero Trust Edge Services (Docker & Tailscale)"
+                    },
+                    {
+                        "id": 3,
+                        "body": "Executive Power BI & DAX Dashboards"
                     }
                 ]
             },
             {
                 "id": 1,
-                "initialYear": 2017,
-                "position": "Project Manager And QA Tester",
-                "position_spa": "Administrador de proyectos y aseguramiento de calidad.",
+                "initialYear": 2015,
+                "endYear": 2022,
+                "position": "IT Operations & Project Specialist",
+                "position_spa": "Especialista en Operaciones de TI y Proyectos",
+                "company": "ITESO Universidad Jesuita de Guadalajara",
+                "location": "Zapopan, Jalisco, Mexico",
+                "duration": "7 years",
                 "tasks": [
                     {
                         "id": 0,
-                        "body": "Technical writer.",
-                        "body_spa": "Escritor Técnico"
+                        "body": "Software Project Management: Coordinated agile development and implementation of key mobile applications for government and private sectors (including 'Jalisco Sin Hambre', 'UNIMA', and 'Mi ITESO'), managing delivery timelines, resources, and contingency plans.",
+                        "body_spa": "Gestión de Proyectos de Software: Coordinó el desarrollo ágil e implementación de aplicaciones móviles clave para sectores gubernamentales y privados ('Jalisco Sin Hambre', 'UNIMA' y 'Mi ITESO'), administrando cronogramas de entrega, recursos y planes de contingencia."
                     },
                     {
                         "id": 1,
-                        "body": "QA Manual Tester.",
-                        "body_spa": "Probador manual y automatizado de software."
+                        "body": "Data Analysis & Reporting: Leveraged Power BI and SQL to develop interactive reports and dashboards, transforming operational data into actionable strategic metrics to facilitate leadership decision-making.",
+                        "body_spa": "Análisis de Datos y Reportes: Utilizó Power BI y SQL para desarrollar informes interactivos y dashboards, convirtiendo datos operativos en métricas estratégicas para facilitar la toma de decisiones."
+                    },
+                    {
+                        "id": 2,
+                        "body": "Quality Assurance & Testing: Developed manual test cases (end-to-end and regression), logged incidents, tracked resolutions, and oversaw the final publication and deployment of applications on official app stores (iOS and Android).",
+                        "body_spa": "Aseguramiento de Calidad y Pruebas (QA): Desarrolló casos de prueba manuales (end-to-end y regresión), documentó incidencias, dio seguimiento a resoluciones y supervisó el despliegue final en tiendas oficiales (iOS y Android)."
                     },
                     {
                         "id": 3,
-                        "body": "Support the developers team in the implementation of new features.",
-                        "body_spa": "Apoyo a desarrolladores durante el desarrollo de nuevas implementaciones."
-                    },
-                    {
-                        "id": 4,
-                        "body": "Improve the contingency plan and control deadlines.",
-                        "body_spa": "Mejora en el plan de contingencia  y administración de proyectos."
-                    },
-                    {
-                        "id": 5,
-                        "body": "Manual and automation mobile testing.",
-                        "body_spa": "Prueba manual y automatizada de aplicaciones  móviles"
+                        "body": "Technical Support & Issue Resolution: Delivered specialized technical support for mobile applications developed by the Mobile Applications Laboratory, resolving user incidents promptly to maintain a seamless end-user experience.",
+                        "body_spa": "Soporte Técnico Especializado: Brindó soporte técnico especializado para aplicaciones móviles desarrolladas por el Laboratorio de Aplicaciones Móviles, resolviendo incidencias de usuarios de manera oportuna."
                     }
                 ],
-                "company": "ITESO, A.C.",
                 "latestProjects": [
                     {
                         "id": 0,
@@ -54,223 +99,133 @@
                     },
                     {
                         "id": 1,
-                        "body": "Mi ITESO"
-                    }
-                ],
-                "duration": "3 years",
-                "location": "México"
-            },
-            {
-                "id": 2,
-                "initialYear": 2021,
-                "position": "High school teacher",
-                "position_spa": "Profesor de bachillerato",
-                "tasks": [
-                    {
-                        "id": 0,
-                        "body": "Suject teacher: spanish & math.",
-                        "body_spa": "Profesor de asignatura: español y matemáticas."
-                    }
-                ],
-                "company": "Tec Monterrey.",
-                "latestProjects": [
-                    {
-                        "id": 0,
-                        "body": "Aprendamos Juntos"
-                    }
-                ],
-                "duration": ".5 years",
-                "location": "Online"
-            },
-            {
-                "id": 3,
-                "initialYear": 2010,
-                "endYear": 2011,
-                "position": "Provide hardware and software assistance.",
-                "position_spa": "Soporte técnico",
-                "tasks": [
-                    {
-                        "id": 0,
-                        "body": "Specialized tecnical Suport",
-                        "body_spa": "Asistencia tecnica especializada"
+                        "body": "UNIMA"
                     },
                     {
-                        "id": 1,
-                        "body": "Network and communication solving issues",
-                        "body_spa": "Solución de problemas de interconección de redes y telecomunicaciones."
+                        "id": 2,
+                        "body": "Mi ITESO"
                     }
-                ],
-                "company": "Telecable de Zapopan",
-                "latestProjects": null,
-                "duration": ".5 years",
-                "location": "Mexico"
+                ]
             }
         ],
         "education": [
             {
                 "id": 0,
-                "title": "Master IT management",
-                "title_spa": "Maestría Gestión de Tecnologías de la información",
+                "title": "Master's Degree in Information Technology Management (M.T.I.)",
+                "title_spa": "Maestría en Gestión de Tecnologías de la Información (M.T.I.)",
                 "initialYear": 2021,
-                "endingYear": 2024,
-                "tasks": null,
+                "endingYear": 2023,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Enterprise systems architecture, digital ecosystem governance, IT leadership and digital transformation.",
+                        "body_spa": "Arquitectura de sistemas empresariales, gobernanza de ecosistemas digitales, liderazgo de TI y transformación digital."
+                    }
+                ],
                 "company": [
                     {
                         "id": 0,
-                        "name": "Tec Milenio",
-                        "url": "https://tecmilenio.mx"
+                        "name": "ITESO Universidad Jesuita de Guadalajara",
+                        "url": "https://iteso.mx"
                     }
                 ]
             },
             {
-                "id": 0,
-                "title": "Industrial Engineering",
+                "id": 1,
+                "title": "Professional Certification in Cybersecurity",
+                "title_spa": "Certificación Profesional en Ciberseguridad",
+                "initialYear": 2025,
+                "endingYear": 2026,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Pentesting (Nmap, ffuf, Metasploit), MITRE ATT&CK framework, vulnerability assessment, and Zero Trust security.",
+                        "body_spa": "Pentesting (Nmap, ffuf, Metasploit), marco MITRE ATT&CK, evaluación de vulnerabilidades y seguridad Zero Trust."
+                    }
+                ],
+                "company": [
+                    {
+                        "id": 0,
+                        "name": "ITESO Universidad Jesuita de Guadalajara",
+                        "url": "https://iteso.mx"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Bachelor's Degree in Industrial Engineering",
                 "title_spa": "Ingeniería Industrial",
                 "initialYear": 2018,
                 "endingYear": 2021,
                 "tasks": [
                     {
                         "id": 0,
-                        "body": "Supply Chain",
-                        "body_spa": "Cadena de suministros"
-                    },
-                    {
-                        "id": 0,
-                        "body": "Project Management",
-                        "body_spa": "Administración de proyectos"
+                        "body": "Process optimization, continuous improvement, supply chain management, and operational systems.",
+                        "body_spa": "Optimización de procesos, mejora continua, administración de la cadena de suministro y sistemas operacionales."
                     }
                 ],
                 "company": [
                     {
                         "id": 0,
-                        "name": "Tec Milenio",
+                        "name": "Universidad Tecmilenio",
                         "url": "https://tecmilenio.mx"
-                    }
-                ]
-            },
-            {
-                "id": 1,
-                "title": "Basic iOS mobile development (BootCamp)",
-                "title_spa": "Desarrollo iOS (BootCamp)",
-                "initialYear": 2016,
-                "endingYear": null,
-                "tasks": [
-                    {
-                        "id": 0,
-                        "body": "Mobile development Obj-c and Swift",
-                        "body_spa": "Desarrollo móvil en lenguajes Obj-c y Swift."
-                    },
-                    {
-                        "id": 0,
-                        "body": "Perform use of web experience, create user interfaces.",
-                        "body_spa": "Mejora de experiencia de usuario, creación y diseño de interfaces."
-                    }
-                ],
-                "company": [
-                    {
-                        "id": 0,
-                        "name": "DevF MX",
-                        "url": "https://www.defv.mx/"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "title": ".Net Programming Lenguaje Course",
-                "title_spa": "Programación .NET",
-                "initialYear": 2013,
-                "endingYear": 2014,
-                "tasks": [
-                    {
-                        "id": 0,
-                        "body": "Develop mobile and desktop apps with .Net technology",
-                        "body_spa": "Desarrollo de Aplicaciones móviles y de escritorio con tecnología .Net"
-                    }
-                ],
-                "company": [
-                    {
-                        "id": 0,
-                        "name": "ITESO AC",
-                        "url": "https://www.iteso.mx/"
                     }
                 ]
             }
         ],
         "tools": [
             {
-                "name": "Project Management",
-                "name_spa": "Administración de Proyectos",
-                "icon": "fa fa-chart-line",
+                "name": "Infrastructure & Cloud",
+                "name_spa": "Infraestructura y Cloud",
+                "icon": "fas fa-cloud",
                 "elements": [
-                    {
-                        "id": 0,
-                        "name": "Jira",
-                        "url": ""
-                    },
-                    {
-                        "id": 1,
-                        "name": "Asana",
-                        "url": ""
-                    },
-                    {
-                        "id": 2,
-                        "name": "Taiga",
-                        "url": ""
-                    },
-                    {
-                        "id": 3,
-                        "name": "PMC Tool",
-                        "url": "https://pmc-tool.com/en/home/"
-                    }
+                    { "id": 0, "name": "Docker" },
+                    { "id": 1, "name": "Google Cloud Platform (Cloud Run, IAM)" },
+                    { "id": 2, "name": "Linux (Debian, Kali)" },
+                    { "id": 3, "name": "Tailscale (Zero Trust)" }
                 ]
             },
             {
-                "name": "Testing",
-                "name_spa": "Pruebas",
-                "icon": "fa fa-rocket",
+                "name": "Automation & Integration",
+                "name_spa": "Automatización e Integración",
+                "icon": "fas fa-cogs",
                 "elements": [
-                    {
-                        "id": 0,
-                        "name": "Katalon Studio",
-                        "url": ""
-                    },
-                    {
-                        "id": 1,
-                        "name": "Appium",
-                        "url": ""
-                    },
-                    {
-                        "id": 2,
-                        "name": "Manual Testing",
-                        "url": ""
-                    },
-                    {
-                        "id": 3,
-                        "name": "Testproject",
-                        "url": ""
-                    }
+                    { "id": 0, "name": "n8n Workflows" },
+                    { "id": 1, "name": "Microsoft Power Automate" },
+                    { "id": 2, "name": "Salesforce Data Loader" },
+                    { "id": 3, "name": "GitHub Actions (CI/CD)" }
                 ]
             },
             {
-                "name": "Development",
-                "name_spa": "Desarrollo",
-                "icon": "fa fa-laptop",
+                "name": "Platforms & Data",
+                "name_spa": "Plataformas y Datos",
+                "icon": "fas fa-database",
                 "elements": [
-                    {
-                        "id": 0,
-                        "name": "Xcode - iOS",
-                        "url": ""
-                    },
-                    {
-                        "id": 1,
-                        "name": "VS Code - Js, HTML & NodeJs",
-                        "url": ""
-                    },
-                    {
-                        "id": 2,
-                        "name": "Android Studio - Android",
-                        "url": ""
-                    }
+                    { "id": 0, "name": "Canvas LMS & Canvas Catalog" },
+                    { "id": 1, "name": "Salesforce CRM" },
+                    { "id": 2, "name": "Power BI & DAX Modeling" },
+                    { "id": 3, "name": "SQL & Microsoft PowerApps" }
+                ]
+            },
+            {
+                "name": "Security & Analysis",
+                "name_spa": "Ciberseguridad y Análisis",
+                "icon": "fas fa-shield-alt",
+                "elements": [
+                    { "id": 0, "name": "Pentesting (Nmap, ffuf, Metasploit)" },
+                    { "id": 1, "name": "MITRE ATT&CK Framework" },
+                    { "id": 2, "name": "Vulnerability Assessment" },
+                    { "id": 3, "name": "Zero Trust / Shift-Left" }
+                ]
+            },
+            {
+                "name": "Community & Projects",
+                "name_spa": "Proyectos y Difusión",
+                "icon": "fas fa-broadcast-tower",
+                "elements": [
+                    { "id": 0, "name": "Radio ITESO 95.1 FM ('Ingeniería Inversa')" },
+                    { "id": 1, "name": "Home Lab & Local LLMs (Docker, Ollama, RPi)" },
+                    { "id": 2, "name": "Biometric Telemetry (Garmin Epix 2)" }
                 ]
             }
         ]

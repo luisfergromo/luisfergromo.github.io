@@ -1,27 +1,33 @@
 import { Component, OnInit } from "@angular/core";
-import curriculumData from '../../assets/SampleJson.json'
-interface Experiences{
-    id:Number;
-  initialYear:Number;
-  position_spa:String;
-  location?:String;
-  company?:String;
+import curriculumData from '../../assets/SampleJson.json';
+
+interface Experiences {
+  id: Number;
+  initialYear: Number;
+  endYear?: Number;
+  position_spa: String;
+  location?: String;
+  company?: String;
+  duration?: String;
   latestProjects?: any;
   tasks: any;
 }
-interface Education{
-  id:Number;
-  title_spa:String;
-  initialYear:Number;
+
+interface Education {
+  id: Number;
+  title_spa: String;
+  initialYear: Number;
   endingYear: Number;
-  tasks:any;
-  company:any;
+  tasks: any;
+  company: any;
 }
-interface Tools{
-  name_spa:String;
-  icon:String;
-  elements:any;
+
+interface Tools {
+  name_spa: String;
+  icon: String;
+  elements: any;
 }
+
 @Component({
   selector: "app-spa",
   templateUrl: "./spa.component.html",
@@ -29,14 +35,17 @@ interface Tools{
 })
 export class SpaComponent implements OnInit {
   name = "LuisFerGRomo";
-  completeName ="Luis Gutiérrez";
+  completeName = "Luis Fernando Gutiérrez Romo";
+
   constructor() {}
 
   ngOnInit(): void {}
+
   printPdf() {
     window.print();
   }
-experiences: Experiences[]= curriculumData[0].experiences;
-education: Education[]= curriculumData[0].education;
-tools:Tools[]= curriculumData[0].tools;
+
+  experiences: Experiences[] = curriculumData[0].experiences;
+  education: Education[] = curriculumData[0].education;
+  tools: Tools[] = curriculumData[0].tools;
 }
