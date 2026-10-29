@@ -132,6 +132,27 @@
             },
             {
                 "id": 1,
+                "title": "Diploma in Managerial Skills and Leadership",
+                "title_spa": "Diplomado en Habilidades Gerenciales y Liderazgo",
+                "initialYear": 2024,
+                "endingYear": 2025,
+                "tasks": [
+                    {
+                        "id": 0,
+                        "body": "Leadership, organizational development, strategic management, and high-performance teams.",
+                        "body_spa": "Liderazgo, desarrollo organizacional, gestión estratégica y dirección de equipos de alto rendimiento."
+                    }
+                ],
+                "company": [
+                    {
+                        "id": 0,
+                        "name": "ITESO Universidad Jesuita de Guadalajara",
+                        "url": "https://iteso.mx"
+                    }
+                ]
+            },
+            {
+                "id": 2,
                 "title": "Professional Certification in Cybersecurity",
                 "title_spa": "Certificación Profesional en Ciberseguridad",
                 "initialYear": 2025,
@@ -152,7 +173,7 @@
                 ]
             },
             {
-                "id": 2,
+                "id": 3,
                 "title": "Bachelor's Degree in Industrial Engineering",
                 "title_spa": "Ingeniería Industrial",
                 "initialYear": 2018,

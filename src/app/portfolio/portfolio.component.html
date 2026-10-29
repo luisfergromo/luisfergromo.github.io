@@ -1,4 +1,5 @@
-<section id="body" class="portfolio-page">
+<section id="portfolio-page" class="portfolio-view">
+  <!-- Navbar -->
   <div class="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" routerLink="/spa">
@@ -11,7 +12,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/spa"><i class="fa fa-angle-left"></i> Inicio</a>
+            <a class="nav-link" routerLink="/spa"><i class="fa fa-arrow-left"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/spa" fragment="resume">Currículum</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/skills">Capacidades & Skills</a>
@@ -19,23 +23,102 @@
           <li class="nav-item active">
             <a class="nav-link" routerLink="/portfolio">Portafolio</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/eng">| English</a>
+          </li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="main">
-    <h1>Latest Projects</h1>
-    <div class="projects-grid">
-      <img src="../assets/images/JSH.png" alt="Jalisco Sin Hambre project" />
-      <img id="GT" src="../assets/images/GT.png" alt="Try For Us project" />
-      <img src="../assets/images/EMT.png" alt="Eres Mi Tipo project" />
-      <img src="../assets/images/Unima-Icon.png" alt="Unima project" />
+
+  <!-- Hero Banner -->
+  <div class="portfolio-hero">
+    <div class="container text-center">
+      <span class="hero-badge"><i class="fas fa-briefcase"></i> Proyectos Reales &amp; Arquitecturas</span>
+      <h1>Portafolio de Proyectos &amp; Soluciones</h1>
+      <p class="lead">
+        Desde integraciones de sistemas empresariales y flujos de automatización hasta aplicaciones móviles y laboratorios de ciberseguridad.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="btn btn-filter" [class.active]="selectedCategory === 'all'" (click)="filterCategory('all')">
+          Todos ({{ projects.length }})
+        </button>
+        <button class="btn btn-filter" [class.active]="selectedCategory === 'Enterprise & Cloud'" (click)="filterCategory('Enterprise & Cloud')">
+          <i class="fas fa-cloud"></i> Sistemas &amp; Cloud (Recientes)
+        </button>
+        <button class="btn btn-filter" [class.active]="selectedCategory === 'Labs & Difusión'" (click)="filterCategory('Labs & Difusión')">
+          <i class="fas fa-flask"></i> Labs &amp; Difusión
+        </button>
+        <button class="btn btn-filter" [class.active]="selectedCategory === 'Mobile & Software'" (click)="filterCategory('Mobile & Software')">
+          <i class="fas fa-mobile-alt"></i> Apps &amp; Software
+        </button>
+      </div>
     </div>
-    <h2>ITESO</h2>
-    <div class="projects-grid">
-      <img src="../assets/images/miiteso.png" alt="Mi ITESO app" />
-      <img src="../assets/images/TU.jpg" alt="Transporte Universitario app" />
-      <img src="../assets/images/EDC.png" alt="Educación Continua app" />
+  </div>
+
+  <!-- Main Content Projects Grid -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4" *ngFor="let proj of filteredProjects">
+        <div class="project-card h-100" [class.featured-border]="proj.featured">
+          <div class="card-header-bar d-flex justify-content-between align-items-center">
+            <span class="category-pill">{{ proj.categorySpa }}</span>
+            <span class="period-badge">{{ proj.period }}</span>
+          </div>
+
+          <div class="project-body d-flex flex-column flex-grow-1">
+            <div class="d-flex align-items-center mb-3">
+              <!-- Image Thumbnail or Icon -->
+              <div class="project-media-box mr-3">
+                <img *ngIf="proj.image" [src]="proj.image" [alt]="proj.title" class="project-thumb-img" />
+                <div *ngIf="!proj.image && proj.icon" class="project-icon-box">
+                  <i [class]="proj.icon"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title mb-1">{{ proj.title }}</h3>
+                <span class="project-org"><i class="fas fa-building text-warning mr-1"></i> {{ proj.organization }}</span>
+              </div>
+            </div>
+
+            <p class="project-description">{{ proj.description }}</p>
+
+            <div class="project-highlights">
+              <b>Logros e integraciones:</b>
+              <ul>
+                <li *ngFor="let h of proj.highlights">
+                  <i class="fas fa-check-circle text-success mr-2"></i> {{ h }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-footer mt-auto pt-3">
+              <div class="tech-stack-pills">
+                <span class="badge stack-pill" *ngFor="let t of proj.techStack">{{ t }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Contact CTA -->
+    <div class="portfolio-cta text-center my-5 p-5">
+      <h3>¿Interesado en implementar o automatizar una arquitectura similar?</h3>
+      <p class="lead">Estoy abierto a colaborar en proyectos de integración, datos, flujos de trabajo e infraestructura segura.</p>
+      <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn btn-warning btn-lg mr-2">
+        <i class="fas fa-envelope"></i> Contactar por Correo
+      </a>
+      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
+        <i class="fab fa-linkedin"></i> Conectar en LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <div class="footer text-center py-4 bg-dark text-white-50">
+    <p class="mb-0">Diseñado con <i class="far fa-heart text-danger"></i> por {{ completeName }}</p>
   </div>
 </section>
