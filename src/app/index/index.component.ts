@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
-import curriculumData from '../../assets/SampleJson.json';
+import curriculumData from '../../assets/resume-data.json';
 
 interface Experiences {
   id: Number;
