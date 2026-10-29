@@ -95,8 +95,9 @@ export class SpaComponent implements OnInit {
   switchLanguage(): void {
     this.closeMenu();
     localStorage.setItem('preferredLang', 'en');
-    if (this.currentSection) {
-      this.router.navigate(['/eng'], { fragment: this.currentSection });
+    const targetSection = this.currentSection || this.route.snapshot.fragment;
+    if (targetSection) {
+      this.router.navigate(['/eng'], { fragment: targetSection });
     } else {
       this.router.navigate(['/eng']);
     }

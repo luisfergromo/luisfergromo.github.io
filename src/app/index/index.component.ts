@@ -96,8 +96,9 @@ export class IndexComponent implements OnInit {
   switchLanguage(): void {
     this.closeMenu();
     localStorage.setItem('preferredLang', 'es');
-    if (this.currentSection) {
-      this.router.navigate(['/spa'], { fragment: this.currentSection });
+    const targetSection = this.currentSection || this.route.snapshot.fragment;
+    if (targetSection) {
+      this.router.navigate(['/spa'], { fragment: targetSection });
     } else {
       this.router.navigate(['/spa']);
     }

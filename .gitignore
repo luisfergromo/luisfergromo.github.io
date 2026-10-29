@@ -105,3 +105,8 @@ baseline.json
 
 # Husky
 .husky/_
+
+
+# Playwright
+/playwright-report/
+/test-results/
