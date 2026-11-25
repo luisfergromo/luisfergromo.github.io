@@ -1,0 +1,218 @@
+<div class="card-page">
+  <!-- Ambient background glow elements -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <!-- Top Action Navigation -->
+  <header class="card-top-nav">
+    <a [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" class="nav-back-btn" aria-label="Volver al inicio">
+      <i class="fas fa-arrow-left"></i>
+      <span>{{ currentLang === 'es' ? 'Sitio Web' : 'Main Site' }}</span>
+    </a>
+
+    <div class="nav-actions">
+      <!-- Language Switcher Pill -->
+      <div class="lang-pill" role="group" aria-label="Selector de idioma">
+        <button type="button" [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">ES</button>
+        <button type="button" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+      </div>
+
+      <!-- Quick Share Button -->
+      <button type="button" class="icon-action-btn" (click)="shareCard()" [title]="currentLang === 'es' ? 'Compartir tarjeta' : 'Share card'" aria-label="Compartir tarjeta">
+        <i class="fas fa-share-alt"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Digital Business Card -->
+  <main class="card-container">
+    <div class="business-card">
+      <!-- Profile Header -->
+      <div class="card-header-section">
+        <div class="avatar-wrapper">
+          <img src="assets/images/1678849232446.jpg" alt="Luis Fernando Gutiérrez Romo" class="profile-photo" />
+          <span class="status-indicator" [title]="currentLang === 'es' ? 'Activo / Disponible para proyectos' : 'Active / Open to opportunities'"></span>
+        </div>
+
+        <h1 class="person-name">{{ completeName }}</h1>
+        <div class="person-handle">@{{ name }}</div>
+
+        <div class="person-title-badge">
+          <i class="fas fa-shield-alt badge-icon"></i>
+          <span>{{ currentLang === 'es' ? titleEs : titleEn }}</span>
+        </div>
+
+        <div class="person-meta">
+          <div class="meta-item">
+            <i class="fas fa-university"></i>
+            <span>{{ institution }}</span>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{ location }}</span>
+          </div>
+        </div>
+
+        <div class="availability-tag">
+          <span class="pulsing-dot"></span>
+          {{ currentLang === 'es' ? 'Disponible para consultoría y proyectos' : 'Available for consulting & engineering projects' }}
+        </div>
+      </div>
+
+      <!-- Primary Action Buttons (vCard & QR) -->
+      <div class="primary-actions">
+        <button type="button" class="btn-primary-action" (click)="downloadVCard()" id="btn-save-contact">
+          <i class="fas fa-user-plus"></i>
+          <div class="btn-text-group">
+            <span class="btn-main-label">{{ currentLang === 'es' ? 'Guardar Contacto' : 'Save Contact' }}</span>
+            <span class="btn-sub-label">{{ currentLang === 'es' ? 'Descargar vCard (.vcf)' : 'Download vCard (.vcf)' }}</span>
+          </div>
+        </button>
+
+        <div class="secondary-btn-row">
+          <button type="button" class="btn-secondary-action" (click)="toggleQrModal()" id="btn-show-qr">
+            <i class="fas fa-qrcode"></i>
+            <span>{{ currentLang === 'es' ? 'Mostrar QR' : 'Show QR' }}</span>
+          </button>
+          <button type="button" class="btn-secondary-action" (click)="shareCard()" id="btn-share-card">
+            <i class="fas fa-share-alt"></i>
+            <span>{{ currentLang === 'es' ? 'Compartir' : 'Share' }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Direct Contact Highlight (Email) -->
+      <div class="contact-highlight-card">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-details">
+          <span class="contact-label">{{ currentLang === 'es' ? 'Correo Electrónico' : 'Direct Email' }}</span>
+          <a [href]="'mailto:' + email" class="contact-value">{{ email }}</a>
+        </div>
+        <button type="button" class="btn-copy-mini" (click)="copyEmail()" [title]="currentLang === 'es' ? 'Copiar correo' : 'Copy email'" aria-label="Copiar correo">
+          <i class="far fa-copy"></i>
+        </button>
+      </div>
+
+      <!-- Navigation & Social Links -->
+      <div class="quick-links-section">
+        <h2 class="section-heading">{{ currentLang === 'es' ? 'Enlaces & Conexiones' : 'Links & Connections' }}</h2>
+        
+        <div class="links-list">
+          <ng-container *ngFor="let link of links">
+            <!-- External link (LinkedIn, GitHub) -->
+            <a *ngIf="link.isExternal" [href]="link.url" target="_blank" rel="noopener noreferrer" class="link-card">
+              <div class="link-icon-box">
+                <i [class]="link.icon"></i>
+              </div>
+              <div class="link-info">
+                <span class="link-title">{{ currentLang === 'es' ? link.label : link.labelEn }}</span>
+                <span class="link-desc">{{ currentLang === 'es' ? link.sublabel : link.sublabelEn }}</span>
+              </div>
+              <i class="fas fa-chevron-right link-chevron"></i>
+            </a>
+
+            <!-- Internal Router Link (Portfolio, Skills, Resume) -->
+            <a *ngIf="link.isRouterLink" [routerLink]="link.url" class="link-card">
+              <div class="link-icon-box">
+                <i [class]="link.icon"></i>
+              </div>
+              <div class="link-info">
+                <span class="link-title">{{ currentLang === 'es' ? link.label : link.labelEn }}</span>
+                <span class="link-desc">{{ currentLang === 'es' ? link.sublabel : link.sublabelEn }}</span>
+              </div>
+              <i class="fas fa-chevron-right link-chevron"></i>
+            </a>
+          </ng-container>
+        </div>
+      </div>
+
+      <!-- Technical Pillars -->
+      <div class="pillars-section">
+        <h2 class="section-heading">{{ currentLang === 'es' ? 'Áreas de Especialidad' : 'Core Capabilities' }}</h2>
+        <div class="pillars-grid">
+          <div class="pillar-card" *ngFor="let pillar of pillars">
+            <div class="pillar-header">
+              <i [class]="pillar.icon"></i>
+              <h3>{{ currentLang === 'es' ? pillar.title : pillar.titleEn }}</h3>
+            </div>
+            <p>{{ currentLang === 'es' ? pillar.items : pillar.itemsEn }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Credentials Badges -->
+      <div class="credentials-section">
+        <h2 class="section-heading">{{ currentLang === 'es' ? 'Formación & Certificaciones' : 'Education & Credentials' }}</h2>
+        <div class="credentials-list">
+          <div class="credential-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="credential-info">
+              <strong>{{ currentLang === 'es' ? 'Maestría en Gestión de Tecnologías de Información' : 'Master\'s in IT Management' }}</strong>
+              <span>ITESO Universidad Jesuita de Guadalajara</span>
+            </div>
+          </div>
+          <div class="credential-badge">
+            <i class="fas fa-user-shield"></i>
+            <div class="credential-info">
+              <strong>{{ currentLang === 'es' ? 'Certificación Profesional en Ciberseguridad' : 'Professional Certification in Cybersecurity' }}</strong>
+              <span>ITESO Universidad Jesuita de Guadalajara</span>
+            </div>
+          </div>
+          <div class="credential-badge">
+            <i class="fas fa-cogs"></i>
+            <div class="credential-info">
+              <strong>{{ currentLang === 'es' ? 'Ingeniería Industrial' : 'Bachelor\'s in Industrial Engineering' }}</strong>
+              <span>Universidad Tecmilenio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Footer -->
+      <footer class="card-footer-section">
+        <a [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" class="footer-site-link">
+          <img src="assets/images/Lfgromo (5).png" alt="LuisFerGRomo logo" class="footer-avatar" />
+          <span>{{ currentLang === 'es' ? 'Explorar Sitio Web Completo' : 'Explore Full Portfolio Website' }} &rarr;</span>
+        </a>
+        <p class="footer-copy">&copy; 2026 Luis Fernando Gutiérrez Romo</p>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Interactive QR Code Modal -->
+  <div class="qr-modal-backdrop" *ngIf="showQrModal" (click)="toggleQrModal()">
+    <div class="qr-modal-content" (click)="$event.stopPropagation()">
+      <div class="qr-modal-header">
+        <h3>{{ currentLang === 'es' ? 'Código QR de Tarjeta' : 'Card QR Code' }}</h3>
+        <button type="button" class="btn-close-modal" (click)="toggleQrModal()" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="qr-code-body">
+        <div class="qr-image-container">
+          <!-- Direct crisp QR image to the card URL -->
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Fluisfergromo.github.io%2Fcard&margin=10"
+               alt="QR Code para tarjeta de presentación Luis Fernando Gutiérrez Romo"
+               class="qr-image" />
+        </div>
+        <p class="qr-hint">
+          {{ currentLang === 'es' 
+             ? 'Apunta con la cámara de tu smartphone para abrir esta tarjeta o compartirla directamente.' 
+             : 'Scan with your smartphone camera to instantly open or share this digital card.' }}
+        </p>
+        <div class="qr-url-box">
+          <code>https://luisfergromo.github.io/card</code>
+          <button type="button" class="btn-copy-url" (click)="copyToClipboard('https://luisfergromo.github.io/card', currentLang === 'es' ? '¡URL copiada!' : 'URL copied!')">
+            <i class="far fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback Notification -->
+  <div class="toast-notification" *ngIf="toastMessage">
+    <i class="fas fa-check-circle"></i>
+    <span>{{ toastMessage }}</span>
+  </div>
+</div>

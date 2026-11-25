@@ -32,6 +32,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" routerLink="/card" (click)="closeMenu()">
+              {{ currentLang === 'es' ? 'Tarjeta Digital' : 'Digital Card' }}
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link lang-switch" (click)="switchLanguage()" role="button">
               {{ currentLang === 'es' ? '| English' : '| Español' }}
             </a>

@@ -10,6 +10,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { SpaComponent } from "./spa/spa.component";
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SkillsComponent } from './skills/skills.component';
     IndexComponent,
     SpaComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

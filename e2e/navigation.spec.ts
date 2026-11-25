@@ -85,6 +85,41 @@ test.describe('Personal Portfolio Web Suite', () => {
     // URL must stay on /skills
     await expect(page).toHaveURL(/\/skills$/);
   });
+
+  test('should load digital business card on /card and redirect /tarjeta', async ({ page }) => {
+    await page.goto('/card');
+    await page.waitForLoadState('networkidle');
+
+    // Title and person name check
+    await expect(page.locator('.person-name')).toContainText('Luis Fernando Gutiérrez Romo');
+    await expect(page.locator('#btn-save-contact')).toBeVisible();
+    await expect(page.locator('#btn-show-qr')).toBeVisible();
+    await expect(page.locator('#btn-share-card')).toBeVisible();
+
+    // Verify avatar image has the updated photo
+    const avatar = page.locator('.profile-photo');
+    await expect(avatar).toBeVisible();
+    await expect(avatar).toHaveAttribute('src', /1678849232446\.jpg/);
+
+    // Test language switcher on card
+    const enBtn = page.locator('.lang-pill button', { hasText: 'EN' });
+    await enBtn.click();
+    await expect(page.locator('.btn-main-label')).toContainText('Save Contact');
+
+    const esBtn = page.locator('.lang-pill button', { hasText: 'ES' });
+    await esBtn.click();
+    await expect(page.locator('.btn-main-label')).toContainText('Guardar Contacto');
+
+    // Test QR modal toggle
+    await page.locator('#btn-show-qr').click();
+    await expect(page.locator('.qr-modal-content')).toBeVisible();
+    await page.locator('.btn-close-modal').click();
+    await expect(page.locator('.qr-modal-content')).not.toBeVisible();
+
+    // Test /tarjeta redirect
+    await page.goto('/tarjeta');
+    await expect(page).toHaveURL(/\/card$/);
+  });
 });
 
 test.describe('Mobile Navigation Suite', () => {
