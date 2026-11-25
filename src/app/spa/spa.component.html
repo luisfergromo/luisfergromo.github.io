@@ -2,9 +2,23 @@
 <section id="header" class="d-print-none">
   <div class="container text-center">
     <div class="box">
-      <img src="../assets/images/Lfgromo (5).png" alt="Luis Fernando Gutiérrez Romo avatar de perfil" />
-      <h1>{{ name }}</h1>
-      <p>Senior IT Operations & Systems Integrator</p>
+      <img src="../assets/images/1678849232446.jpg" alt="Foto profesional de Luis Fernando Gutiérrez Romo" />
+      <h1>{{ completeName }}</h1>
+      <p>IT Manager | Technical Project Manager | Senior Systems Integrator</p>
+      <div class="hero-meta">
+        <i class="fas fa-globe"></i> Remoto Global · Híbrido / Presencial (Guadalajara, MX) · Bilingüe (ES / EN)
+      </div>
+      <div class="hero-actions">
+        <button type="button" (click)="printPdf()" class="btn-hero-primary">
+          <i class="fas fa-download"></i> Descargar CV (ATS)
+        </button>
+        <a routerLink="/card" class="btn-hero-secondary">
+          <i class="fas fa-id-card"></i> Tarjeta Digital
+        </a>
+        <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn-hero-secondary">
+          <i class="fas fa-envelope"></i> Contactar
+        </a>
+      </div>
     </div>
   </div>
   <div class="scroll-btn">
@@ -94,11 +108,11 @@
         <br>
         <h4>{{ completeName }}</h4>
         <p>
-          <b>Senior IT Operations & Systems Integrator</b> con Maestría en Gestión de Tecnologías de la Información (ITESO), formación en Ingeniería Industrial y Certificación Profesional en Ciberseguridad.
+          <b>IT Manager, Technical Project Manager y Senior Systems Integrator</b> con más de 10 años de experiencia, Maestría en Gestión de Tecnologías de la Información (Universidad Tecmilenio), Ingeniería Industrial y Certificación Profesional en Ciberseguridad (ITESO).
           <br><br>
-          Especialista en orquestar ecosistemas digitales complejos, automatizar flujos de trabajo de negocio y desplegar infraestructura segura, escalable y resiliente (Docker, GCP, Tailscale, n8n, Salesforce, Canvas LMS y Power BI con DAX).
+          Especialista en liderar entregas de software, orquestar ecosistemas digitales complejos (Canvas LMS, Salesforce, Microsoft Power Automate, Power BI con DAX, Docker, GCP y Tailscale) y operar con equipos remotos globales o híbridos.
           <br><br>
-          Alineado con principios de seguridad digital moderna (Zero Trust, Shift-Left), computación perimetral y traducción de datos operativos en decisiones estratégicas.
+          Perfil bilingüe (Español / Inglés) que combina liderazgo técnico, arquitectura segura (Zero Trust) e inteligencia de negocios para decisiones estratégicas.
         </p>
       </div>
     </div>
@@ -147,7 +161,7 @@
           <ul class="timeline">
             <li *ngFor="let experience of experiences">
               <h4>
-                <span>{{experience.initialYear}}<ng-container *ngIf="experience.endYear"> – {{experience.endYear}}</ng-container> : </span>{{experience.position_spa}}
+                <span>{{experience.initialYear}}<ng-container *ngIf="experience.endYear"> - {{experience.endYear}}</ng-container> : </span>{{experience.position_spa}}
               </h4>
               <div *ngIf="experience.tasks">
                 <div *ngFor="let text of experience.tasks">
@@ -155,11 +169,13 @@
                 </div>
               </div>
               <br />
-              <b>Institución / Empresa</b> – {{experience.company}} ({{experience.location}})
+              <b>Institución / Empresa:</b> {{experience.company}} ({{experience.location}})
               <ng-container *ngIf="experience.latestProjects">
                 <br />
-                <b>Proyectos e integraciones clave: </b>
-                <a *ngFor="let project of experience.latestProjects">{{project.body}}<br /></a>
+                <b>Proyectos e integraciones clave:</b>
+                <div class="project-chips">
+                  <a routerLink="/portfolio" class="project-chip" *ngFor="let project of experience.latestProjects">{{project.body}}</a>
+                </div>
               </ng-container>
             </li>
           </ul>
@@ -256,18 +272,18 @@
 <div class="ats-resume d-none d-print-block">
   <header class="ats-header">
     <h1>{{ completeName }}</h1>
-    <h2>Senior IT Operations &amp; Systems Integrator</h2>
+    <h2>IT Manager | Technical Project Manager | Senior Systems Integrator</h2>
     <p class="ats-contact-info">
-      Zapopan, Jalisco, México • luisfernando.gutierrezr@outlook.com • 
-      linkedin.com/in/LuisFerGRomo • github.com/luisfergromo • luisfergromo.github.io • 
-      credly.com/users/luisfergromo • skills.google • tryhackme.com/p/VidarTheFoehammer
+      Zapopan, Jalisco, México | Remoto Global | Bilingüe (ES/EN) • luisfernando.gutierrezr@outlook.com • 
+      linkedin.com/in/LuisFerGRomo • github.com/luisfergromo • luisfergromo.vercel.app • 
+      credly.com/users/luisfergromo • tryhackme.com/p/VidarTheFoehammer
     </p>
   </header>
 
   <section>
     <h3 class="ats-section-title">Resumen Profesional</h3>
     <p class="ats-summary">
-      Integrador de Sistemas y Operaciones de TI Senior con Maestría en Gestión de Tecnologías de la Información (ITESO), formación en Ingeniería Industrial y Certificación Profesional en Ciberseguridad. Especialista en orquestar ecosistemas digitales complejos, automatizar flujos de trabajo de negocio y desplegar infraestructura escalable y segura. Amplia experiencia aprovechando plataformas como Canvas LMS, Salesforce, Power Automate, n8n y Docker para resolver cuellos de botella operativos y construir arquitecturas resilientes. Experto en transformar datos operativos en decisiones estratégicas mediante Power BI y modelado DAX avanzado, garantizando alta disponibilidad, seguridad digital (Zero Trust, Shift-Left) e integridad empresarial.
+      Líder de Operaciones de TI, Technical Project Manager e Integrador de Sistemas Senior con más de 10 años de experiencia conectando la arquitectura técnica con la ejecución de negocio. Maestro en Gestión de Tecnologías de la Información (Universidad Tecmilenio), Ingeniero Industrial y con diplomados en Habilidades Gerenciales y Ciberseguridad (ITESO). Trayectoria comprobada liderando proyectos de software, automatizando flujos multicanal con Microsoft Power Automate y orquestando ecosistemas empresariales complejos (Canvas LMS, Salesforce, Power BI con DAX, Docker, GCP, Tailscale) bajo principios Zero Trust.
     </p>
   </section>
 
@@ -275,8 +291,8 @@
     <h3 class="ats-section-title">Habilidades Técnicas y Herramientas</h3>
     <div class="ats-skills-grid">
       <p><strong>Infraestructura &amp; Cloud:</strong> Docker, Google Cloud Platform (Cloud Run, IAM), Linux (Debian, Kali), Tailscale (Zero Trust), Raspberry Pi.</p>
-      <p><strong>Automatización &amp; Integración:</strong> n8n, Microsoft Power Automate, Salesforce Data Loader, GitHub Actions (CI/CD), REST APIs, Webhooks.</p>
-      <p><strong>Plataformas &amp; Datos:</strong> Canvas LMS, Canvas Catalog, Salesforce CRM, Power BI (DAX Modeling), SQL, Microsoft PowerApps.</p>
+      <p><strong>Automatización &amp; Integración:</strong> Microsoft Power Automate, PowerApps, Salesforce Data Loader, REST APIs, Webhooks, GitHub Actions (CI/CD).</p>
+      <p><strong>Plataformas &amp; Datos:</strong> Canvas LMS, Canvas Catalog, Salesforce CRM, Power BI (DAX Modeling), SQL, PostgreSQL.</p>
       <p><strong>Ciberseguridad &amp; Análisis:</strong> Pentesting (Nmap, ffuf, Metasploit, Burp Suite), Marco MITRE ATT&amp;CK, Evaluación de Vulnerabilidades, Seguridad Shift-Left.</p>
     </div>
   </section>
@@ -286,7 +302,7 @@
     <div class="ats-job-block" *ngFor="let experience of experiences">
       <div class="ats-job-header">
         <span>{{ experience.position_spa }}</span>
-        <span>{{ experience.initialYear }} – {{ experience.endYear || 'Presente' }}</span>
+        <span>{{ experience.initialYear }} - {{ experience.endYear || 'Presente' }}</span>
       </div>
       <div class="ats-job-company">
         <span>{{ experience.company }}</span>
@@ -305,7 +321,7 @@
     <div class="ats-job-block" *ngFor="let item of education">
       <div class="ats-job-header">
         <span>{{ item.title_spa }}</span>
-        <span><ng-container *ngIf="item.endingYear">{{ item.initialYear }} – {{ item.endingYear }}</ng-container></span>
+        <span><ng-container *ngIf="item.endingYear">{{ item.initialYear }} - {{ item.endingYear }}</ng-container></span>
       </div>
       <div class="ats-job-company">
         <span *ngFor="let institute of item.company">{{ institute.name }}</span>

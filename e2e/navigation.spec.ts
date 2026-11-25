@@ -7,7 +7,9 @@ test.describe('Personal Portfolio Web Suite', () => {
     
     const heroTitle = page.locator('#header h1');
     await expect(heroTitle).toBeVisible();
-    await expect(heroTitle).toContainText('LuisFerGRomo');
+    await expect(heroTitle).toContainText('Luis Fernando Gutiérrez Romo');
+    await expect(page.locator('#header .hero-actions')).toBeVisible();
+    await expect(page.locator('body')).not.toContainText(/\bn8n\b/i);
     
     // Core sections should be present
     await expect(page.locator('#about')).toBeAttached();
@@ -101,18 +103,27 @@ test.describe('Personal Portfolio Web Suite', () => {
     await expect(avatar).toBeVisible();
     await expect(avatar).toHaveAttribute('src', /1678849232446\.jpg/);
 
-    // Test language switcher on card
+    // Verify no ITESO ORG header and no n8n mention; Master's points to Tecmilenio
+    await expect(page.locator('.card-header-section')).not.toContainText('ITESO');
+    await expect(page.locator('.credentials-list')).toContainText('Universidad Tecmilenio');
+    await expect(page.locator('body')).not.toContainText(/\bn8n\b/i);
+
+    // Test language switcher on card and dynamic Resume link (/spa vs /eng)
     const enBtn = page.locator('.lang-pill button', { hasText: 'EN' });
     await enBtn.click();
     await expect(page.locator('.btn-main-label')).toContainText('Save Contact');
+    await expect(page.locator('.links-list a[href="/eng"]')).toBeVisible();
 
     const esBtn = page.locator('.lang-pill button', { hasText: 'ES' });
     await esBtn.click();
     await expect(page.locator('.btn-main-label')).toContainText('Guardar Contacto');
+    await expect(page.locator('.links-list a[href="/spa"]')).toBeVisible();
 
-    // Test QR modal toggle
+    // Test QR modal toggle with local card-qr.svg and canonical Vercel URL
     await page.locator('#btn-show-qr').click();
     await expect(page.locator('.qr-modal-content')).toBeVisible();
+    await expect(page.locator('.qr-image')).toHaveAttribute('src', /card-qr\.svg/);
+    await expect(page.locator('.qr-url-box code')).toContainText('https://luisfergromo.vercel.app/card');
     await page.locator('.btn-close-modal').click();
     await expect(page.locator('.qr-modal-content')).not.toBeVisible();
 
@@ -144,6 +155,8 @@ test.describe('Personal Portfolio Web Suite', () => {
 
     const thmLink = page.locator('.verified-badge-item[href*="tryhackme.com/p/VidarTheFoehammer"]');
     await expect(thmLink).toBeVisible();
+
+    await expect(page.locator('#resume')).toContainText('Universidad Tecmilenio');
   });
 });
 

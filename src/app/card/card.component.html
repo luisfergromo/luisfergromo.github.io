@@ -44,8 +44,8 @@
 
         <div class="person-meta">
           <div class="meta-item">
-            <i class="fas fa-university"></i>
-            <span>{{ institution }}</span>
+            <i class="fas fa-globe"></i>
+            <span>{{ currentLang === 'es' ? workModesEs : workModesEn }}</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-map-marker-alt"></i>
@@ -55,7 +55,7 @@
 
         <div class="availability-tag">
           <span class="pulsing-dot"></span>
-          {{ currentLang === 'es' ? 'Disponible para consultoría y proyectos' : 'Available for consulting & engineering projects' }}
+          {{ currentLang === 'es' ? 'Disponible para liderazgo TI, integración y consultoría' : 'Open to IT Leadership, Systems Integration & Consulting' }}
         </div>
       </div>
 
@@ -114,7 +114,7 @@
             </a>
 
             <!-- Internal Router Link (Portfolio, Skills, Resume) -->
-            <a *ngIf="link.isRouterLink" [routerLink]="link.url" class="link-card">
+            <a *ngIf="link.isRouterLink" [routerLink]="currentLang === 'es' ? link.url : (link.urlEn || link.url)" class="link-card">
               <div class="link-icon-box">
                 <i [class]="link.icon"></i>
               </div>
@@ -150,7 +150,7 @@
             <i class="fas fa-graduation-cap"></i>
             <div class="credential-info">
               <strong>{{ currentLang === 'es' ? 'Maestría en Gestión de Tecnologías de Información' : 'Master\'s in IT Management' }}</strong>
-              <span>ITESO Universidad Jesuita de Guadalajara</span>
+              <span>Universidad Tecmilenio</span>
             </div>
           </div>
           <div class="credential-badge">
@@ -190,8 +190,8 @@
       </div>
       <div class="qr-code-body">
         <div class="qr-image-container">
-          <!-- Direct crisp QR image to the card URL -->
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Fluisfergromo.github.io%2Fcard&margin=10"
+          <!-- Local crisp QR SVG to the canonical card URL -->
+          <img src="assets/images/card-qr.svg"
                alt="QR Code para tarjeta de presentación Luis Fernando Gutiérrez Romo"
                class="qr-image" />
         </div>
@@ -201,8 +201,8 @@
              : 'Scan with your smartphone camera to instantly open or share this digital card.' }}
         </p>
         <div class="qr-url-box">
-          <code>https://luisfergromo.github.io/card</code>
-          <button type="button" class="btn-copy-url" (click)="copyToClipboard('https://luisfergromo.github.io/card', currentLang === 'es' ? '¡URL copiada!' : 'URL copied!')">
+          <code>https://luisfergromo.vercel.app/card</code>
+          <button type="button" class="btn-copy-url" (click)="copyToClipboard('https://luisfergromo.vercel.app/card', currentLang === 'es' ? '¡URL copiada!' : 'URL copied!')">
             <i class="far fa-copy"></i>
           </button>
         </div>

@@ -15,6 +15,7 @@ interface QuickLink {
   sublabel: string;
   sublabelEn: string;
   url: string;
+  urlEn?: string;
   isExternal: boolean;
   isRouterLink?: boolean;
   action?: 'email' | 'vcard' | 'share';
@@ -28,9 +29,10 @@ interface QuickLink {
 export class CardComponent implements OnInit {
   name = 'LuisFerGRomo';
   completeName = 'Luis Fernando Gutiérrez Romo';
-  titleEs = 'Senior IT Operations & Systems Integrator';
-  titleEn = 'Senior IT Operations & Systems Integrator';
-  institution = 'ITESO Universidad Jesuita de Guadalajara';
+  titleEs = 'IT Manager | Technical PM | Senior Systems Integrator';
+  titleEn = 'IT Manager | Technical PM | Senior Systems Integrator';
+  workModesEs = 'Remoto Global · Híbrido / Presencial GDL · Bilingüe (ES/EN)';
+  workModesEn = 'Remote Global · Hybrid / On-site GDL · Bilingual (ES/EN)';
   location = 'Zapopan, Jalisco, México';
   email = 'luisfernando.gutierrezr@outlook.com';
   currentLang: 'es' | 'en' = 'es';
@@ -51,8 +53,8 @@ export class CardComponent implements OnInit {
       icon: 'fas fa-cogs',
       title: 'Automatización & CRM',
       titleEn: 'Automation & CRM',
-      items: 'n8n · Salesforce · Power Automate',
-      itemsEn: 'n8n · Salesforce · Power Automate'
+      items: 'Power Automate · Salesforce · REST APIs',
+      itemsEn: 'Power Automate · Salesforce · REST APIs'
     },
     {
       icon: 'fas fa-chart-line',
@@ -143,6 +145,7 @@ export class CardComponent implements OnInit {
       sublabel: 'Experiencia laboral completa y trayectoria',
       sublabelEn: 'Full professional experience & trajectory',
       url: '/spa',
+      urlEn: '/eng',
       isExternal: false,
       isRouterLink: true
     }
@@ -170,17 +173,16 @@ export class CardComponent implements OnInit {
       'VERSION:3.0',
       'FN:Luis Fernando Gutiérrez Romo',
       'N:Gutiérrez Romo;Luis Fernando;;;',
-      'TITLE:Senior IT Operations & Systems Integrator',
-      'ORG:ITESO Universidad Jesuita de Guadalajara',
+      'TITLE:IT Manager | Technical PM | Senior Systems Integrator',
       'EMAIL;TYPE=INTERNET,WORK,PREF:luisfernando.gutierrezr@outlook.com',
-      'URL;TYPE=WORK:https://luisfergromo.github.io/',
+      'URL;TYPE=WORK:https://luisfergromo.vercel.app/',
       'X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/LuisFerGRomo/',
       'X-SOCIALPROFILE;TYPE=github:https://github.com/luisfergromo/',
       'X-SOCIALPROFILE;TYPE=credly:https://www.credly.com/users/luisfergromo',
       'X-SOCIALPROFILE;TYPE=google-skills:https://www.skills.google/public_profiles/4c860249-ffdf-40a0-ba83-58268e0313e7',
       'X-SOCIALPROFILE;TYPE=tryhackme:https://tryhackme.com/p/VidarTheFoehammer',
-      'ADR;TYPE=WORK:;;ITESO;Zapopan;Jalisco;;Mexico',
-      'NOTE:Senior IT Operations & Systems Integrator. Ciberseguridad (TryHackMe), Cloud (Google Cloud Skills), Credly, Automatización (n8n, Salesforce), BI (Power BI & DAX).',
+      'ADR;TYPE=WORK:;;;Zapopan;Jalisco;;Mexico',
+      'NOTE:IT Manager, Technical PM & Senior Systems Integrator. Microsoft Power Automate, Salesforce, Power BI & DAX, Cloud (Docker, GCP, Tailscale), Ciberseguridad (TryHackMe, Credly).',
       'END:VCARD'
     ].join('\r\n');
 
@@ -200,9 +202,9 @@ export class CardComponent implements OnInit {
   async shareCard(): Promise<void> {
     const title = 'Tarjeta Digital - Luis Fernando Gutiérrez Romo';
     const text = this.currentLang === 'es'
-      ? 'Tarjeta de presentación digital de Luis Fernando Gutiérrez Romo – Senior IT Operations & Systems Integrator'
-      : 'Digital Business Card of Luis Fernando Gutiérrez Romo – Senior IT Operations & Systems Integrator';
-    const url = window.location.href;
+      ? 'Tarjeta de presentación digital de Luis Fernando Gutiérrez Romo | IT Manager, Technical PM & Senior Systems Integrator'
+      : 'Digital Business Card of Luis Fernando Gutiérrez Romo | IT Manager, Technical PM & Senior Systems Integrator';
+    const url = 'https://luisfergromo.vercel.app/card';
 
     if (navigator.share) {
       try {

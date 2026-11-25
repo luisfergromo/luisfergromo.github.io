@@ -14,32 +14,32 @@
                     {
                         "id": 0,
                         "body": "Enterprise Systems Architecture: Architected scalable Canvas LMS and Canvas Catalog environments, leading cross-platform integrations to ensure operational continuity for high-volume continuous education programs.",
-                        "body_spa": "Arquitectura de Sistemas Empresariales: Diseñó entornos escalables de Canvas LMS y Canvas Catalog, liderando integraciones multiplataforma para garantizar la continuidad operativa en programas de educación continua de alto volumen."
+                        "body_spa": "Arquitectura de Sistemas Empresariales: Diseñé entornos escalables de Canvas LMS y Canvas Catalog, liderando integraciones multiplataforma para garantizar la continuidad operativa en programas de educación continua de alto volumen."
                     },
                     {
                         "id": 1,
-                        "body": "Data Pipelines & CRM Integration: Engineered automated data pipelines between Canvas LMS and Salesforce via Data Loader and n8n, eliminating manual entry, managing API rate limits, and enforcing strict enterprise data integrity.",
-                        "body_spa": "Tuberías de Datos e Integración CRM: Creó canalizaciones automatizadas de datos entre Canvas LMS y Salesforce mediante Data Loader y n8n, eliminando la captura manual, gestionando límites de llamadas API y garantizando la integridad de datos empresariales."
+                        "body": "Data Pipelines & CRM Integration: Engineered automated data pipelines between Canvas LMS and Salesforce via Salesforce Data Loader, REST APIs, and Microsoft Power Automate, eliminating manual entry, managing API rate limits, and enforcing strict enterprise data integrity.",
+                        "body_spa": "Pipelines de Datos e Integración CRM: Diseñé e implementé pipelines automatizados de datos entre Canvas LMS y Salesforce mediante Salesforce Data Loader, APIs REST y Microsoft Power Automate, eliminando la captura manual, gestionando límites de llamadas API y garantizando la integridad de datos empresariales."
                     },
                     {
                         "id": 2,
                         "body": "Secure Infrastructure & Edge Computing: Deployed containerized integration services using Docker, implementing Zero Trust networks via Tailscale to secure internal APIs without exposing public ports to the internet.",
-                        "body_spa": "Infraestructura Segura y Computación Edge: Desplegó servicios de integración contenerizados con Docker, implementando redes Zero Trust mediante Tailscale para proteger APIs internas sin exponer puertos públicos a internet."
+                        "body_spa": "Infraestructura Segura y Computación Edge: Desplegué servicios de integración contenerizados con Docker, implementando redes Zero Trust mediante Tailscale para proteger APIs internas sin exponer puertos públicos a internet."
                     },
                     {
                         "id": 3,
                         "body": "Workflow Orchestration: Programmed automated multi-channel workflows with Microsoft Power Automate and custom HTML templates (Delivra) for academic credentialing and targeted corporate outreach.",
-                        "body_spa": "Orquestación de Flujos de Trabajo: Programó flujos multicanal automatizados con Microsoft Power Automate y plantillas HTML personalizadas (Delivra) para acreditaciones académicas y difusión corporativa focalizada."
+                        "body_spa": "Orquestación de Flujos de Trabajo: Programé flujos multicanal automatizados con Microsoft Power Automate y plantillas HTML personalizadas (Delivra) para acreditaciones académicas y difusión corporativa focalizada."
                     },
                     {
                         "id": 4,
                         "body": "Advanced Business Intelligence: Developed executive Power BI dashboards utilizing complex DAX modeling, translating raw operational databases into actionable strategic metrics for institutional decision-making.",
-                        "body_spa": "Inteligencia de Negocios Avanzada (BI): Desarrolló paneles ejecutivos en Power BI utilizando modelado complejo con DAX, transformando bases de datos operativas en métricas estratégicas para la toma de decisiones institucionales."
+                        "body_spa": "Inteligencia de Negocios Avanzada (BI): Desarrollé paneles ejecutivos en Power BI utilizando modelado complejo con DAX, transformando bases de datos operativas en métricas estratégicas para la toma de decisiones institucionales."
                     },
                     {
                         "id": 5,
                         "body": "Systems Lifecycle Management: Directed strategic troubleshooting and sunsetting of enterprise applications, establishing strict data validation workflows and resolving root-cause software contingencies.",
-                        "body_spa": "Gestión del Ciclo de Vida de Sistemas: Dirigió la resolución estratégica de problemas y el retiro planificado de aplicaciones empresariales, estableciendo flujos rigurosos de validación de datos y resolviendo contingencias de causa raíz."
+                        "body_spa": "Gestión del Ciclo de Vida de Sistemas: Dirigí la resolución estratégica de problemas y el retiro planificado de aplicaciones empresariales, estableciendo flujos rigurosos de validación de datos y resolviendo contingencias de causa raíz."
                     }
                 ],
                 "latestProjects": [
@@ -49,7 +49,7 @@
                     },
                     {
                         "id": 1,
-                        "body": "Salesforce Data Pipeline (n8n & Data Loader)"
+                        "body": "Salesforce Data Pipeline (Data Loader & APIs)"
                     },
                     {
                         "id": 2,
@@ -74,22 +74,22 @@
                     {
                         "id": 0,
                         "body": "Software Project Management: Coordinated agile development and implementation of key mobile applications for government and private sectors (including 'Jalisco Sin Hambre', 'UNIMA', and 'Mi ITESO'), managing delivery timelines, resources, and contingency plans.",
-                        "body_spa": "Gestión de Proyectos de Software: Coordinó el desarrollo ágil e implementación de aplicaciones móviles clave para sectores gubernamentales y privados ('Jalisco Sin Hambre', 'UNIMA' y 'Mi ITESO'), administrando cronogramas de entrega, recursos y planes de contingencia."
+                        "body_spa": "Gestión de Proyectos de Software: Coordiné el desarrollo ágil e implementación de aplicaciones móviles clave para sectores gubernamentales y privados ('Jalisco Sin Hambre', 'UNIMA' y 'Mi ITESO'), administrando cronogramas de entrega, recursos y planes de contingencia."
                     },
                     {
                         "id": 1,
                         "body": "Data Analysis & Reporting: Leveraged Power BI and SQL to develop interactive reports and dashboards, transforming operational data into actionable strategic metrics to facilitate leadership decision-making.",
-                        "body_spa": "Análisis de Datos y Reportes: Utilizó Power BI y SQL para desarrollar informes interactivos y dashboards, convirtiendo datos operativos en métricas estratégicas para facilitar la toma de decisiones."
+                        "body_spa": "Análisis de Datos y Reportes: Utilicé Power BI y SQL para desarrollar informes interactivos y dashboards, convirtiendo datos operativos en métricas estratégicas para facilitar la toma de decisiones."
                     },
                     {
                         "id": 2,
                         "body": "Quality Assurance & Testing: Developed manual test cases (end-to-end and regression), logged incidents, tracked resolutions, and oversaw the final publication and deployment of applications on official app stores (iOS and Android).",
-                        "body_spa": "Aseguramiento de Calidad y Pruebas (QA): Desarrolló casos de prueba manuales (end-to-end y regresión), documentó incidencias, dio seguimiento a resoluciones y supervisó el despliegue final en tiendas oficiales (iOS y Android)."
+                        "body_spa": "Aseguramiento de Calidad y Pruebas (QA): Desarrollé casos de prueba manuales (end-to-end y regresión), documenté incidencias, di seguimiento a resoluciones y supervisé el despliegue final en tiendas oficiales (iOS y Android)."
                     },
                     {
                         "id": 3,
                         "body": "Technical Support & Issue Resolution: Delivered specialized technical support for mobile applications developed by the Mobile Applications Laboratory, resolving user incidents promptly to maintain a seamless end-user experience.",
-                        "body_spa": "Soporte Técnico Especializado: Brindó soporte técnico especializado para aplicaciones móviles desarrolladas por el Laboratorio de Aplicaciones Móviles, resolviendo incidencias de usuarios de manera oportuna."
+                        "body_spa": "Soporte Técnico Especializado: Brindé soporte técnico especializado para aplicaciones móviles desarrolladas por el Laboratorio de Aplicaciones Móviles, resolviendo incidencias de usuarios de manera oportuna."
                     }
                 ],
                 "latestProjects": [
@@ -113,7 +113,7 @@
                 "id": 0,
                 "title": "Master's Degree in Information Technology Management (M.T.I.)",
                 "title_spa": "Maestría en Gestión de Tecnologías de la Información (M.T.I.)",
-                "initialYear": 2021,
+                "initialYear": 2022,
                 "endingYear": 2023,
                 "tasks": [
                     {
@@ -125,8 +125,8 @@
                 "company": [
                     {
                         "id": 0,
-                        "name": "ITESO Universidad Jesuita de Guadalajara",
-                        "url": "https://iteso.mx"
+                        "name": "Universidad Tecmilenio",
+                        "url": "https://tecmilenio.mx"
                     }
                 ]
             },
@@ -211,9 +211,9 @@
                 "name_spa": "Automatización e Integración",
                 "icon": "fas fa-cogs",
                 "elements": [
-                    { "id": 0, "name": "n8n Workflows" },
-                    { "id": 1, "name": "Microsoft Power Automate" },
-                    { "id": 2, "name": "Salesforce Data Loader" },
+                    { "id": 0, "name": "Microsoft Power Automate" },
+                    { "id": 1, "name": "Microsoft Power Platform (PowerApps)" },
+                    { "id": 2, "name": "Salesforce Data Loader & REST APIs" },
                     { "id": 3, "name": "GitHub Actions (CI/CD)" }
                 ]
             },

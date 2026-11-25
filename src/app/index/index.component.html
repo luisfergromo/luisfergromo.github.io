@@ -2,9 +2,23 @@
 <section id="header" class="d-print-none">
   <div class="container text-center">
     <div class="box">
-      <img src="../assets/images/Lfgromo (5).png" alt="Luis Fernando Gutiérrez Romo profile avatar" />
-      <h1>{{ name }}</h1>
-      <p>Senior IT Operations & Systems Integrator</p>
+      <img src="../assets/images/1678849232446.jpg" alt="Luis Fernando Gutiérrez Romo professional photo" />
+      <h1>{{ completeName }}</h1>
+      <p>IT Manager | Technical Project Manager | Senior Systems Integrator</p>
+      <div class="hero-meta">
+        <i class="fas fa-globe"></i> Remote (Global) · Hybrid / On-site (Guadalajara, MX) · Bilingual (ES / EN)
+      </div>
+      <div class="hero-actions">
+        <button type="button" (click)="printPdf()" class="btn-hero-primary">
+          <i class="fas fa-download"></i> Download CV (ATS)
+        </button>
+        <a routerLink="/card" class="btn-hero-secondary">
+          <i class="fas fa-id-card"></i> Digital Card
+        </a>
+        <a href="mailto:luisfernando.gutierrezr@outlook.com" class="btn-hero-secondary">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
     </div>
   </div>
   <div class="scroll-btn">
@@ -94,11 +108,11 @@
         <br>
         <h4>{{ completeName }}</h4>
         <p>
-          <b>Senior IT Operations & Systems Integrator</b> with a Master's in Information Technology Management (ITESO), an Industrial Engineering background, and Professional Certification in Cybersecurity.
+          <b>IT Manager, Technical Project Manager & Senior Systems Integrator</b> with 10+ years of experience, a Master's in Information Technology Management (Universidad Tecmilenio), an Industrial Engineering degree, and Professional Certification in Cybersecurity (ITESO).
           <br><br>
-          Proven expertise in orchestrating complex digital ecosystems, automating business workflows, and deploying scalable, secure infrastructure (Docker, GCP, Tailscale, n8n, Salesforce, Canvas LMS, Power BI & DAX).
+          Proven track record leading cross-functional software delivery and orchestrating complex digital ecosystems (Canvas LMS, Salesforce, Microsoft Power Automate, Power BI & DAX, Docker, GCP, Tailscale) for global remote and hybrid teams.
           <br><br>
-          Strong advocate for modern digital security compliance (Zero Trust, Shift-Left), edge computing, and translating raw operational data into actionable strategic insights.
+          Bilingual (Spanish / English) leader combining hands-on systems architecture, Zero Trust security practices, and executive BI reporting.
         </p>
       </div>
     </div>
@@ -146,7 +160,7 @@
           <h3 class="text-center">My Professional Experience</h3>
           <ul class="timeline">
             <li *ngFor="let experience of experiences">
-              <h4><span>{{experience.initialYear}}<ng-container *ngIf="experience.endYear"> – {{experience.endYear}}</ng-container> : </span>{{experience.position}}</h4>
+              <h4><span>{{experience.initialYear}}<ng-container *ngIf="experience.endYear"> - {{experience.endYear}}</ng-container> : </span>{{experience.position}}</h4>
               <div *ngIf="experience.tasks">
                 <div *ngFor="let text of experience.tasks">
                   <p>{{text.body}}</p>
@@ -156,8 +170,10 @@
               <b>Organization / Company:</b> {{experience.company}} ({{experience.location}})
               <ng-container *ngIf="experience.latestProjects">
                 <br />
-                <b>Key Projects & Integrations: </b>
-                <a *ngFor="let project of experience.latestProjects"> {{ project.body}}<br /></a>
+                <b>Key Projects & Integrations:</b>
+                <div class="project-chips">
+                  <a routerLink="/portfolio" class="project-chip" *ngFor="let project of experience.latestProjects">{{ project.body }}</a>
+                </div>
               </ng-container>
             </li>
           </ul>
@@ -254,18 +270,18 @@
 <div class="ats-resume d-none d-print-block">
   <header class="ats-header">
     <h1>{{ completeName }}</h1>
-    <h2>Senior IT Operations &amp; Systems Integrator</h2>
+    <h2>IT Manager | Technical Project Manager | Senior Systems Integrator</h2>
     <p class="ats-contact-info">
-      Zapopan, Jalisco, Mexico • luisfernando.gutierrezr@outlook.com • 
-      linkedin.com/in/LuisFerGRomo • github.com/luisfergromo • luisfergromo.github.io • 
-      credly.com/users/luisfergromo • skills.google • tryhackme.com/p/VidarTheFoehammer
+      Zapopan, Jalisco, Mexico | Open to Remote (Global) | Bilingual (ES/EN) • luisfernando.gutierrezr@outlook.com • 
+      linkedin.com/in/LuisFerGRomo • github.com/luisfergromo • luisfergromo.vercel.app • 
+      credly.com/users/luisfergromo • tryhackme.com/p/VidarTheFoehammer
     </p>
   </header>
 
   <section>
     <h3 class="ats-section-title">Summary</h3>
     <p class="ats-summary">
-      Versatile IT Operations &amp; Systems Integrator with a Master's in Information Technology Management and a background in Industrial Engineering. Proven expertise in orchestrating complex digital ecosystems, automating business workflows, and deploying scalable infrastructure. Skilled in leveraging platforms like Canvas LMS, Salesforce, Power Automate, and Docker to bridge the gap between operational bottlenecks and robust technical architecture. Adept at translating raw operational data into actionable strategic insights using Power BI and DAX, while ensuring high system availability, streamlined multichannel communication, and strict digital security compliance (Zero Trust, Shift-Left).
+      IT Operations Leader, Technical Project Manager, and Senior Systems Integrator with 10+ years of experience bridging technical architecture and business execution. Hold a Master's in Information Technology Management (Universidad Tecmilenio), an Industrial Engineering degree, and specialized diplomas in Managerial Leadership and Cybersecurity (ITESO). Proven track record leading cross-functional software delivery, automating multi-channel business workflows with Microsoft Power Automate, and orchestrating complex enterprise ecosystems (Canvas LMS, Salesforce, Power BI &amp; DAX, Docker, GCP, Tailscale) under Zero Trust security principles.
     </p>
   </section>
 
@@ -273,8 +289,8 @@
     <h3 class="ats-section-title">Technical Skills &amp; Platforms</h3>
     <div class="ats-skills-grid">
       <p><strong>Infrastructure &amp; Cloud:</strong> Docker, Google Cloud Platform (Cloud Run, IAM), Linux (Debian, Kali), Tailscale (Zero Trust), Raspberry Pi.</p>
-      <p><strong>Automation &amp; Integration:</strong> n8n, Microsoft Power Automate, Salesforce Data Loader, GitHub Actions (CI/CD), REST APIs, Webhooks.</p>
-      <p><strong>Platforms &amp; Data:</strong> Canvas LMS, Canvas Catalog, Salesforce CRM, Power BI (DAX Modeling), SQL, Microsoft PowerApps.</p>
+      <p><strong>Automation &amp; Integration:</strong> Microsoft Power Automate, PowerApps, Salesforce Data Loader, REST APIs, Webhooks, GitHub Actions (CI/CD).</p>
+      <p><strong>Platforms &amp; Data:</strong> Canvas LMS, Canvas Catalog, Salesforce CRM, Power BI (DAX Modeling), SQL, PostgreSQL.</p>
       <p><strong>Security &amp; Analysis:</strong> Pentesting (Nmap, ffuf, Metasploit, Burp Suite), MITRE ATT&amp;CK Framework, Vulnerability Assessment, Shift-Left Security.</p>
     </div>
   </section>
@@ -284,7 +300,7 @@
     <div class="ats-job-block" *ngFor="let experience of experiences">
       <div class="ats-job-header">
         <span>{{ experience.position }}</span>
-        <span>{{ experience.initialYear }} – {{ experience.endYear || 'Present' }}</span>
+        <span>{{ experience.initialYear }} - {{ experience.endYear || 'Present' }}</span>
       </div>
       <div class="ats-job-company">
         <span>{{ experience.company }}</span>
@@ -303,7 +319,7 @@
     <div class="ats-job-block" *ngFor="let item of education">
       <div class="ats-job-header">
         <span>{{ item.title }}</span>
-        <span><ng-container *ngIf="item.endingYear">{{ item.initialYear }} – {{ item.endingYear }}</ng-container></span>
+        <span><ng-container *ngIf="item.endingYear">{{ item.initialYear }} - {{ item.endingYear }}</ng-container></span>
       </div>
       <div class="ats-job-company">
         <span *ngFor="let institute of item.company">{{ institute.name }}</span>

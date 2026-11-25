@@ -120,6 +120,14 @@
               <div class="tech-stack-pills">
                 <span class="badge stack-pill" *ngFor="let t of proj.techStack">{{ t }}</span>
               </div>
+              <div class="project-links mt-2" *ngIf="proj.repoUrl || proj.demoUrl">
+                <a *ngIf="proj.repoUrl" [href]="proj.repoUrl" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fab fa-github"></i> {{ currentLang === 'es' ? 'Ver código' : 'View Code' }}
+                </a>
+                <a *ngIf="proj.demoUrl" [href]="proj.demoUrl" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fas fa-external-link-alt"></i> {{ currentLang === 'es' ? (proj.demoLabelEs || 'Ver demo') : (proj.demoLabelEn || 'Live Demo') }}
+                </a>
+              </div>
             </div>
           </div>
         </div>

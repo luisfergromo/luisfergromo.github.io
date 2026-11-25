@@ -73,14 +73,14 @@ export class SkillsComponent implements OnInit {
       highlights: [
         'Sincronización automatizada entre Canvas LMS y Salesforce CRM.',
         'Manejo de rate limits de APIs y validación de consistencia de datos.',
-        'Eliminación de captura manual y orquestación con n8n y Data Loader.'
+        'Eliminación de captura manual mediante Microsoft Power Automate y Salesforce Data Loader.'
       ],
       highlightsEn: [
         'Automated synchronization between Canvas LMS and Salesforce CRM.',
         'API rate-limit handling and data consistency validation.',
-        'Elimination of manual data entry via n8n and Salesforce Data Loader orchestration.'
+        'Elimination of manual data entry via Microsoft Power Automate and Salesforce Data Loader.'
       ],
-      tools: ['n8n', 'Salesforce CRM', 'Salesforce Data Loader', 'Power Automate']
+      tools: ['Power Automate', 'Salesforce CRM', 'Salesforce Data Loader', 'REST APIs']
     },
     {
       title: 'Infraestructura Segura & Computación Edge',

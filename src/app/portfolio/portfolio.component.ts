@@ -18,6 +18,10 @@ export interface PortfolioProject {
   image?: string;
   icon?: string;
   featured?: boolean;
+  repoUrl?: string;
+  demoUrl?: string;
+  demoLabelEs?: string;
+  demoLabelEn?: string;
 }
 
 @Component({
@@ -43,8 +47,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2022 – 2026',
-      periodEn: '2022 – 2026',
+      period: '2022 - 2026',
+      periodEn: '2022 - 2026',
       featured: true,
       description: 'Arquitectura, despliegue y administración integral de Canvas LMS y Canvas Catalog para programas de educación continua masiva e institucional.',
       descriptionEn: 'End-to-end architecture, deployment, and administration of Canvas LMS and Canvas Catalog for enterprise continuing education and institutional academic programs.',
@@ -59,32 +63,33 @@ export class PortfolioComponent implements OnInit {
         'Presenter / Participant at Canvas Connect Mexico City 2025.'
       ],
       techStack: ['Canvas LMS', 'Canvas Catalog', 'LTI', 'REST APIs', 'Cloud'],
-      image: '../assets/images/EDC.png'
+      image: '../assets/images/EDC.png',
+      repoUrl: 'https://github.com/luisfergromo/CURSOS-FLEXIBLES-ITESO'
     },
     {
       id: 'salesforce-pipeline',
-      title: 'Pipeline de Datos Canvas LMS ↔ Salesforce CRM',
-      titleEn: 'Canvas LMS ↔ Salesforce CRM Data Pipeline',
+      title: 'Pipeline de Datos Canvas LMS <-> Salesforce CRM',
+      titleEn: 'Canvas LMS <-> Salesforce CRM Data Pipeline',
       category: 'Enterprise & Cloud',
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2022 – 2026',
-      periodEn: '2022 – 2026',
+      period: '2022 - 2026',
+      periodEn: '2022 - 2026',
       featured: true,
-      description: 'Diseño e implementación de tuberías automáticas de datos entre el entorno LMS y Salesforce CRM para eliminar captura manual de leads y estudiantes.',
+      description: 'Diseño e implementación de pipelines automatizados de datos entre el entorno LMS y Salesforce CRM para eliminar captura manual de leads y estudiantes.',
       descriptionEn: 'Design and implementation of automated data pipelines between Canvas LMS and Salesforce CRM to eliminate manual student and lead data entry.',
       highlights: [
-        'Automatización con Salesforce Data Loader y flujos n8n programados.',
+        'Automatización con Salesforce Data Loader, flujos en Microsoft Power Automate y APIs REST.',
         'Manejo estricto de cuotas y rate limits de API garantizando consistencia de datos.',
         'Reducción drástica del tiempo de procesamiento administrativo.'
       ],
       highlightsEn: [
-        'Automated ETL using Salesforce Data Loader and scheduled n8n workflows.',
+        'Automated ETL using Salesforce Data Loader, Microsoft Power Automate, and REST APIs.',
         'Strict rate-limit handling and API quota management ensuring data consistency.',
         'Drastic reduction in administrative processing time.'
       ],
-      techStack: ['Salesforce CRM', 'Data Loader', 'n8n', 'APIs', 'Automatización'],
+      techStack: ['Salesforce CRM', 'Data Loader', 'Power Automate', 'REST APIs', 'Automatización'],
       icon: 'fas fa-sync-alt'
     },
     {
@@ -95,8 +100,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO / Infraestructura',
       organizationEn: 'ITESO / Infrastructure',
-      period: '2023 – 2026',
-      periodEn: '2023 – 2026',
+      period: '2023 - 2026',
+      periodEn: '2023 - 2026',
       featured: true,
       description: 'Despliegue de microservicios de integración contenerizados mediante Docker, protegidos por redes perimetrales privadas Zero Trust.',
       descriptionEn: 'Deployment of containerized integration microservices using Docker, secured with Zero Trust private perimeter networking.',
@@ -121,8 +126,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2023 – 2026',
-      periodEn: '2023 – 2026',
+      period: '2023 - 2026',
+      periodEn: '2023 - 2026',
       featured: true,
       description: 'Modelado y desarrollo de tableros de control ejecutivos interactivos y métricas DAX avanzadas para la toma de decisiones institucionales.',
       descriptionEn: 'Modeling and development of interactive executive dashboards and advanced DAX measures for academic retention and operational decision-making.',
@@ -147,8 +152,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2022 – 2024',
-      periodEn: '2022 – 2024',
+      period: '2022 - 2024',
+      periodEn: '2022 - 2024',
       description: 'Automatizaciones institucionales para agilizar aprobaciones de cursos, comunicaciones a estudiantes y emisión de constancias.',
       descriptionEn: 'Institutional workflow automations to streamline course approvals, student communications, and badge credential issuance.',
       highlights: [
@@ -168,14 +173,14 @@ export class PortfolioComponent implements OnInit {
     // ==================== LABORATORIOS, DIFUSIÓN & INVESTIGACIÓN (2023 - 2026) ====================
     {
       id: 'radio-iteso',
-      title: 'Radio ITESO 95.1 FM – Conducción "Ingeniería Inversa"',
-      titleEn: 'Radio ITESO 95.1 FM – "Ingeniería Inversa" Show',
+      title: 'Radio ITESO 95.1 FM | Conducción "Ingeniería Inversa"',
+      titleEn: 'Radio ITESO 95.1 FM | "Ingeniería Inversa" Show',
       category: 'Labs & Difusión',
       categorySpa: 'Laboratorios & Difusión',
       organization: 'Radio ITESO 95.1 FM / ITESO',
       organizationEn: 'Radio ITESO 95.1 FM / ITESO',
-      period: '2023 – Presente',
-      periodEn: '2023 – Present',
+      period: '2023 - Presente',
+      periodEn: '2023 - Present',
       featured: true,
       description: 'Producción, ingeniería técnica y locución de la cápsula semanal de divulgación tecnológica y podcast "Ingeniería Inversa".',
       descriptionEn: 'Production, technical engineering, and hosting of the weekly technology and culture radio segment and podcast "Ingeniería Inversa".',
@@ -200,23 +205,24 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Laboratorios & Difusión',
       organization: 'Laboratorio Personal de I+D',
       organizationEn: 'Personal R&D Lab',
-      period: '2024 – Presente',
-      periodEn: '2024 – Present',
+      period: '2024 - Presente',
+      periodEn: '2024 - Present',
       featured: true,
-      description: 'Infraestructura autoalojada con microservicios contenerizados, ejecución de modelos de lenguaje locales (Ollama) y telemetría deportiva Garmin.',
-      descriptionEn: 'Self-hosted homelab environment running local language models with Ollama, containerized microservices, and Garmin sports biometric telemetry.',
+      description: 'Infraestructura autoalojada con microservicios contenerizados, ejecución de modelos de lenguaje locales (Ollama) y servidor MCP open-source para telemetría Garmin.',
+      descriptionEn: 'Self-hosted homelab environment running local language models with Ollama, containerized microservices, and an open-source Garmin Health MCP Server.',
       highlights: [
+        'Servidor open-source Garmin Health MCP + bot de Telegram con Gemini AI para coaching y métricas biométricas.',
         'Inferencia local de modelos Mistral y Llama sin enviar datos a la nube pública vía APIs FastAPI.',
-        'Captura y procesamiento de métricas biométricas en tiempo real (HRV, zonas de frecuencia, carga de fatiga) con sensores Garmin.',
         'Acceso remoto cifrado con Tailscale y filtrado de red local con Pi-hole.'
       ],
       highlightsEn: [
+        'Open-source Garmin Health MCP Server + Telegram AI coach analyzing recovery, training load, and HRV.',
         'Local inference of Mistral and Llama models via FastAPI endpoints without cloud data leakage.',
-        'Real-time processing of biometric streams (HRV, heart rate zones, training load) from Garmin sensors.',
         'Encrypted mesh connectivity with Tailscale and local network filtering via Pi-hole.'
       ],
-      techStack: ['Ollama', 'Local LLMs', 'Docker', 'FastAPI', 'Garmin Telemetry', 'Raspberry Pi'],
-      icon: 'fas fa-server'
+      techStack: ['Ollama', 'MCP Server', 'Docker', 'FastAPI', 'Garmin Telemetry', 'Raspberry Pi'],
+      icon: 'fas fa-server',
+      repoUrl: 'https://github.com/luisfergromo/garmin-health-mcp'
     },
     {
       id: 'tryhackme-labs',
@@ -226,8 +232,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Laboratorios & Difusión',
       organization: 'Práctica Ofensiva y Defensiva Continua',
       organizationEn: 'Offensive & Defensive Security Practice',
-      period: '2024 – Presente',
-      periodEn: '2024 – Present',
+      period: '2024 - Presente',
+      periodEn: '2024 - Present',
       description: 'Entrenamiento continuo en técnicas de seguridad ofensiva/defensiva, análisis de vulnerabilidades y mapeo al marco MITRE ATT&CK.',
       descriptionEn: 'Continuous hands-on offensive and defensive cybersecurity training, practical penetration testing, and MITRE ATT&CK framework mapping.',
       highlights: [
@@ -241,10 +247,40 @@ export class PortfolioComponent implements OnInit {
         'Shift-Left security mindset applied to software architectures and integrations.'
       ],
       techStack: ['Kali Linux', 'Burp Suite', 'Nmap', 'MITRE ATT&CK', 'OWASP Top 10'],
-      icon: 'fas fa-shield-alt'
+      icon: 'fas fa-shield-alt',
+      demoUrl: 'https://tryhackme.com/p/VidarTheFoehammer',
+      demoLabelEs: 'Perfil TryHackMe',
+      demoLabelEn: 'TryHackMe Profile'
     },
 
-    // ==================== DESARROLLO DE SOFTWARE & APPS MÓVILES (HISTÓRICO) ====================
+    // ==================== DESARROLLO DE SOFTWARE & APPS MÓVILES ====================
+    {
+      id: '1link-access',
+      title: '1link-access | Bio Links Open Source para Devs',
+      titleEn: '1link-access | Open-Source Bio Links for Devs',
+      category: 'Mobile & Software',
+      categorySpa: 'Desarrollo de Software & Móvil',
+      organization: 'Proyecto Open Source',
+      organizationEn: 'Open Source Project',
+      period: '2024 - Presente',
+      periodEn: '2024 - Present',
+      description: 'Alternativa ligera y open-source a Linktree pensada para desarrolladores, construida con React y JavaScript y lista para despliegue en Vercel.',
+      descriptionEn: 'Lightweight open-source Linktree alternative built for developers with React and JavaScript, ready for instant Vercel deployment.',
+      highlights: [
+        'Configuración centralizada de enlaces y marca personal sin dependencias de suscripciones SaaS.',
+        'Despliegue automatizado en Vercel con alto rendimiento y diseño responsivo.'
+      ],
+      highlightsEn: [
+        'Centralized personal branding and link hub without recurring SaaS subscriptions.',
+        'Automated Vercel deployment with fast load times and responsive layout.'
+      ],
+      techStack: ['React', 'JavaScript', 'Vercel', 'Open Source'],
+      icon: 'fas fa-link',
+      repoUrl: 'https://github.com/luisfergromo/1link-access',
+      demoUrl: 'https://1link-access.vercel.app',
+      demoLabelEs: 'Ver Demo',
+      demoLabelEn: 'Live Demo'
+    },
     {
       id: 'jalisco-sin-hambre',
       title: 'Jalisco Sin Hambre',
@@ -253,8 +289,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Desarrollo de Software & Móvil',
       organization: 'Laboratorio de Aplicaciones Móviles ITESO / Gobierno de Jalisco & Banco de Alimentos',
       organizationEn: 'ITESO Mobile Lab / Jalisco Government & Food Bank',
-      period: '2020 – 2021',
-      periodEn: '2020 – 2021',
+      period: '2020 - 2021',
+      periodEn: '2020 - 2021',
       description: 'Aplicación móvil de apoyo logístico y social desarrollada durante la emergencia sanitaria por COVID-19 para la canalización de despensas a familias vulnerables.',
       descriptionEn: 'Emergency logistics mobile application to distribute humanitarian food aid to vulnerable families during the COVID-19 pandemic.',
       highlights: [
@@ -276,8 +312,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Desarrollo de Software & Móvil',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2018 – 2022',
-      periodEn: '2018 – 2022',
+      period: '2018 - 2022',
+      periodEn: '2018 - 2022',
       description: 'Aplicación móvil oficial para la comunidad universitaria de ITESO (estudiantes, profesores y colaboradores).',
       descriptionEn: 'Official mobile application for the ITESO university community (students, faculty, and administrative staff).',
       highlights: [
@@ -295,14 +331,14 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 'unima',
-      title: 'UNIMA – Diagnósticos Rápidos',
-      titleEn: 'UNIMA – Fast Diagnostic Testing App',
+      title: 'UNIMA | Diagnósticos Rápidos',
+      titleEn: 'UNIMA | Fast Diagnostic Testing App',
       category: 'Mobile & Software',
       categorySpa: 'Desarrollo de Software & Móvil',
       organization: 'Laboratorio de Aplicaciones Móviles ITESO / UNIMA Biotech',
       organizationEn: 'ITESO Mobile Applications Lab / UNIMA Biotech',
-      period: '2017 – 2020',
-      periodEn: '2017 – 2020',
+      period: '2017 - 2020',
+      periodEn: '2017 - 2020',
       description: 'Colaboración en el aseguramiento de calidad para la aplicación biotecnológica de lectura rápida de pruebas diagnósticas mediante cámara de smartphone.',
       descriptionEn: 'Quality assurance and testing collaboration for biotech app enabling fast diagnostic test reading via smartphone camera.',
       highlights: [
@@ -324,8 +360,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Desarrollo de Software & Móvil',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
       organizationEn: 'ITESO Jesuit University of Guadalajara',
-      period: '2017 – 2020',
-      periodEn: '2017 – 2020',
+      period: '2017 - 2020',
+      periodEn: '2017 - 2020',
       description: 'Plataforma para el seguimiento de rutas, paradas y horarios del sistema de transporte de autobuses universitarios de ITESO.',
       descriptionEn: 'Real-time bus tracking application for routes, stops, and schedules of the ITESO university transportation system.',
       highlights: [
@@ -347,8 +383,8 @@ export class PortfolioComponent implements OnInit {
       categorySpa: 'Desarrollo de Software & Móvil',
       organization: 'Sector Social / ITESO',
       organizationEn: 'Social Sector / ITESO',
-      period: '2017 – 2019',
-      periodEn: '2017 – 2019',
+      period: '2017 - 2019',
+      periodEn: '2017 - 2019',
       description: 'Aplicación para incentivar y conectar donantes de sangre voluntarios con receptores en situaciones de emergencia médica.',
       descriptionEn: 'Social impact mobile application connecting voluntary blood donors with recipients during medical emergencies.',
       highlights: [

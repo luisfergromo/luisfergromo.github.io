@@ -211,6 +211,34 @@
   border: 1px solid #e2e8f0;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d45a0a;
+  background-color: #fff5ef;
+  border: 1px solid #ffd8bf;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.project-link-btn:hover {
+  background-color: #f26b1d;
+  color: #ffffff;
+  border-color: #f26b1d;
+  text-decoration: none;
+}
+
 /* Portfolio CTA */
 .portfolio-cta {
   background: linear-gradient(135deg, #181818 0%, #282828 100%);
