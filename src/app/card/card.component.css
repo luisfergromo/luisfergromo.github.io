@@ -1,7 +1,6 @@
 /* ==================== CARD PAGE CONTAINER ==================== */
 .card-page {
   min-height: 100vh;
-  background-color: #0d0f12;
   background: radial-gradient(circle at top center, #1b2028 0%, #0d0f12 70%);
   color: #f8f9fa;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -13,7 +12,6 @@
   align-items: center;
 }
 
-/* Ambient glow orbs */
 .bg-orb {
   position: absolute;
   border-radius: 50%;
@@ -138,7 +136,7 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 28px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
   padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
@@ -187,7 +185,6 @@
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 0.25rem 0;
-  letter-spacing: -0.02em;
   line-height: 1.25;
 }
 
@@ -210,7 +207,6 @@
   font-size: 0.88rem;
   font-weight: 600;
   margin-bottom: 0.85rem;
-  line-height: 1.3;
 }
 
 .badge-icon {
@@ -260,9 +256,8 @@
 }
 
 @keyframes pulse-dot {
-  0% { transform: scale(0.9); opacity: 0.6; }
+  0%, 100% { transform: scale(0.9); opacity: 0.6; }
   50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 8px #34d399; }
-  100% { transform: scale(0.9); opacity: 0.6; }
 }
 
 /* ==================== PRIMARY ACTIONS ==================== */
@@ -291,13 +286,8 @@
 .btn-primary-action:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(242, 107, 29, 0.55);
-  background: linear-gradient(135deg, #ff7a30 0%, #ffa05e 100%);
   color: #ffffff;
   text-decoration: none;
-}
-
-.btn-primary-action:active {
-  transform: translateY(0);
 }
 
 .btn-primary-action i {
@@ -319,7 +309,6 @@
 .btn-sub-label {
   font-size: 0.76rem;
   opacity: 0.9;
-  font-weight: 400;
 }
 
 .secondary-btn-row {
@@ -352,7 +341,6 @@
 
 .btn-secondary-action i {
   color: #f26b1d;
-  font-size: 1rem;
 }
 
 /* ==================== DIRECT CONTACT (EMAIL) ==================== */
@@ -390,7 +378,6 @@
   font-size: 0.74rem;
   color: #9ca3af;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   font-weight: 600;
 }
 
@@ -402,7 +389,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.2s;
 }
 
 .contact-value:hover {
@@ -431,7 +417,7 @@
   border-color: #f26b1d;
 }
 
-/* ==================== SECTION HEADINGS ==================== */
+/* ==================== HEADINGS & LINKS ==================== */
 .section-heading {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -443,7 +429,6 @@
   padding-left: 0.5rem;
 }
 
-/* ==================== QUICK LINKS ==================== */
 .links-list {
   display: flex;
   flex-direction: column;
@@ -482,7 +467,6 @@
   color: #f26b1d;
   font-size: 1.1rem;
   flex-shrink: 0;
-  transition: all 0.2s ease;
 }
 
 .link-card:hover .link-icon-box {
@@ -510,15 +494,13 @@
 .link-chevron {
   color: #6b7280;
   font-size: 0.8rem;
-  transition: transform 0.2s ease;
 }
 
 .link-card:hover .link-chevron {
   color: #f26b1d;
-  transform: translateX(2px);
 }
 
-/* ==================== TECHNICAL PILLARS ==================== */
+/* ==================== PILLARS & CREDENTIALS ==================== */
 .pillars-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -564,7 +546,6 @@
   line-height: 1.35;
 }
 
-/* ==================== CREDENTIALS ==================== */
 .credentials-list {
   display: flex;
   flex-direction: column;
@@ -624,7 +605,6 @@
   font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.2s;
 }
 
 .footer-site-link:hover {
@@ -670,12 +650,6 @@
   width: 100%;
   padding: 1.5rem;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
-  animation: modal-pop 0.25s ease-out;
-}
-
-@keyframes modal-pop {
-  0% { transform: scale(0.92); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
 }
 
 .qr-modal-header {
@@ -700,7 +674,6 @@
   line-height: 1;
   cursor: pointer;
   padding: 0;
-  transition: color 0.2s;
 }
 
 .btn-close-modal:hover {
@@ -761,7 +734,6 @@
   color: #d1d5db;
   cursor: pointer;
   padding: 0.2rem;
-  transition: color 0.2s;
 }
 
 .btn-copy-url:hover {
@@ -785,10 +757,4 @@
   gap: 0.6rem;
   box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
   z-index: 2000;
-  animation: toast-slide-up 0.25s ease-out;
-}
-
-@keyframes toast-slide-up {
-  0% { transform: translate(-50%, 20px); opacity: 0; }
-  100% { transform: translate(-50%, 0); opacity: 1; }
 }
