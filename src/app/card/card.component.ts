@@ -86,7 +86,34 @@ export class CardComponent implements OnInit {
       labelEn: 'GitHub',
       sublabel: 'Código, scripts e integraciones',
       sublabelEn: 'Code, scripts & integrations',
-      url: 'https://github.com/LuisFerGRomo',
+      url: 'https://github.com/luisfergromo/',
+      isExternal: true
+    },
+    {
+      icon: 'fas fa-award',
+      label: 'Credly',
+      labelEn: 'Credly',
+      sublabel: 'Insignias y certificaciones oficiales',
+      sublabelEn: 'Official verified certifications',
+      url: 'https://www.credly.com/users/luisfergromo',
+      isExternal: true
+    },
+    {
+      icon: 'fab fa-google',
+      label: 'Google Cloud Skills',
+      labelEn: 'Google Cloud Skills',
+      sublabel: 'Perfil público de habilidades Google Cloud',
+      sublabelEn: 'Public Google Cloud skill badges',
+      url: 'https://www.skills.google/public_profiles/4c860249-ffdf-40a0-ba83-58268e0313e7',
+      isExternal: true
+    },
+    {
+      icon: 'fas fa-user-secret',
+      label: 'TryHackMe',
+      labelEn: 'TryHackMe',
+      sublabel: 'Laboratorios de ciberseguridad (VidarTheFoehammer)',
+      sublabelEn: 'Hands-on security labs (VidarTheFoehammer)',
+      url: 'https://tryhackme.com/p/VidarTheFoehammer',
       isExternal: true
     },
     {
@@ -148,9 +175,12 @@ export class CardComponent implements OnInit {
       'EMAIL;TYPE=INTERNET,WORK,PREF:luisfernando.gutierrezr@outlook.com',
       'URL;TYPE=WORK:https://luisfergromo.github.io/',
       'X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/LuisFerGRomo/',
-      'X-SOCIALPROFILE;TYPE=github:https://github.com/LuisFerGRomo',
+      'X-SOCIALPROFILE;TYPE=github:https://github.com/luisfergromo/',
+      'X-SOCIALPROFILE;TYPE=credly:https://www.credly.com/users/luisfergromo',
+      'X-SOCIALPROFILE;TYPE=google-skills:https://www.skills.google/public_profiles/4c860249-ffdf-40a0-ba83-58268e0313e7',
+      'X-SOCIALPROFILE;TYPE=tryhackme:https://tryhackme.com/p/VidarTheFoehammer',
       'ADR;TYPE=WORK:;;ITESO;Zapopan;Jalisco;;Mexico',
-      'NOTE:Senior IT Operations & Systems Integrator. Ciberseguridad, Cloud (Docker, GCP, Tailscale), Automatización (n8n, Salesforce), BI (Power BI & DAX).',
+      'NOTE:Senior IT Operations & Systems Integrator. Ciberseguridad (TryHackMe), Cloud (Google Cloud Skills), Credly, Automatización (n8n, Salesforce), BI (Power BI & DAX).',
       'END:VCARD'
     ].join('\r\n');
 

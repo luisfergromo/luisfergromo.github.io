@@ -414,6 +414,81 @@ body {
   text-decoration: underline;
 }
 
+/* ==================== VERIFIED PROFILES & BADGES ==================== */
+.verified-profiles-block {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.verified-profiles-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.9rem;
+}
+
+.verified-profiles-title i {
+  color: var(--orange_color);
+  margin-right: 6px;
+}
+
+.verified-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.verified-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #212529;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.verified-badge-item:hover {
+  background: #ffffff;
+  border-color: var(--orange_color);
+  color: var(--orange_color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(242, 107, 29, 0.15);
+  text-decoration: none;
+}
+
+.verified-badge-item i {
+  font-size: 1.35rem;
+  color: var(--orange_color);
+  flex-shrink: 0;
+}
+
+.badge-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.badge-text strong {
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.badge-text span {
+  font-size: 0.72rem;
+  color: #6c757d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ==================== TOOLS / EXPERIENCE BOXES ==================== */
 .experience {
   padding: 80px 20px;

@@ -119,6 +119,31 @@ test.describe('Personal Portfolio Web Suite', () => {
     // Test /tarjeta redirect
     await page.goto('/tarjeta');
     await expect(page).toHaveURL(/\/card$/);
+
+    // Verify verified external links on card
+    await expect(page.locator('a[href*="credly.com/users/luisfergromo"]')).toBeVisible();
+    await expect(page.locator('a[href*="skills.google/public_profiles"]')).toBeVisible();
+    await expect(page.locator('a[href*="tryhackme.com/p/VidarTheFoehammer"]')).toBeVisible();
+  });
+
+  test('should display verified technical profiles (Credly, Google Skills, TryHackMe) on home and spa', async ({ page, isMobile }) => {
+    test.skip(isMobile, 'Verified profiles block check on desktop layout');
+
+    await page.goto('/spa');
+    await page.waitForLoadState('networkidle');
+
+    // Check verified badges grid
+    const verifiedBlock = page.locator('.verified-profiles-block');
+    await expect(verifiedBlock).toBeAttached();
+
+    const credlyLink = page.locator('.verified-badge-item[href*="credly.com/users/luisfergromo"]');
+    await expect(credlyLink).toBeVisible();
+
+    const googleSkillsLink = page.locator('.verified-badge-item[href*="skills.google/public_profiles"]');
+    await expect(googleSkillsLink).toBeVisible();
+
+    const thmLink = page.locator('.verified-badge-item[href*="tryhackme.com/p/VidarTheFoehammer"]');
+    await expect(thmLink).toBeVisible();
   });
 });
 
