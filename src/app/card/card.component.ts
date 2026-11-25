@@ -34,7 +34,7 @@ export class CardComponent implements OnInit {
   workModesEs = 'Remoto Global · Híbrido / Presencial GDL · Bilingüe (ES/EN)';
   workModesEn = 'Remote Global · Hybrid / On-site GDL · Bilingual (ES/EN)';
   location = 'Zapopan, Jalisco, México';
-  email = 'luisfernando.gutierrezr@outlook.com';
+  email = 'lfgromo+contacto@gmail.com';
   currentLang: 'es' | 'en' = 'es';
 
   toastMessage: string | null = null;
@@ -174,7 +174,7 @@ export class CardComponent implements OnInit {
       'FN:Luis Fernando Gutiérrez Romo',
       'N:Gutiérrez Romo;Luis Fernando;;;',
       'TITLE:IT Manager | Technical PM | Senior Systems Integrator',
-      'EMAIL;TYPE=INTERNET,WORK,PREF:luisfernando.gutierrezr@outlook.com',
+      'EMAIL;TYPE=INTERNET,WORK,PREF:lfgromo+contacto@gmail.com',
       'URL;TYPE=WORK:https://luisfergromo.vercel.app/',
       'X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/LuisFerGRomo/',
       'X-SOCIALPROFILE;TYPE=github:https://github.com/luisfergromo/',
