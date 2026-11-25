@@ -103,26 +103,6 @@
   box-shadow: 0 2px 8px rgba(242, 107, 29, 0.4);
 }
 
-.icon-action-btn {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #d1d5db;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.icon-action-btn:hover {
-  background: rgba(242, 107, 29, 0.2);
-  border-color: #f26b1d;
-  color: #ffffff;
-}
-
 /* ==================== CARD CONTAINER ==================== */
 .card-container {
   width: 100%;

@@ -16,11 +16,6 @@
         <button type="button" [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">ES</button>
         <button type="button" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
       </div>
-
-      <!-- Quick Share Button -->
-      <button type="button" class="icon-action-btn" (click)="shareCard()" [title]="currentLang === 'es' ? 'Compartir tarjeta' : 'Share card'" aria-label="Compartir tarjeta">
-        <i class="fas fa-share-alt"></i>
-      </button>
     </div>
   </header>
 

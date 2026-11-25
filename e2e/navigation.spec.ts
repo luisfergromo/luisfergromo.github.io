@@ -97,6 +97,7 @@ test.describe('Personal Portfolio Web Suite', () => {
     await expect(page.locator('#btn-save-contact')).toBeVisible();
     await expect(page.locator('#btn-show-qr')).toBeVisible();
     await expect(page.locator('#btn-share-card')).toBeVisible();
+    await expect(page.locator('.card-top-nav .icon-action-btn')).toHaveCount(0);
 
     // Verify avatar image has the updated photo
     const avatar = page.locator('.profile-photo');
