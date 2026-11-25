@@ -49,21 +49,18 @@
   <!-- Hero Header -->
   <div class="skills-hero">
     <div class="container text-center">
-      <span class="hero-badge">
-        <i class="fas fa-layer-group"></i> {{ currentLang === 'es' ? 'Experiencia & Evolución Técnica' : 'Experience & Technical Evolution' }}
-      </span>
-      <h1>{{ currentLang === 'es' ? 'Lo que sé realizar & Nuevas Fronteras' : 'What I Can Deliver & New Frontiers' }}</h1>
+      <h1>{{ currentLang === 'es' ? 'Capacidades y stack' : 'Capabilities & Stack' }}</h1>
       <p class="lead">
         {{ currentLang === 'es' 
-          ? 'Soluciones que diseño, opero y automatizo en producción, junto con las tecnologías que investigo y aprendo continuamente.'
-          : 'Solutions I architect, operate, and automate in production, alongside the emerging technologies I continuously research and master.' }}
+          ? 'Lo que uso en producción y las áreas en las que sigo profundizando.'
+          : 'What I work with in production and the areas I am actively digging deeper into.' }}
       </p>
       <div class="hero-anchors">
         <a href="#capabilities" class="btn btn-outline-light btn-sm mr-2 mb-2">
-          <i class="fas fa-check-circle"></i> {{ currentLang === 'es' ? 'Lo que sé realizar' : 'Proven Capabilities' }}
+          {{ currentLang === 'es' ? 'Experiencia en producción' : 'Production Experience' }}
         </a>
         <a href="#learning" class="btn btn-warning btn-sm mb-2">
-          <i class="fas fa-bolt"></i> {{ currentLang === 'es' ? 'En qué me estoy formando' : 'Active Learning & R&D' }}
+          {{ currentLang === 'es' ? 'En qué estoy profundizando' : 'Currently Exploring' }}
         </a>
       </div>
     </div>
@@ -73,33 +70,26 @@
     <!-- SECTION 1: PROVEN CAPABILITIES -->
     <section id="capabilities" class="skills-section">
       <div class="section-heading text-center">
-        <h2>
-          <i class="fas fa-cubes text-warning"></i> {{ currentLang === 'es' ? 'Lo Que Sé y Puedo Realizar' : 'What I Deliver & Core Capabilities' }}
-        </h2>
+        <h2>{{ currentLang === 'es' ? 'Experiencia en producción' : 'Production Experience' }}</h2>
         <p class="section-subtitle">
           {{ currentLang === 'es' 
-            ? 'Capacidades comprobadas aplicadas en entornos empresariales, universitarios y de alta escala.'
-            : 'Proven competencies deployed across enterprise, higher-education, and high-availability operations.' }}
+            ? 'Áreas técnicas y de gestión aplicadas en operación diaria.'
+            : 'Technical and management areas applied in day-to-day operations.' }}
         </p>
       </div>
 
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4" *ngFor="let cap of capabilities">
           <div class="skill-card h-100">
-            <div class="skill-card-header d-flex align-items-center">
-              <div class="skill-icon-wrapper mr-3">
-                <i [class]="cap.icon"></i>
-              </div>
-              <div>
-                <span class="skill-category">{{ currentLang === 'es' ? cap.category : (cap.categoryEn || cap.category) }}</span>
-                <h3 class="skill-title mb-0">{{ currentLang === 'es' ? cap.title : (cap.titleEn || cap.title) }}</h3>
-              </div>
+            <div class="skill-card-header">
+              <span class="skill-category">{{ currentLang === 'es' ? cap.category : (cap.categoryEn || cap.category) }}</span>
+              <h3 class="skill-title mb-0">{{ currentLang === 'es' ? cap.title : (cap.titleEn || cap.title) }}</h3>
             </div>
             <div class="skill-card-body">
               <p class="skill-desc">{{ currentLang === 'es' ? cap.description : (cap.descriptionEn || cap.description) }}</p>
               <ul class="skill-highlights">
                 <li *ngFor="let point of (currentLang === 'es' ? cap.highlights : (cap.highlightsEn || cap.highlights))">
-                  <i class="fas fa-check text-success mr-2"></i> {{ point }}
+                  {{ point }}
                 </li>
               </ul>
             </div>
@@ -113,16 +103,14 @@
       </div>
     </section>
 
-    <!-- SECTION 2: LEARNING & NEXT FRONTIERS -->
+    <!-- SECTION 2: ACTIVE LEARNING -->
     <section id="learning" class="skills-section mt-5">
       <div class="section-heading text-center">
-        <h2>
-          <i class="fas fa-seedling text-success"></i> {{ currentLang === 'es' ? 'Nuevas Skills en Aprendizaje Activo' : 'Emerging Skills & Active Learning' }}
-        </h2>
+        <h2>{{ currentLang === 'es' ? 'En qué estoy profundizando' : 'Currently Exploring' }}</h2>
         <p class="section-subtitle">
           {{ currentLang === 'es' 
-            ? 'Fronteras técnicas en las que estoy invirtiendo tiempo, experimentando en mi Home Lab y certificándome.'
-            : 'Technical frontiers where I invest dedicated focus, homelab experimentation, and certifications.' }}
+            ? 'Temas en los que estoy practicando en mi lab personal o certificándome.'
+            : 'Topics I am actively practicing in my homelab or certifying in.' }}
         </p>
       </div>
 
@@ -130,50 +118,33 @@
         <div class="col-lg-6 col-md-12 mb-4" *ngFor="let item of learningSkills">
           <div class="learning-card h-100">
             <div class="learning-card-header d-flex justify-content-between align-items-start">
-              <div class="d-flex align-items-center">
-                <div class="learning-icon-wrapper mr-3">
-                  <i [class]="item.icon"></i>
-                </div>
-                <div>
-                  <span class="learning-category">{{ currentLang === 'es' ? item.category : (item.categoryEn || item.category) }}</span>
-                  <h3 class="learning-title mb-0">{{ currentLang === 'es' ? item.title : (item.titleEn || item.title) }}</h3>
-                </div>
+              <div>
+                <span class="learning-category">{{ currentLang === 'es' ? item.category : (item.categoryEn || item.category) }}</span>
+                <h3 class="learning-title mb-0">{{ currentLang === 'es' ? item.title : (item.titleEn || item.title) }}</h3>
               </div>
-              <span class="badge" [ngClass]="item.badgeClass">{{ currentLang === 'es' ? item.badge : (item.badgeEn || item.badge) }}</span>
+              <span class="status-tag">{{ currentLang === 'es' ? item.badge : (item.badgeEn || item.badge) }}</span>
             </div>
             <div class="learning-card-body">
               <p class="learning-desc">{{ currentLang === 'es' ? item.description : (item.descriptionEn || item.description) }}</p>
-              <div class="learning-topics">
-                <b>{{ currentLang === 'es' ? 'Ejes clave de estudio y práctica:' : 'Key study areas & hands-on focus:' }}</b>
-                <ul>
-                  <li *ngFor="let topic of (currentLang === 'es' ? item.keyTopics : (item.keyTopicsEn || item.keyTopics))">
-                    <i class="fas fa-chevron-right text-warning mr-2"></i> {{ topic }}
-                  </li>
-                </ul>
-              </div>
-              <div class="learning-goal">
-                <i class="fas fa-bullseye text-danger mr-1"></i> <b>{{ currentLang === 'es' ? 'Objetivo de aplicación:' : 'Target objective:' }}</b> {{ currentLang === 'es' ? item.goal : (item.goalEn || item.goal) }}
-              </div>
+              <ul class="learning-topics-list">
+                <li *ngFor="let topic of (currentLang === 'es' ? item.keyTopics : (item.keyTopicsEn || item.keyTopics))">
+                  {{ topic }}
+                </li>
+              </ul>
+              <p class="learning-goal mb-0">
+                <b>{{ currentLang === 'es' ? 'Meta:' : 'Goal:' }}</b> {{ currentLang === 'es' ? item.goal : (item.goalEn || item.goal) }}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Call to action / Contact box -->
-    <div class="contact-cta text-center my-5 p-5">
-      <h3>{{ currentLang === 'es' ? '¿Tienes un reto técnico o una integración compleja en mente?' : 'Have a technical challenge or complex integration in mind?' }}</h3>
-      <p class="lead">
-        {{ currentLang === 'es' 
-          ? 'Hablemos sobre cómo puedo aportar valor en automatización, datos, arquitectura de sistemas o ciberseguridad.'
-          : 'Let us connect on how I can add immediate value in workflow automation, data pipelines, systems architecture, or cybersecurity.' }}
-      </p>
-      <a href="mailto:lfgromo+contacto@gmail.com" class="btn btn-warning btn-lg mr-2 mb-2">
-        <i class="fas fa-envelope"></i> {{ currentLang === 'es' ? 'Contáctame por Correo' : 'Send an Email' }}
-      </a>
-      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg mb-2">
-        <i class="fab fa-linkedin"></i> {{ currentLang === 'es' ? 'Conectar en LinkedIn' : 'Connect on LinkedIn' }}
-      </a>
+    <div class="page-contact-note">
+      {{ currentLang === 'es' ? '¿Algún proyecto o vacante en mente? Escríbeme a ' : 'Have a project or role in mind? Reach out at ' }}
+      <a href="mailto:lfgromo+contacto@gmail.com">lfgromo+contacto@gmail.com</a>
+      {{ currentLang === 'es' ? ' o por ' : ' or on ' }}
+      <a href="https://linkedin.com/in/LuisFerGRomo" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
     </div>
   </div>
 

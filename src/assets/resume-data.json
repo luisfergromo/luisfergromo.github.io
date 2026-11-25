@@ -13,33 +13,33 @@
                 "tasks": [
                     {
                         "id": 0,
-                        "body": "Enterprise Systems Architecture: Architected scalable Canvas LMS and Canvas Catalog environments, leading cross-platform integrations to ensure operational continuity for high-volume continuous education programs.",
-                        "body_spa": "Arquitectura de Sistemas Empresariales: Diseñé entornos escalables de Canvas LMS y Canvas Catalog, liderando integraciones multiplataforma para garantizar la continuidad operativa en programas de educación continua de alto volumen."
+                        "body": "Canvas LMS & Catalog Architecture: Managed and scaled Canvas LMS and Canvas Catalog environments, integrating external platforms for continuing education programs.",
+                        "body_spa": "Arquitectura Canvas LMS y Catalog: Administré y escalé los entornos de Canvas LMS y Canvas Catalog, integrando plataformas externas para programas de educación continua."
                     },
                     {
                         "id": 1,
-                        "body": "Data Pipelines & CRM Integration: Engineered automated data pipelines between Canvas LMS and Salesforce via Salesforce Data Loader, REST APIs, and Microsoft Power Automate, eliminating manual entry, managing API rate limits, and enforcing strict enterprise data integrity.",
-                        "body_spa": "Pipelines de Datos e Integración CRM: Diseñé e implementé pipelines automatizados de datos entre Canvas LMS y Salesforce mediante Salesforce Data Loader, APIs REST y Microsoft Power Automate, eliminando la captura manual, gestionando límites de llamadas API y garantizando la integridad de datos empresariales."
+                        "body": "CRM Data Pipelines: Built automated sync flows between Canvas LMS and Salesforce using Data Loader, REST APIs, and Microsoft Power Automate, eliminating manual entry and handling API rate limits.",
+                        "body_spa": "Integración LMS y CRM: Construí flujos automatizados entre Canvas LMS y Salesforce con Data Loader, APIs REST y Microsoft Power Automate, eliminando captura manual y cuidando límites de API."
                     },
                     {
                         "id": 2,
-                        "body": "Secure Infrastructure & Edge Computing: Deployed containerized integration services using Docker, implementing Zero Trust networks via Tailscale to secure internal APIs without exposing public ports to the internet.",
-                        "body_spa": "Infraestructura Segura y Computación Edge: Desplegué servicios de integración contenerizados con Docker, implementando redes Zero Trust mediante Tailscale para proteger APIs internas sin exponer puertos públicos a internet."
+                        "body": "Containers & Private Networking: Deployed integration services in Docker behind Tailscale Zero Trust networks to keep internal APIs off the public internet.",
+                        "body_spa": "Contenedores y Red Privada: Desplegué servicios de integración en Docker sobre redes privadas con Tailscale para no exponer APIs internas a internet."
                     },
                     {
                         "id": 3,
-                        "body": "Workflow Orchestration: Programmed automated multi-channel workflows with Microsoft Power Automate and custom HTML templates (Delivra) for academic credentialing and targeted corporate outreach.",
-                        "body_spa": "Orquestación de Flujos de Trabajo: Programé flujos multicanal automatizados con Microsoft Power Automate y plantillas HTML personalizadas (Delivra) para acreditaciones académicas y difusión corporativa focalizada."
+                        "body": "Workflow Automation: Automated multi-channel academic notifications, course approvals, and digital credentialing with Microsoft Power Automate and HTML templates (Delivra).",
+                        "body_spa": "Automatización de Flujos: Programé flujos en Microsoft Power Automate y plantillas HTML (Delivra) para aprobaciones, avisos académicos y emisión de constancias."
                     },
                     {
                         "id": 4,
-                        "body": "Advanced Business Intelligence: Developed executive Power BI dashboards utilizing complex DAX modeling, translating raw operational databases into actionable strategic metrics for institutional decision-making.",
-                        "body_spa": "Inteligencia de Negocios Avanzada (BI): Desarrollé paneles ejecutivos en Power BI utilizando modelado complejo con DAX, transformando bases de datos operativas en métricas estratégicas para la toma de decisiones institucionales."
+                        "body": "Business Intelligence: Built Power BI dashboards with DAX modeling so academic and leadership teams could track metrics without manual spreadsheets.",
+                        "body_spa": "Reportes en Power BI: Armé tableros en Power BI con modelado DAX para dar seguimiento a indicadores operativos y académicos sin hojas de cálculo manuales."
                     },
                     {
                         "id": 5,
-                        "body": "Systems Lifecycle Management: Directed strategic troubleshooting and sunsetting of enterprise applications, establishing strict data validation workflows and resolving root-cause software contingencies.",
-                        "body_spa": "Gestión del Ciclo de Vida de Sistemas: Dirigí la resolución estratégica de problemas y el retiro planificado de aplicaciones empresariales, estableciendo flujos rigurosos de validación de datos y resolviendo contingencias de causa raíz."
+                        "body": "Systems Lifecycle: Led root-cause troubleshooting, data validation checks, and planned retirement of legacy institutional applications.",
+                        "body_spa": "Ciclo de Vida de Sistemas: Resolví incidentes de raíz, establecí validaciones de datos y coordiné el retiro planificado de aplicaciones legadas."
                     }
                 ],
                 "latestProjects": [

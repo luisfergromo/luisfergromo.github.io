@@ -50,17 +50,17 @@ export class PortfolioComponent implements OnInit {
       period: '2022 - 2026',
       periodEn: '2022 - 2026',
       featured: true,
-      description: 'Arquitectura, despliegue y administración integral de Canvas LMS y Canvas Catalog para programas de educación continua masiva e institucional.',
-      descriptionEn: 'End-to-end architecture, deployment, and administration of Canvas LMS and Canvas Catalog for enterprise continuing education and institutional academic programs.',
+      description: 'Administración, configuración e integración de Canvas LMS y Canvas Catalog para programas de educación continua.',
+      descriptionEn: 'Administration, setup, and integration of Canvas LMS and Canvas Catalog for continuing education programs.',
       highlights: [
-        'Integración multiplataforma vía LTI, APIs REST y Webhooks para enrolamiento automatizado.',
-        'Garantía de alta disponibilidad y soporte de procesos operativos académicos.',
+        'Integraciones vía LTI, APIs REST y Webhooks para automatizar inscripciones.',
+        'Operación continua y soporte técnico de la plataforma académica.',
         'Participación en Canvas Connect México City 2025.'
       ],
       highlightsEn: [
-        'Multi-platform integration via LTI, REST APIs, and Webhooks for automated student enrollments.',
-        'Guaranteed high availability and operational continuity for academic business processes.',
-        'Presenter / Participant at Canvas Connect Mexico City 2025.'
+        'Integrations via LTI, REST APIs, and Webhooks to automate student enrollments.',
+        'Ongoing operations and technical support for the institutional platform.',
+        'Participant at Canvas Connect Mexico City 2025.'
       ],
       techStack: ['Canvas LMS', 'Canvas Catalog', 'LTI', 'REST APIs', 'Cloud'],
       image: '../assets/images/EDC.png',
@@ -77,25 +77,25 @@ export class PortfolioComponent implements OnInit {
       period: '2022 - 2026',
       periodEn: '2022 - 2026',
       featured: true,
-      description: 'Diseño e implementación de pipelines automatizados de datos entre el entorno LMS y Salesforce CRM para eliminar captura manual de leads y estudiantes.',
-      descriptionEn: 'Design and implementation of automated data pipelines between Canvas LMS and Salesforce CRM to eliminate manual student and lead data entry.',
+      description: 'Flujos de sincronización entre Canvas LMS y Salesforce CRM para evitar captura manual de prospectos y alumnos.',
+      descriptionEn: 'Automated sync flows between Canvas LMS and Salesforce CRM to remove manual lead and student data entry.',
       highlights: [
-        'Automatización con Salesforce Data Loader, flujos en Microsoft Power Automate y APIs REST.',
-        'Manejo estricto de cuotas y rate limits de API garantizando consistencia de datos.',
-        'Reducción drástica del tiempo de procesamiento administrativo.'
+        'Sincronización con Salesforce Data Loader, Microsoft Power Automate y APIs REST.',
+        'Control de cuotas y rate limits de API para mantener consistencia en registros.',
+        'Reducción de trabajo operativo en procesos de inscripción.'
       ],
       highlightsEn: [
-        'Automated ETL using Salesforce Data Loader, Microsoft Power Automate, and REST APIs.',
-        'Strict rate-limit handling and API quota management ensuring data consistency.',
-        'Drastic reduction in administrative processing time.'
+        'Sync pipelines built with Salesforce Data Loader, Microsoft Power Automate, and REST APIs.',
+        'API rate-limit and quota handling to keep records consistent.',
+        'Cut manual administrative overhead across enrollment workflows.'
       ],
       techStack: ['Salesforce CRM', 'Data Loader', 'Power Automate', 'REST APIs', 'Automatización'],
       icon: 'fas fa-sync-alt'
     },
     {
       id: 'zero-trust-edge',
-      title: 'Servicios de Integración Contenerizados & Zero Trust',
-      titleEn: 'Containerized Integration Services & Zero Trust Edge',
+      title: 'Servicios Contenerizados y Red Privada Zero Trust',
+      titleEn: 'Containerized Services & Zero Trust Networking',
       category: 'Enterprise & Cloud',
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO / Infraestructura',
@@ -103,25 +103,25 @@ export class PortfolioComponent implements OnInit {
       period: '2023 - 2026',
       periodEn: '2023 - 2026',
       featured: true,
-      description: 'Despliegue de microservicios de integración contenerizados mediante Docker, protegidos por redes perimetrales privadas Zero Trust.',
-      descriptionEn: 'Deployment of containerized integration microservices using Docker, secured with Zero Trust private perimeter networking.',
+      description: 'Servicios de integración en Docker protegidos con redes privadas Tailscale sin exponer puertos públicos.',
+      descriptionEn: 'Dockerized integration services running behind Tailscale private networks without exposing public ports.',
       highlights: [
-        'Red de malla privada con Tailscale: acceso a APIs internas sin exponer puertos públicos a internet.',
-        'Aislamiento de servicios, control de acceso basado en identidad y alta resiliencia.',
-        'Implementación en servidores Linux (Debian) y entornos edge.'
+        'Red de malla privada con Tailscale para consumir APIs internas de forma segura.',
+        'Aislamiento de servicios y control de acceso por identidad.',
+        'Despliegue en servidores Linux (Debian) y equipos locales.'
       ],
       highlightsEn: [
-        'Private mesh network with Tailscale: secure internal API access without exposing public internet ports.',
-        'Service isolation, identity-based access control, and high operational resilience.',
-        'Production Linux (Debian) and edge server deployments.'
+        'Private Tailscale mesh network for internal API access.',
+        'Service isolation and identity-based access controls.',
+        'Deployed on Linux (Debian) servers and local edge nodes.'
       ],
       techStack: ['Docker', 'Tailscale', 'Zero Trust', 'Linux', 'GCP'],
       icon: 'fas fa-network-wired'
     },
     {
       id: 'power-bi-dashboards',
-      title: 'Analítica Ejecutiva & Modelado DAX en Power BI',
-      titleEn: 'Executive Power BI Analytics & DAX Modeling',
+      title: 'Tableros Ejecutivos y Modelado DAX en Power BI',
+      titleEn: 'Executive Dashboards & DAX Modeling in Power BI',
       category: 'Enterprise & Cloud',
       categorySpa: 'Sistemas Empresariales & Cloud',
       organization: 'ITESO Universidad Jesuita de Guadalajara',
@@ -129,17 +129,17 @@ export class PortfolioComponent implements OnInit {
       period: '2023 - 2026',
       periodEn: '2023 - 2026',
       featured: true,
-      description: 'Modelado y desarrollo de tableros de control ejecutivos interactivos y métricas DAX avanzadas para la toma de decisiones institucionales.',
-      descriptionEn: 'Modeling and development of interactive executive dashboards and advanced DAX measures for academic retention and operational decision-making.',
+      description: 'Modelos y tableros en Power BI con DAX para seguimiento de indicadores académicos y comerciales.',
+      descriptionEn: 'Power BI data models and dashboards with DAX to track academic and enrollment metrics.',
       highlights: [
-        'Consolidación de bases de datos relacionales, métricas del LMS y captación de CRM en modelos unificados.',
-        'Visualización en tiempo real de indicadores académicos, tasas de abandono y avance de cohortes.',
-        'Eliminación de reportes manuales en hojas de cálculo para la dirección.'
+        'Cruce de bases SQL, datos del LMS y registros de Salesforce en un solo modelo.',
+        'Seguimiento de avance por cohorte, deserción e ingresos.',
+        'Reemplazo de reportes manuales en Excel.'
       ],
       highlightsEn: [
-        'Consolidation of relational databases, LMS metrics, and CRM leads into unified models.',
-        'Real-time visualization of academic indicators, student drop-off rates, and cohort progress.',
-        'Elimination of manual spreadsheets for executive reporting.'
+        'Combined SQL databases, LMS metrics, and Salesforce data into unified models.',
+        'Visibility into cohort progress, drop-off rates, and enrollment trends.',
+        'Replaced manual spreadsheet reporting for leadership.'
       ],
       techStack: ['Power BI', 'DAX Modeling', 'SQL', 'Data Analytics', 'Dashboards'],
       icon: 'fas fa-chart-line'
@@ -154,17 +154,15 @@ export class PortfolioComponent implements OnInit {
       organizationEn: 'ITESO Jesuit University of Guadalajara',
       period: '2022 - 2024',
       periodEn: '2022 - 2024',
-      description: 'Automatizaciones institucionales para agilizar aprobaciones de cursos, comunicaciones a estudiantes y emisión de constancias.',
-      descriptionEn: 'Institutional workflow automations to streamline course approvals, student communications, and badge credential issuance.',
+      description: 'Flujos con Power Automate para aprobaciones de cursos, notificaciones a estudiantes y emisión de constancias.',
+      descriptionEn: 'Power Automate flows for course approvals, student notifications, and credential issuance.',
       highlights: [
-        'Notificaciones automáticas, escalamiento de tickets y generación de constancias por finalización de cursos.',
-        'Integración con el ecosistema Microsoft 365, SharePoint y Teams.',
-        'Alta confiabilidad y trazabilidad operativa en procesos académicos.'
+        'Avisos automáticos, seguimiento de solicitudes y generación de constancias.',
+        'Integración directa con Microsoft 365, SharePoint y Teams.'
       ],
       highlightsEn: [
-        'Automated notifications, ticket escalation, and credential generation for course completions.',
-        'Integration across Microsoft 365, SharePoint, and Teams ecosystem.',
-        'High reliability and auditability for institutional academic operations.'
+        'Automated notifications, ticket routing, and certificate generation.',
+        'Integrated with Microsoft 365, SharePoint, and Teams.'
       ],
       techStack: ['Power Automate', 'Microsoft 365', 'SharePoint', 'Workflows'],
       icon: 'fas fa-cogs'

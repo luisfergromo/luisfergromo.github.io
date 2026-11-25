@@ -43,122 +43,122 @@ export class SkillsComponent implements OnInit {
 
   capabilities: Capability[] = [
     {
-      title: 'Arquitectura de Sistemas & LMS',
+      title: 'Arquitectura de Sistemas y LMS',
       titleEn: 'Systems & LMS Architecture',
       category: 'Sistemas Empresariales',
       categoryEn: 'Enterprise Systems',
       icon: 'fas fa-graduation-cap',
-      description: 'Diseño, escalabilidad y mantenimiento de ecosistemas LMS institucionales de alto impacto.',
-      descriptionEn: 'Design, scalability, and operations of mission-critical institutional LMS ecosystems.',
+      description: 'Administración e integración de entornos LMS institucionales en operación continua.',
+      descriptionEn: 'Administration and integration of institutional LMS platforms in production.',
       highlights: [
-        'Despliegue y administración integral de Canvas LMS y Canvas Catalog.',
-        'Integraciones vía LTI, Webhooks y APIs REST para educación continua masiva.',
-        'Garantía de continuidad operativa y alta disponibilidad de servicios.'
+        'Despliegue y administración de Canvas LMS y Canvas Catalog.',
+        'Integraciones vía LTI, Webhooks y APIs REST para educación continua.',
+        'Operación diaria, soporte y continuidad del servicio.'
       ],
       highlightsEn: [
-        'End-to-end deployment and administration of Canvas LMS and Canvas Catalog.',
-        'Seamless integrations via LTI, Webhooks, and REST APIs for large-scale continuing education.',
-        'High availability and business continuity for academic operations.'
+        'Deployment and administration of Canvas LMS and Canvas Catalog.',
+        'Integrations via LTI, Webhooks, and REST APIs for continuing education.',
+        'Day-to-day operations, support, and service continuity.'
       ],
       tools: ['Canvas LMS', 'Canvas Catalog', 'LTI', 'REST APIs', 'Webhooks']
     },
     {
-      title: 'Pipelines de Datos & Automatización CRM',
-      titleEn: 'Data Pipelines & CRM Automation',
-      category: 'Integración & Flujos',
+      title: 'Integración de Datos y CRM',
+      titleEn: 'Data Sync & CRM Automation',
+      category: 'Integración y Flujos',
       categoryEn: 'Integration & Workflows',
       icon: 'fas fa-sync-alt',
-      description: 'Construcción de canalizaciones de datos bidireccionales y automatización de procesos repetitivos.',
-      descriptionEn: 'Building bidirectional data pipelines and automating repetitive institutional workflows.',
+      description: 'Sincronización de datos entre sistemas y automatización de tareas administrativas.',
+      descriptionEn: 'Data synchronization across systems and automation of repetitive admin workflows.',
       highlights: [
-        'Sincronización automatizada entre Canvas LMS y Salesforce CRM.',
-        'Manejo de rate limits de APIs y validación de consistencia de datos.',
-        'Eliminación de captura manual mediante Microsoft Power Automate y Salesforce Data Loader.'
+        'Sincronización entre Canvas LMS y Salesforce CRM.',
+        'Control de rate limits de APIs y validación de registros.',
+        'Automatización con Microsoft Power Automate y Salesforce Data Loader.'
       ],
       highlightsEn: [
-        'Automated synchronization between Canvas LMS and Salesforce CRM.',
-        'API rate-limit handling and data consistency validation.',
-        'Elimination of manual data entry via Microsoft Power Automate and Salesforce Data Loader.'
+        'Automated sync between Canvas LMS and Salesforce CRM.',
+        'API rate-limit handling and record consistency checks.',
+        'Workflow automation via Microsoft Power Automate and Salesforce Data Loader.'
       ],
       tools: ['Power Automate', 'Salesforce CRM', 'Salesforce Data Loader', 'REST APIs']
     },
     {
-      title: 'Infraestructura Segura & Computación Edge',
-      titleEn: 'Secure Infrastructure & Edge Computing',
-      category: 'DevOps & Redes',
-      categoryEn: 'DevOps & Networking',
+      title: 'Infraestructura Contenerizada y Redes Privadas',
+      titleEn: 'Containers & Private Networking',
+      category: 'Infraestructura y Redes',
+      categoryEn: 'Infrastructure & Networking',
       icon: 'fas fa-server',
-      description: 'Aprovisionamiento de servicios contenerizados y redes seguras con enfoque Zero Trust.',
-      descriptionEn: 'Provisioning containerized services and secure networks with a Zero Trust mindset.',
+      description: 'Servicios en Docker y acceso remoto cifrado sin exponer puertos públicos.',
+      descriptionEn: 'Dockerized services and encrypted private networking without public port exposure.',
       highlights: [
-        'Contenerización de microservicios e integraciones con Docker.',
-        'Redes privadas Zero Trust mediante Tailscale (sin exponer puertos públicos a internet).',
-        'Administración de servidores Linux (Debian, Kali) y Home Labs en Raspberry Pi.'
+        'Contenerización de servicios de integración con Docker.',
+        'Redes privadas con Tailscale para acceder a APIs internas.',
+        'Administración de servidores Linux (Debian, Kali) y Raspberry Pi.'
       ],
       highlightsEn: [
-        'Microservice containerization and integration workloads with Docker.',
-        'Zero Trust encrypted mesh networks via Tailscale without exposing public ports.',
-        'Linux server administration (Debian, Kali) and edge homelabs with Raspberry Pi.'
+        'Containerization of integration services with Docker.',
+        'Private Tailscale mesh networks for internal API access.',
+        'Linux server administration (Debian, Kali) and Raspberry Pi nodes.'
       ],
       tools: ['Docker', 'Tailscale', 'Linux (Debian/Kali)', 'GCP Cloud Run', 'Raspberry Pi']
     },
     {
-      title: 'Business Intelligence (BI) & Analítica DAX',
-      titleEn: 'Business Intelligence (BI) & DAX Analytics',
-      category: 'Datos & Toma de Decisiones',
-      categoryEn: 'Data & Decision-Making',
+      title: 'Business Intelligence (BI) y DAX',
+      titleEn: 'Business Intelligence (BI) & DAX',
+      category: 'Datos y Reportes',
+      categoryEn: 'Data & Reporting',
       icon: 'fas fa-chart-line',
-      description: 'Transformación de datos operativos masivos en tableros ejecutivos estratégicos.',
-      descriptionEn: 'Transforming massive operational datasets into strategic executive dashboards.',
+      description: 'Modelado de datos y tableros en Power BI para seguimiento operativo y directivo.',
+      descriptionEn: 'Data modeling and Power BI dashboards for operational and leadership tracking.',
       highlights: [
-        'Modelado relacional avanzado en Power BI con fórmulas y métricas DAX complejas.',
-        'Consultas, agregaciones y modelado de datos en SQL Server / PostgreSQL.',
-        'Diseño de dashboards para la toma de decisiones institucionales y directivas.'
+        'Modelado relacional en Power BI y medidas DAX.',
+        'Consultas y preparación de datos en SQL Server y PostgreSQL.',
+        'Tableros para seguimiento de metas e indicadores.'
       ],
       highlightsEn: [
-        'Advanced relational data modeling in Power BI using complex DAX calculations.',
-        'Data extraction, transformations, and querying in SQL Server / PostgreSQL.',
-        'Executive dashboard design for strategic institutional decision-making.'
+        'Relational modeling in Power BI with DAX measures.',
+        'SQL querying and data prep on SQL Server and PostgreSQL.',
+        'Dashboards built for operational and leadership reporting.'
       ],
       tools: ['Power BI', 'DAX', 'SQL', 'Microsoft PowerApps', 'Excel Avanzado']
     },
     {
-      title: 'Gestión de Proyectos TI & Aseguramiento de Calidad',
-      titleEn: 'IT Project Management & Quality Assurance',
-      category: 'Gestión & Metodologías',
-      categoryEn: 'Management & Methodologies',
+      title: 'Gestión de Proyectos TI y QA',
+      titleEn: 'IT Project Management & QA',
+      category: 'Gestión y Calidad',
+      categoryEn: 'Management & QA',
       icon: 'fas fa-tasks',
-      description: 'Liderazgo técnico ágil, control de cronogramas y aseguramiento de calidad de software.',
-      descriptionEn: 'Agile technical leadership, milestone delivery, and comprehensive QA testing.',
+      description: 'Coordinación de entregas ágiles, control de incidencias y pruebas de software.',
+      descriptionEn: 'Agile delivery coordination, issue tracking, and software quality assurance.',
       highlights: [
-        'Coordinación ágil (Scrum/Kanban) de apps móviles clave (Jalisco Sin Hambre, UNIMA, Mi ITESO).',
-        'Diseño y ejecución de casos de prueba manuales, de regresión y end-to-end (QA).',
-        'Publicación y despliegue final en tiendas oficiales (Apple App Store & Google Play).'
+        'Coordinación de apps móviles (Jalisco Sin Hambre, UNIMA, Mi ITESO).',
+        'Casos de prueba manuales, regresión y end-to-end.',
+        'Publicación y seguimiento en Apple App Store y Google Play.'
       ],
       highlightsEn: [
-        'Agile sprint coordination (Scrum/Kanban) for core mobile apps (Jalisco Sin Hambre, UNIMA, Mi ITESO).',
-        'Manual, regression, and end-to-end (QA) test plan design and execution.',
-        'Store release management across Apple App Store and Google Play.'
+        'Agile coordination for mobile apps (Jalisco Sin Hambre, UNIMA, Mi ITESO).',
+        'Manual, regression, and end-to-end test planning and execution.',
+        'Release management on Apple App Store and Google Play.'
       ],
       tools: ['Scrum / Agile', 'Jira', 'Asana', 'QA Manual & E2E', 'App Stores Publishing']
     },
     {
-      title: 'Ingeniería de Audio & Transmisión',
-      titleEn: 'Audio Engineering & Broadcasting',
-      category: 'Medios & Divulgación',
-      categoryEn: 'Media & Tech Outreach',
+      title: 'Producción de Audio y Radio',
+      titleEn: 'Audio Production & Broadcasting',
+      category: 'Medios y Divulgación',
+      categoryEn: 'Media & Outreach',
       icon: 'fas fa-broadcast-tower',
-      description: 'Operación técnica de cabina de radio, edición profesional y divulgación tecnológica.',
-      descriptionEn: 'Radio studio broadcast operations, professional post-production, and tech communication.',
+      description: 'Operación de cabina, edición de audio y divulgación tecnológica.',
+      descriptionEn: 'Studio broadcast operations, audio editing, and tech communication.',
       highlights: [
-        'Creador, editor técnico y locutor de la cápsula "Ingeniería Inversa" en Radio ITESO 95.1 FM.',
-        'Operación de consolas profesionales de radiodifusión AEQ CAPITOL IP12.',
-        'Postproducción de audio y masterización con Adobe Audition.'
+        'Productor técnico y conductor de "Ingeniería Inversa" en Radio ITESO 95.1 FM.',
+        'Operación de consolas AEQ CAPITOL IP12.',
+        'Edición y postproducción en Adobe Audition.'
       ],
       highlightsEn: [
-        'Creator, sound engineer, and host of "Ingeniería Inversa" tech show on Radio ITESO 95.1 FM.',
-        'Operation of AEQ CAPITOL IP12 professional digital broadcast consoles.',
-        'Audio post-production and mastering with Adobe Audition.'
+        'Technical producer and host of "Ingeniería Inversa" on Radio ITESO 95.1 FM.',
+        'Operation of AEQ CAPITOL IP12 broadcast consoles.',
+        'Audio editing and post-production in Adobe Audition.'
       ],
       tools: ['AEQ CAPITOL IP12', 'Adobe Audition', 'Radio Broadcasting', 'Divulgación TI']
     }
@@ -166,100 +166,100 @@ export class SkillsComponent implements OnInit {
 
   learningSkills: LearningSkill[] = [
     {
-      title: 'Ciberseguridad Ofensiva & Pentesting',
-      titleEn: 'Offensive Cybersecurity & Pentesting',
-      category: 'Seguridad Digital',
-      categoryEn: 'Digital Security',
+      title: 'Ciberseguridad y Pentesting',
+      titleEn: 'Cybersecurity & Pentesting',
+      category: 'Seguridad',
+      categoryEn: 'Security',
       icon: 'fas fa-user-secret',
       badge: 'Certificación 2026',
       badgeEn: 'Certification 2026',
       badgeClass: 'badge-danger',
-      description: 'Especialización en análisis de vulnerabilidades, pruebas de intrusión y marcos de seguridad modernos.',
-      descriptionEn: 'Specialization in vulnerability assessments, penetration testing, and modern security frameworks.',
+      description: 'Análisis de vulnerabilidades, laboratorios prácticos y marcos de seguridad.',
+      descriptionEn: 'Vulnerability assessment, hands-on labs, and security frameworks.',
       keyTopics: [
-        'Framework MITRE ATT&CK para modelado de amenazas y detección.',
-        'Herramientas de reconocimiento y explotación: Nmap, ffuf, Metasploit, Burp Suite.',
-        'Principios de seguridad Shift-Left y arquitectura Zero Trust.'
+        'Mapeo de amenazas con el marco MITRE ATT&CK.',
+        'Práctica con Nmap, ffuf, Metasploit y Burp Suite.',
+        'Controles Zero Trust y seguridad desde el diseño.'
       ],
       keyTopicsEn: [
-        'MITRE ATT&CK framework for threat modeling and adversary simulation.',
-        'Reconnaissance and exploitation tools: Nmap, ffuf, Metasploit, Burp Suite.',
-        'Shift-Left security mindset and Zero Trust network defense.'
+        'Threat modeling with the MITRE ATT&CK framework.',
+        'Hands-on practice with Nmap, ffuf, Metasploit, and Burp Suite.',
+        'Zero Trust networking and Shift-Left security practices.'
       ],
-      goal: 'Obtención de la Certificación Profesional en Ciberseguridad (ITESO) y auditorías preventivas de infraestructura.',
-      goalEn: 'Achieve Professional Cybersecurity Certification (ITESO) and conduct proactive infrastructure security audits.'
+      goal: 'Certificación en Ciberseguridad (ITESO) y revisión preventiva de servicios propios.',
+      goalEn: 'ITESO Cybersecurity certification and proactive hardening of self-hosted services.'
     },
     {
-      title: 'Inteligencia Artificial Local & LLMs en el Edge',
-      titleEn: 'Local AI & Edge LLM Deployment',
-      category: 'Inteligencia Artificial',
-      categoryEn: 'Artificial Intelligence',
+      title: 'LLMs Locales y Automatización con Agentes',
+      titleEn: 'Local LLMs & Agent Workflows',
+      category: 'IA Aplicada',
+      categoryEn: 'Applied AI',
       icon: 'fas fa-brain',
-      badge: 'En Producción Propia',
-      badgeEn: 'Self-Hosted Production',
+      badge: 'Lab Personal',
+      badgeEn: 'Home Lab',
       badgeClass: 'badge-success',
-      description: 'Ejecución y afinación de modelos de lenguaje abiertos directamente en servidores locales autohospedados.',
-      descriptionEn: 'Running and fine-tuning open-source LLMs directly on self-hosted local hardware.',
+      description: 'Ejecución de modelos abiertos en hardware propio y servidores MCP.',
+      descriptionEn: 'Running open-weight models on local hardware and building MCP servers.',
       keyTopics: [
-        'Orquestación de LLMs locales con Ollama en hardware dedicado.',
-        'Privacidad de datos y procesamiento sin dependencia de APIs externas en la nube.',
-        'Integración de modelos con flujos de automatización y agentes de código.'
+        'Modelos locales con Ollama sin depender de APIs externas.',
+        'Servidores MCP en Python/Node para conectar herramientas reales.',
+        'Automatización de tareas repetitivas con agentes locales.'
       ],
       keyTopicsEn: [
-        'Orchestration of local LLMs using Ollama on dedicated edge hardware.',
-        'Complete data privacy and offline processing without third-party cloud API dependencies.',
-        'Model integration with automation workflows and developer coding agents.'
+        'Running local models via Ollama without external cloud APIs.',
+        'Building MCP servers in Python/Node for real tool integrations.',
+        'Automating personal and ops workflows with local agents.'
       ],
-      goal: 'Construir un ecosistema de agentes locales privados para análisis seguro de datos institucionales.',
-      goalEn: 'Build an ecosystem of private local agents for secure institutional and research data analysis.'
+      goal: 'Flujos privados de consulta y automatización sobre datos propios.',
+      goalEn: 'Private local automation and data querying workflows.'
     },
     {
-      title: 'Telemetría Biométrica & Analítica Wearable',
-      titleEn: 'Biometric Telemetry & Wearable Analytics',
-      category: 'IoT & Telemetría',
-      categoryEn: 'IoT & Telemetry',
+      title: 'Telemetría Biométrica Garmin',
+      titleEn: 'Garmin Biometric Telemetry',
+      category: 'IoT y Datos',
+      categoryEn: 'IoT & Data',
       icon: 'fas fa-heartbeat',
-      badge: 'Investigación Activa',
-      badgeEn: 'Active Research',
+      badge: 'Open Source',
+      badgeEn: 'Open Source',
       badgeClass: 'badge-primary',
-      description: 'Captura y análisis de flujos telemétricos en tiempo real desde dispositivos wearables de alto rendimiento.',
-      descriptionEn: 'Real-time telemetry capture and sports performance analysis from high-grade wearables.',
+      description: 'Extracción y análisis de métricas deportivas desde relojes y sensores Garmin.',
+      descriptionEn: 'Extracting and analyzing training metrics from Garmin wearables.',
       keyTopics: [
-        'Extracción de métricas telemétricas del ecosistema Garmin (Epix Gen 2, HRM-Pro Plus).',
-        'Zonas de frecuencia cardíaca, variabilidad de frecuencia (HRV) y carga de entrenamiento.',
-        'Automatización del almacenamiento y modelado de datos biométricos para optimización deportiva.'
+        'Lectura de métricas de Garmin (Epix Gen 2, HRM-Pro Plus).',
+        'Seguimiento de zonas de pulso, HRV y carga semanal.',
+        'Integración vía servidor MCP y bot de Telegram (garmin-health-mcp).'
       ],
       keyTopicsEn: [
-        'Telemetry extraction from the Garmin wearable ecosystem (Epix Gen 2, HRM-Pro Plus).',
-        'Heart rate training zones, heart rate variability (HRV), and acute training load.',
-        'Automated storage and modeling of biometric streams for athletic performance optimization.'
+        'Telemetry extraction from Garmin devices (Epix Gen 2, HRM-Pro Plus).',
+        'Tracking heart-rate zones, HRV, and weekly training load.',
+        'Integrated via MCP server and Telegram bot (garmin-health-mcp).'
       ],
-      goal: 'Integrar dashboards analíticos predictivos de fatiga y adaptación neuromuscular.',
-      goalEn: 'Deploy predictive fatigue and neuromuscular recovery dashboards.'
+      goal: 'Seguir mejorando garmin-health-mcp para análisis de recuperación y carga.',
+      goalEn: 'Iterate on garmin-health-mcp for recovery and training load tracking.'
     },
     {
-      title: 'Arquitecturas Cloud Nativas & CI/CD Continuo',
-      titleEn: 'Cloud-Native Architectures & Continuous CI/CD',
-      category: 'Cloud & Modern Ops',
-      categoryEn: 'Cloud & Modern Ops',
+      title: 'Cloud Run y CI/CD',
+      titleEn: 'Cloud Run & CI/CD',
+      category: 'Cloud y Ops',
+      categoryEn: 'Cloud & Ops',
       icon: 'fas fa-cloud-upload-alt',
-      badge: 'Ampliación Constante',
-      badgeEn: 'Continuous Learning',
+      badge: 'En Curso',
+      badgeEn: 'Ongoing',
       badgeClass: 'badge-warning',
-      description: 'Evolución continua de prácticas DevOps para despliegue automatizado y cómputo sin servidor.',
-      descriptionEn: 'Continuous advancement of DevOps workflows for automated deployments and serverless compute.',
+      description: 'Despliegues automatizados y servicios sin servidor en GCP y GitHub.',
+      descriptionEn: 'Automated deployments and serverless workloads on GCP and GitHub.',
       keyTopics: [
-        'Google Cloud Platform (Cloud Run, gestión de accesos IAM, Cloud Storage).',
-        'Automatización de pruebas y despliegues con GitHub Actions.',
-        'Infraestructura inmutable y despliegues sin tiempo de inactividad.'
+        'Google Cloud Platform (Cloud Run, IAM, Cloud Storage).',
+        'Pipelines de pruebas y despliegue con GitHub Actions.',
+        'Balance entre costos en nube pública y servicios en home lab.'
       ],
       keyTopicsEn: [
-        'Google Cloud Platform (Cloud Run, IAM identity management, Cloud Storage).',
-        'Automated CI/CD build, test, and release pipelines with GitHub Actions.',
-        'Immutable infrastructure patterns and zero-downtime releases.'
+        'Google Cloud Platform (Cloud Run, IAM, Cloud Storage).',
+        'Automated build and test pipelines with GitHub Actions.',
+        'Cost and reliability balance across cloud and self-hosted setups.'
       ],
-      goal: 'Optimizar costos y resiliencia en arquitecturas híbridas cloud/edge.',
-      goalEn: 'Maximize resilience and cost efficiency across hybrid cloud/edge deployments.'
+      goal: 'Mantener despliegues reproducibles y de bajo costo en proyectos personales y de trabajo.',
+      goalEn: 'Keep personal and production deployments reproducible and cost-effective.'
     }
   ];
 

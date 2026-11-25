@@ -1,8 +1,4 @@
 <div class="card-page">
-  <!-- Ambient background glow elements -->
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-
   <!-- Top Action Navigation -->
   <header class="card-top-nav">
     <a [routerLink]="currentLang === 'es' ? '/spa' : '/eng'" class="nav-back-btn" aria-label="Volver al inicio">
@@ -26,16 +22,12 @@
       <div class="card-header-section">
         <div class="avatar-wrapper">
           <img src="assets/images/1678849232446.jpg" alt="Luis Fernando Gutiérrez Romo" class="profile-photo" />
-          <span class="status-indicator" [title]="currentLang === 'es' ? 'Activo / Disponible para proyectos' : 'Active / Open to opportunities'"></span>
         </div>
 
         <h1 class="person-name">{{ completeName }}</h1>
         <div class="person-handle">@{{ name }}</div>
 
-        <div class="person-title-badge">
-          <i class="fas fa-shield-alt badge-icon"></i>
-          <span>{{ currentLang === 'es' ? titleEs : titleEn }}</span>
-        </div>
+        <p class="person-title">{{ currentLang === 'es' ? titleEs : titleEn }}</p>
 
         <div class="person-meta">
           <div class="meta-item">
@@ -48,10 +40,9 @@
           </div>
         </div>
 
-        <div class="availability-tag">
-          <span class="pulsing-dot"></span>
+        <p class="availability-note">
           {{ currentLang === 'es' ? 'Disponible para liderazgo TI, integración y consultoría' : 'Open to IT Leadership, Systems Integration & Consulting' }}
-        </div>
+        </p>
       </div>
 
       <!-- Primary Action Buttons (vCard & QR) -->
@@ -171,7 +162,7 @@
           <img src="assets/images/Lfgromo (5).png" alt="LuisFerGRomo logo" class="footer-avatar" />
           <span>{{ currentLang === 'es' ? 'Explorar Sitio Web Completo' : 'Explore Full Portfolio Website' }} &rarr;</span>
         </a>
-        <p class="footer-copy">&copy; 2026 Luis Fernando Gutiérrez Romo</p>
+        <p class="footer-copy">{{ currentLang === 'es' ? 'Diseñado con' : 'Designed with' }} <i class="far fa-heart footer-heart"></i> {{ currentLang === 'es' ? 'por' : 'by' }} {{ completeName }}.</p>
       </footer>
     </div>
   </main>
